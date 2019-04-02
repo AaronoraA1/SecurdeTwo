@@ -16,20 +16,28 @@ import java.util.TimerTask;
 public class Login extends javax.swing.JPanel {
 
     public Frame frame;
-    
+    public SQLite sql;
+
+    private static final File FILENAME = new File("logs/logs.txt");
+
+    private ArrayList<User> users;
+
+    private int loginAttempts;
+    private int secondsPassed;
+
     public Login() {
         initComponents();
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        txtLogPassword = new javax.swing.JPasswordField();
         txtLogUsername = new javax.swing.JTextField();
-        btnLogin = new javax.swing.JButton();
+        txtLogPassword = new javax.swing.JPasswordField();
         btnRegister = new javax.swing.JButton();
+        btnLogin = new javax.swing.JButton();
         errorMessage = new javax.swing.JLabel();
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
@@ -47,28 +55,30 @@ public class Login extends javax.swing.JPanel {
         txtLogPassword.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtLogPassword.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true), "PASSWORD", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 12))); // NOI18N
 
-        btnRegister.setBackground(new java.awt.Color(255, 255, 255));
+
+        btnRegister.setBackground(new java.awt.Color(0, 0, 0));
         btnRegister.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        btnRegister.setForeground(new java.awt.Color(255, 255, 255));
         btnRegister.setText("REGISTER");
         btnRegister.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnRegisterActionPerformed(evt);
             }
         });
 
-        btnLogin.setBackground(new java.awt.Color(255, 255, 255));
+        btnLogin.setBackground(new java.awt.Color(0, 0, 0));
         btnLogin.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        btnLogin.setForeground(new java.awt.Color(255, 255, 255));
         btnLogin.setText("LOGIN");
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnLoginActionPerformed(evt);
             }
         });
 
         errorMessage.setFont(new java.awt.Font("Dialog", 0, 10)); // NOI18N
         errorMessage.setForeground(new java.awt.Color(255, 0, 0));
         errorMessage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -104,27 +114,18 @@ public class Login extends javax.swing.JPanel {
                                 .addComponent(errorMessage, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addContainerGap(95, Short.MAX_VALUE))
         );
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>
 
+    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {
 
-    public SQLite sql;
-
-    private static final File FILENAME = new File("logs/logs.txt");
-
-    private ArrayList<User> users;
-
-    private int loginAttempts;
-    private int secondsPassed;
-
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         users = this.frame.main.sqlite.getUsers();
         boolean userFound = false;
         User foundUser = null;
+        String inputHashPassword = this.frame.main.hashPassword(txtLogPassword.getText());
 
         for(User user : users){
             if(user.getUsername().equalsIgnoreCase(txtLogUsername.getText() ) &&
-                    user.getPassword().equals(txtLogPassword.getText() )){
+                    user.getPassword().equals(inputHashPassword)){
                 userFound = true;
                 foundUser = user;
                 break;
@@ -132,7 +133,7 @@ public class Login extends javax.swing.JPanel {
         }
         if(userFound){
             loginAttempts = 0;
-            this.frame.main.writeLogs(newLog(txtLogUsername.getText(), txtLogPassword.getText(), userFound));
+            this.frame.main.writeLogs(newLog(txtLogUsername.getText(), inputHashPassword, userFound));
             clearFields();
             frame.setUser(foundUser);
             frame.mainNav();
@@ -150,7 +151,7 @@ public class Login extends javax.swing.JPanel {
                 failedLogin();
             }
         }
-    }//GEN-LAST:event_btnLoginActionPerformed
+    }
 
     private void failedLogin(){
         Timer timer = new Timer();
@@ -166,16 +167,20 @@ public class Login extends javax.swing.JPanel {
             }
         };
         timer.scheduleAtFixedRate(task, 1000, 1000);
+    }
 
-
-    }//GEN-LAST:event_jButton2ActionPerformed
-
+    private void btnRegisterActionPerformed(java.awt.event.ActionEvent evt) {
+        clearFields();
+        frame.registerNav();
+    }
 
     public void clearFields(){
         txtLogUsername.setText("");
         txtLogPassword.setText("");
         errorMessage.setText("");
     }
+
+
 
     public String newLog(String username, String password, boolean isSuccessful){
         DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
@@ -188,17 +193,12 @@ public class Login extends javax.swing.JPanel {
         }
     }
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        frame.registerNav();
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnLogin;
     private javax.swing.JButton btnRegister;
     private javax.swing.JLabel errorMessage;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPasswordField txtLogPassword;
+    private javax.swing.JTextField txtLogPassword;
     private javax.swing.JTextField txtLogUsername;
     // End of variables declaration//GEN-END:variables
 }

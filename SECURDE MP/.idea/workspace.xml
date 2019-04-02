@@ -1,10 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6001fd74-a0b1-4f15-b64c-501954c8a912" name="Default" comment="" />
+    <list default="true" id="6001fd74-a0b1-4f15-b64c-501954c8a912" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SECURDE MP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SECURDE MP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/Controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/Controller/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/Controller/SQLite.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/Controller/SQLite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/Model/Logs.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/Model/Logs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/Frame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/Frame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/Frame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/Frame$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/Frame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/Frame$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/Frame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/Frame$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/Frame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/Frame$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/Frame.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/Frame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/Login$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/Login$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/Login$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/Login$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/Register$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/Register$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/Register$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/Register$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/Register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javax.script.filename" beforeDir="false" afterPath="$PROJECT_DIR$/javax.script.filename" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/Controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/Controller/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/Controller/SQLite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/Controller/SQLite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/Login$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/Login$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/Login$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/Login$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/Login$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/Login$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtHistory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtHistory$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtLogs$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtLogs$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtUser$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtUser$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/Register$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/Register$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/Register$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/Register$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/Register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SQLite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SQLite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Register.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,107 +54,98 @@
       <FILTER>Controller.*</FILTER>
     </SUITE>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="database" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="SECURDE MP" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
+            <state relative-caret-position="312">
+              <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#303#304#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Login.form">
-          <provider selected="true" editor-type-id="ui-designer" />
-        </entry>
-      </file>
-      <file leaf-file-name="Login.java" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="200" column="38" selection-start-line="200" selection-start-column="38" selection-end-line="200" selection-end-column="38" />
+            <state relative-caret-position="563">
+              <caret line="140" column="13" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#113#114#0" expanded="true" />
-                <element signature="e#145#146#0" expanded="true" />
-                <element signature="e#187#276#0" expanded="true" />
-                <element signature="e#6970#7256#0" expanded="true" />
-                <element signature="e#7255#7256#0" expanded="true" />
+                <element signature="e#557#558#0" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
+                <element signature="method#initComponents#0;class#Login#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Home.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Frame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Frame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="213" selection-start-line="213" selection-end-line="213" />
-              <folding>
-                <element signature="e#13519#13520#0" expanded="true" />
-                <element signature="e#13551#13552#0" expanded="true" />
-                <element signature="e#13578#13579#0" expanded="true" />
-                <element signature="e#13605#13606#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Register.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/View/Register.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="45" lean-forward="true" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+            <state relative-caret-position="109">
+              <caret line="181" column="42" selection-start-line="181" selection-start-column="42" selection-end-line="181" selection-end-column="42" />
               <folding>
-                <element signature="e#119#120#0" expanded="true" />
-                <element signature="e#151#152#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#initComponents#0;class#Register#0" />
+                <element signature="e#2071#2072#0" expanded="true" />
+                <element signature="e#2134#2135#0" expanded="true" />
+                <element signature="e#4381#4382#0" expanded="true" />
+                <element signature="e#4447#4448#0" expanded="true" />
+                <element signature="e#8445#9398#1" />
+                <element signature="e#9717#11307#1" />
+                <element signature="e#11313#11591#1" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SQLite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/SQLite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3753">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sqlite.getuser</find>
+      <find>log adde</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Controller/Main.java" />
         <option value="$PROJECT_DIR$/src/View/Frame.java" />
-        <option value="$PROJECT_DIR$/src/View/Register.java" />
+        <option value="$PROJECT_DIR$/src/Controller/SQLite.java" />
         <option value="$PROJECT_DIR$/src/View/Login.java" />
+        <option value="$PROJECT_DIR$/src/Controller/Main.java" />
+        <option value="$PROJECT_DIR$/src/View/Register.java" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
@@ -123,14 +153,12 @@
     <option name="width" value="1382" />
     <option name="height" value="784" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,14 +193,17 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554201618807" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -239,130 +270,152 @@
       <option name="presentableId" value="Default" />
       <updated>1553837902433</updated>
       <workItem from="1553837905115" duration="3920000" />
+      <workItem from="1554174031139" duration="4310000" />
+      <workItem from="1554193924656" duration="5859000" />
+      <workItem from="1554200509039" duration="1087000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3920000" />
+    <option name="totallyTimeSpent" value="15176000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32965517" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3294271" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.009114583" />
-      <window_info anchor="right" id="Database" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.18206896" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23903178" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" show_stripe_button="false" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31643626" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.18206896" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32872504" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Maven" order="0" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" show_stripe_button="false" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Structure" order="7" weight="0.24962178" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32980332" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3294271" />
+      <window_info anchor="right" id="Maven Projects" order="11" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/View/Login.java</url>
-          <line>76</line>
-          <properties />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="1" />
-    </breakpoint-manager>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Controller/SQLite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3753">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Login.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Home.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="180">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="40">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-12/lib/src.zip!/java.scripting/javax/script/ScriptEngine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/logs.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-12/lib/src.zip!/java.sql/java/sql/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13120">
+          <caret line="701" selection-start-line="701" selection-end-line="701" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/History.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Frame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="213" selection-start-line="213" selection-end-line="213" />
-          <folding>
-            <element signature="e#13519#13520#0" expanded="true" />
-            <element signature="e#13551#13552#0" expanded="true" />
-            <element signature="e#13578#13579#0" expanded="true" />
-            <element signature="e#13605#13606#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="201">
+          <caret line="264" column="16" selection-start-line="264" selection-start-column="16" selection-end-line="264" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Register.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/SQLite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="45" lean-forward="true" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        <state relative-caret-position="208">
+          <caret line="290" column="16" selection-start-line="290" selection-start-column="16" selection-end-line="290" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
           <folding>
-            <element signature="e#119#120#0" expanded="true" />
-            <element signature="e#151#152#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="200" column="38" selection-start-line="200" selection-start-column="38" selection-end-line="200" selection-end-column="38" />
+        <state relative-caret-position="563">
+          <caret line="140" column="13" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#113#114#0" expanded="true" />
-            <element signature="e#145#146#0" expanded="true" />
-            <element signature="e#187#276#0" expanded="true" />
-            <element signature="e#6970#7256#0" expanded="true" />
-            <element signature="e#7255#7256#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="method#initComponents#0;class#Login#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="181" column="42" selection-start-line="181" selection-start-column="42" selection-end-line="181" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initComponents#0;class#Register#0" />
+            <element signature="e#2071#2072#0" expanded="true" />
+            <element signature="e#2134#2135#0" expanded="true" />
+            <element signature="e#4381#4382#0" expanded="true" />
+            <element signature="e#4447#4448#0" expanded="true" />
+            <element signature="e#8445#9398#1" />
+            <element signature="e#9717#11307#1" />
+            <element signature="e#11313#11591#1" />
           </folding>
         </state>
       </provider>
