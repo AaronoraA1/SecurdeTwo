@@ -9,7 +9,7 @@ import java.awt.Dimension;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import javax.swing.WindowConstants;
+import javax.swing.*;
 
 public class Frame extends javax.swing.JFrame {
 
@@ -186,27 +186,62 @@ public class Frame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void adminBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminBtnActionPerformed
-        adminHomePnl.showPnl("home");
-        contentView.show(Content, "adminHomePnl");
+
+        if (user.getRole() == 5) {
+            contentView.show(Content, "adminHomePnl");
+            adminHomePnl.showPnl("home");
+        }
+        else {
+            this.main.writeLogs(newLog(user.getUsername(), "Admin Page"));
+            JOptionPane.showMessageDialog(null, "You do not have authorization to access this page.");
+        }
+
+
     }//GEN-LAST:event_adminBtnActionPerformed
 
     private void managerBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_managerBtnActionPerformed
-        managerHomePnl.showPnl("home");
-        contentView.show(Content, "managerHomePnl");
+
+        if (user.getRole() == 4) {
+            managerHomePnl.showPnl("home");
+            contentView.show(Content, "managerHomePnl");
+        }
+        else {
+            this.main.writeLogs(newLog(user.getUsername(), "Manager Page"));
+            JOptionPane.showMessageDialog(null, "You do not have authorization to access this page.");
+        }
+
     }//GEN-LAST:event_managerBtnActionPerformed
 
     private void staffBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_staffBtnActionPerformed
-        staffHomePnl.showPnl("home");
-        contentView.show(Content, "staffHomePnl");
+
+        if (user.getRole() == 3) {
+
+            staffHomePnl.showPnl("home");
+            contentView.show(Content, "staffHomePnl");
+        }
+        else {
+            this.main.writeLogs(newLog(user.getUsername(), "Staff Page"));
+            JOptionPane.showMessageDialog(null, "You do not have authorization to access this page.");
+        }
+
     }//GEN-LAST:event_staffBtnActionPerformed
 
     private void clientBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clientBtnActionPerformed
-        clientHomePnl.showPnl("home");
-        contentView.show(Content, "clientHomePnl");
+
+        if (user.getRole() == 2) {
+            contentView.show(Content, "clientHomePnl");
+            clientHomePnl.showPnl("home");
+        }
+        else {
+            this.main.writeLogs(newLog(user.getUsername(), "Client Page"));
+            JOptionPane.showMessageDialog(null, "You do not have authorization to access this page.");
+        }
+
     }//GEN-LAST:event_clientBtnActionPerformed
 
     private void logoutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutBtnActionPerformed
         frameView.show(Container, "loginPnl");
+        this.main.writeLogs(newLog(user.getUsername(),"LOGGED OUT"));
     }//GEN-LAST:event_logoutBtnActionPerformed
 
     public Main main;
@@ -252,6 +287,18 @@ public class Frame extends javax.swing.JFrame {
     
     public void mainNav(){
         frameView.show(Container, "homePnl");
+        if(user.getRole() == 5){
+            contentView.show(Content, "adminHomePnl");
+        }
+        else if(user.getRole() == 4){
+            contentView.show(Content, "managerHomePnl");
+        }
+        else if(user.getRole() == 3){
+            contentView.show(Content, "staffHomePnl");
+        }
+        else if(user.getRole() == 2){
+            contentView.show(Content, "clientHomePnl");
+        }
     }
     
     public void loginNav(){

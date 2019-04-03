@@ -49,3 +49,52 @@
 03/04/19 00:24:10 :  LOGGED IN [admin]
 03/04/19 00:28:04 :  LOGGED IN [admin]
 03/04/19 10:21:41 :  LOGGED IN [admin]
+03/04/19 10:26:22 :  LOGGED IN [admin]
+03/04/19 10:44:00 :  LOGGED IN [admin]
+03/04/19 16:56:17 :  LOGGED IN [admin]
+03/04/19 17:00:47 :  LOGGED IN [admin]
+03/04/19 17:01:10 : admin ACCESSED Manager Page
+03/04/19 17:01:12 : admin ACCESSED Staff Page
+03/04/19 17:01:14 : admin ACCESSED Client Page
+03/04/19 17:01:16 : admin ACCESSED Manager Page
+03/04/19 17:01:26 : admin ACCESSED Manager Page
+03/04/19 17:01:28 : admin ACCESSED Staff Page
+03/04/19 17:01:32 : admin ACCESSED Client Page
+03/04/19 17:01:36 : admin ACCESSED LOGGED OUT
+03/04/19 17:01:44 :  LOGGED IN [client2]
+03/04/19 17:01:48 : client2 ACCESSED Staff Page
+03/04/19 17:01:50 : client2 ACCESSED Manager Page
+03/04/19 17:01:52 : client2 ACCESSED Admin Page
+03/04/19 17:01:58 : client2 ACCESSED Staff Page
+03/04/19 17:02:01 : client2 ACCESSED LOGGED OUT
+03/04/19 17:02:07 :  LOGGED IN [admin]
+03/04/19 17:02:15 : admin ACCESSED Client Page
+03/04/19 17:08:48 :  LOGGED IN [admin]
+03/04/19 17:08:51 : admin ACCESSED Manager Page
+03/04/19 17:08:53 : admin ACCESSED Manager Page
+03/04/19 17:08:54 : admin ACCESSED Staff Page
+03/04/19 17:08:56 : admin ACCESSED Client Page
+03/04/19 17:08:57 : admin ACCESSED LOGGED OUT
+03/04/19 17:09:05 :  LOGGED IN [client1]
+03/04/19 17:16:40 :  LOGGED IN [client2]
+03/04/19 17:16:46 : client2 ACCESSED Admin Page
+03/04/19 17:20:42 :  LOGGED IN [admin]
+03/04/19 17:20:43 : admin ACCESSED Manager Page
+03/04/19 17:20:44 : admin ACCESSED Staff Page
+03/04/19 17:20:45 : admin ACCESSED Client Page
+03/04/19 17:20:50 : admin ACCESSED LOGGED OUT
+03/04/19 17:21:03 :  LOGGED IN [client2]
+03/04/19 17:21:04 : client2 ACCESSED Staff Page
+03/04/19 17:21:05 : client2 ACCESSED Manager Page
+03/04/19 17:21:06 : client2 ACCESSED Admin Page
+03/04/19 17:21:34 : FAILED LOGIN ATTEMPT [staff, frameView.show(Container, "homePnl");         if(user.getRole() == 5){             contentView.show(Content, "adminHomePnl");         }         else if(user.getRole() == 4){             contentView.show(Content, "managerHomePnl");         }         else if(user.getRole() == 3){             contentView.show(Content, "staffHomePnl");         }         else if(user.getRole() == 2){             contentView.show(Content, "clientHomePnl");         }]
+03/04/19 17:21:38 :  LOGGED IN [staff]
+03/04/19 17:21:39 : staff ACCESSED Client Page
+03/04/19 17:21:40 : staff ACCESSED Manager Page
+03/04/19 17:21:42 : staff ACCESSED Admin Page
+03/04/19 17:21:43 : staff ACCESSED LOGGED OUT
+03/04/19 17:21:52 :  LOGGED IN [manager]
+03/04/19 17:21:53 : manager ACCESSED Client Page
+03/04/19 17:21:57 : manager ACCESSED Staff Page
+03/04/19 17:21:58 : manager ACCESSED Client Page
+03/04/19 17:21:59 : manager ACCESSED Admin Page
