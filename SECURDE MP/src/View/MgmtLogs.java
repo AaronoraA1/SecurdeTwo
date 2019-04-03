@@ -18,6 +18,8 @@ public class MgmtLogs extends javax.swing.JPanel {
 
     public SQLite sqlite;
     public DefaultTableModel tableModel;
+
+    private int roleID;
     
     public MgmtLogs(SQLite sqlite) {
         initComponents();
@@ -144,6 +146,14 @@ public class MgmtLogs extends javax.swing.JPanel {
         else
             sqlite.DEBUG_MODE = 1;
     }//GEN-LAST:event_btnDebugActionPerformed
+
+    public int getRoleID() {
+        return roleID;
+    }
+
+    public void setRoleID(int roleID) {
+        this.roleID = roleID;
+    }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

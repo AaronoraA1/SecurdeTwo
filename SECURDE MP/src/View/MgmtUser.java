@@ -67,6 +67,9 @@ public class MgmtUser extends javax.swing.JPanel {
                             users.get(nCtr).getRole(),
                             users.get(nCtr).getLocked()});
             }
+
+            btnChangePass.setVisible(false);
+
         } else if (this.getRoleID() == 3) {
             for (int nCtr = 0; nCtr < users.size(); nCtr++) {
                 if (users.get(nCtr).getRole() == 2)
@@ -76,6 +79,10 @@ public class MgmtUser extends javax.swing.JPanel {
                             users.get(nCtr).getRole(),
                             users.get(nCtr).getLocked()});
             }
+
+            btnChangePass.setVisible(false);
+            btnEditRole.setVisible(false);
+            btnDelete.setVisible(false);
         }
     }
 

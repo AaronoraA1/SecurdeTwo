@@ -46,10 +46,10 @@ public class StaffHome extends javax.swing.JPanel {
         Content.add(mgmtLogs, "mgmtLogs");
         
 //        UNCOMMENT TO DISABLE BUTTONS
-//        historyBtn.setVisible(false);
+        historyBtn.setVisible(false);
 //        usersBtn.setVisible(false);
 //        productsBtn.setVisible(false);
-//        logsBtn.setVisible(false);
+        logsBtn.setVisible(false);
     }
     
     public void showPnl(String panelName){
@@ -166,6 +166,7 @@ public class StaffHome extends javax.swing.JPanel {
     }//GEN-LAST:event_usersBtnActionPerformed
 
     private void productsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productsBtnActionPerformed
+        mgmtProduct.setRoleID(3);
         mgmtProduct.init();
         usersBtn.setForeground(Color.black);
         productsBtn.setForeground(Color.red);
@@ -175,6 +176,7 @@ public class StaffHome extends javax.swing.JPanel {
     }//GEN-LAST:event_productsBtnActionPerformed
 
     private void historyBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_historyBtnActionPerformed
+        mgmtHistory.setRoleID(3);
         mgmtHistory.init();
         usersBtn.setForeground(Color.black);
         productsBtn.setForeground(Color.black);
@@ -184,6 +186,7 @@ public class StaffHome extends javax.swing.JPanel {
     }//GEN-LAST:event_historyBtnActionPerformed
 
     private void logsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logsBtnActionPerformed
+        mgmtLogs.setRoleID(3);
         mgmtLogs.init();
         usersBtn.setForeground(Color.black);
         productsBtn.setForeground(Color.black);
