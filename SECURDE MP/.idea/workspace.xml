@@ -3,12 +3,71 @@
   <component name="ChangeListManager">
     <list default="true" id="6001fd74-a0b1-4f15-b64c-501954c8a912" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/Controller/SQLite.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/Controller/SQLite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/Model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/AdminHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/AdminHome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/ClientHome$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/ClientHome$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/ClientHome$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/ClientHome$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/ClientHome$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/ClientHome$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/ClientHome$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/ClientHome$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/ClientHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/ClientHome.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/View/Frame.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/Frame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/ManagerHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/ManagerHome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/ManagerHome.form" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/ManagerHome.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/MgmtProduct$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/MgmtProduct$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/MgmtProduct$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/MgmtProduct$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/MgmtProduct$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/MgmtProduct$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/MgmtProduct$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/MgmtProduct$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/MgmtProduct$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/MgmtProduct$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/MgmtProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/MgmtProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/MgmtUser$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/MgmtUser$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/MgmtUser$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/MgmtUser$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/MgmtUser$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/MgmtUser$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/MgmtUser$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/MgmtUser$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/MgmtUser$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/MgmtUser$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/MgmtUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/MgmtUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/MgmtUser.form" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/MgmtUser.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/Register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/View/StaffHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/View/StaffHome.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/Controller/SQLite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/Controller/SQLite.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/Model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/Model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/AdminHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/AdminHome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/ClientHome$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/ClientHome$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/ClientHome$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/ClientHome$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/ClientHome$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/ClientHome$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/ClientHome$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/ClientHome$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/ClientHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/ClientHome.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/Frame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/Frame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/ManagerHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/ManagerHome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtUser$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtUser$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtUser$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtUser$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtUser$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtUser$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtUser$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtUser$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtUser$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtUser$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/Register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/StaffHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/StaffHome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SQLite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SQLite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/AdminHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/AdminHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/ClientHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ClientHome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Frame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/ManagerHome.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ManagerHome.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/ManagerHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/ManagerHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/MgmtProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MgmtProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/MgmtUser.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MgmtUser.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/MgmtUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MgmtUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/StaffHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/StaffHome.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,93 +105,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/MgmtUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1283">
-              <caret line="223" column="40" selection-start-line="223" selection-start-column="40" selection-end-line="223" selection-end-column="40" />
-              <folding>
-                <element signature="method#init#0;class#MgmtUser#0" />
-                <element signature="method#designer#0;class#MgmtUser#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/View/Frame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="294" column="9" lean-forward="true" selection-start-line="294" selection-start-column="9" selection-end-line="294" selection-end-column="9" />
-              <folding>
-                <element signature="e#434#523#0" expanded="true" />
-                <element signature="e#2209#2210#0" expanded="true" />
-                <element signature="e#2269#2270#0" expanded="true" />
-                <element signature="e#2883#2884#0" expanded="true" />
-                <element signature="e#2945#2946#0" expanded="true" />
-                <element signature="e#3322#3323#0" expanded="true" />
-                <element signature="e#3382#3383#0" expanded="true" />
-                <element signature="e#3765#3766#0" expanded="true" />
-                <element signature="e#3826#3827#0" expanded="true" />
-                <element signature="e#4204#4205#0" expanded="true" />
-                <element signature="e#4265#4266#0" expanded="true" />
-                <element signature="e#12734#12735#0" expanded="true" />
-                <element signature="e#12786#12787#0" expanded="true" />
-                <element signature="e#12819#12820#0" expanded="true" />
-                <element signature="e#12872#12873#0" expanded="true" />
-                <element signature="e#12908#12909#0" expanded="true" />
-                <element signature="e#12964#12965#0" expanded="true" />
-                <element signature="method#registerAction#0;class#Frame#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="138" column="22" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#557#558#0" expanded="true" />
-                <element signature="e#589#590#0" expanded="true" />
-                <element signature="method#initComponents#0;class#Login#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/ClientHome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="41" column="26" lean-forward="true" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-              <folding>
-                <element signature="e#1577#1578#0" expanded="true" />
-                <element signature="e#1629#1630#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="252">
+              <caret line="50" column="35" lean-forward="true" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/Home.java">
+        <entry file="file://$PROJECT_DIR$/src/Model/History.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+            <state relative-caret-position="380">
+              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/AdminHome.java">
+        <entry file="file://$PROJECT_DIR$/src/Model/Logs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+            <state relative-caret-position="60">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/MgmtProduct.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
               <folding>
-                <element signature="e#1600#1601#0" expanded="true" />
-                <element signature="e#1652#1653#0" expanded="true" />
+                <element signature="e#2387#2476#0" expanded="true" />
+                <element signature="e#4424#4425#0" expanded="true" />
+                <element signature="e#4487#4488#0" expanded="true" />
+                <element signature="e#4811#4812#0" expanded="true" />
+                <element signature="e#4869#4870#0" expanded="true" />
+                <element signature="e#5234#5235#0" expanded="true" />
+                <element signature="e#5293#5294#0" expanded="true" />
+                <element signature="e#5632#5633#0" expanded="true" />
+                <element signature="e#5693#5694#0" expanded="true" />
+                <element signature="e#11245#11246#0" expanded="true" />
+                <element signature="e#11274#11275#0" expanded="true" />
+                <element signature="e#11315#11316#0" expanded="true" />
+                <element signature="e#11351#11352#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,6 +166,7 @@
       <find>welcome admin</find>
       <find>adminhome</find>
       <find>adminHomePnl</find>
+      <find>for</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,20 +175,24 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Controller/SQLite.java" />
         <option value="$PROJECT_DIR$/src/View/Login.java" />
         <option value="$PROJECT_DIR$/src/Controller/Main.java" />
-        <option value="$PROJECT_DIR$/src/View/Register.java" />
         <option value="$PROJECT_DIR$/src/View/MgmtHistory.java" />
         <option value="$PROJECT_DIR$/src/View/MgmtLogs.java" />
-        <option value="$PROJECT_DIR$/src/View/MgmtProduct.java" />
-        <option value="$PROJECT_DIR$/src/View/MgmtUser.java" />
+        <option value="$PROJECT_DIR$/src/View/ManagerHome.java" />
         <option value="$PROJECT_DIR$/src/View/StaffHome.java" />
+        <option value="$PROJECT_DIR$/src/View/MgmtUser.java" />
+        <option value="$PROJECT_DIR$/src/View/AdminHome.java" />
+        <option value="$PROJECT_DIR$/src/Controller/SQLite.java" />
         <option value="$PROJECT_DIR$/src/View/Frame.java" />
+        <option value="$PROJECT_DIR$/src/View/Register.java" />
+        <option value="$PROJECT_DIR$/src/Model/User.java" />
+        <option value="$PROJECT_DIR$/src/View/MgmtProduct.java" />
+        <option value="$PROJECT_DIR$/src/View/ClientHome.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -222,7 +245,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554201711588" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554287272274" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
@@ -298,12 +321,12 @@
       <workItem from="1554205180935" duration="1733000" />
       <workItem from="1554214743506" duration="2751000" />
       <workItem from="1554257070222" duration="3194000" />
-      <workItem from="1554278281516" duration="3470000" />
+      <workItem from="1554278281516" duration="7379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26778000" />
+    <option name="totallyTimeSpent" value="30687000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -370,52 +393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/History.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/Register.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="181" column="42" selection-start-line="181" selection-start-column="42" selection-end-line="181" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#initComponents#0;class#Register#0" />
-            <element signature="e#2071#2072#0" expanded="true" />
-            <element signature="e#2134#2135#0" expanded="true" />
-            <element signature="e#4381#4382#0" expanded="true" />
-            <element signature="e#4447#4448#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/SQLite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5600">
-          <caret line="290" column="16" selection-start-line="290" selection-start-column="16" selection-end-line="290" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/MgmtLogs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1180">
@@ -436,27 +413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/MgmtProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="252" column="40" selection-start-line="252" selection-start-column="40" selection-end-line="252" selection-end-column="40" />
-          <folding>
-            <element signature="e#2387#2476#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/MgmtUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1283">
-          <caret line="223" column="40" selection-start-line="223" selection-start-column="40" selection-end-line="223" selection-end-column="40" />
-          <folding>
-            <element signature="method#init#0;class#MgmtUser#0" />
-            <element signature="method#designer#0;class#MgmtUser#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-12/lib/src.zip!/java.desktop/java/awt/CardLayout.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -464,16 +420,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/StaffHome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="51" column="36" lean-forward="true" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Home.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
+        <state relative-caret-position="103">
           <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
         </state>
       </provider>
@@ -489,10 +438,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/ManagerHome.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/StaffHome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="158" column="28" selection-start-line="158" selection-start-column="28" selection-end-line="158" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/AdminHome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+        <state relative-caret-position="232">
+          <caret line="158" column="28" selection-start-line="158" selection-start-column="28" selection-end-line="158" selection-end-column="28" />
           <folding>
             <element signature="e#1600#1601#0" expanded="true" />
             <element signature="e#1652#1653#0" expanded="true" />
@@ -500,20 +459,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/ClientHome.java">
+    <entry file="file://$PROJECT_DIR$/src/View/ManagerHome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="41" column="26" lean-forward="true" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-          <folding>
-            <element signature="e#1577#1578#0" expanded="true" />
-            <element signature="e#1629#1630#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="823">
+          <caret line="158" column="30" lean-forward="true" selection-start-line="157" selection-start-column="115" selection-end-line="158" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="420">
           <caret line="138" column="22" selection-start-line="138" selection-start-column="22" selection-end-line="138" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -524,30 +479,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/SQLite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="268" column="16" selection-start-line="268" selection-start-column="16" selection-end-line="268" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="64" column="128" selection-start-line="64" selection-start-column="128" selection-end-line="64" selection-end-column="128" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/Frame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="294" column="9" lean-forward="true" selection-start-line="294" selection-start-column="9" selection-end-line="294" selection-end-column="9" />
+        <state relative-caret-position="512">
+          <caret line="310" selection-start-line="310" selection-end-line="310" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="105" column="63" selection-start-line="105" selection-start-column="63" selection-end-line="105" selection-end-column="63" />
           <folding>
-            <element signature="e#434#523#0" expanded="true" />
-            <element signature="e#2209#2210#0" expanded="true" />
-            <element signature="e#2269#2270#0" expanded="true" />
-            <element signature="e#2883#2884#0" expanded="true" />
-            <element signature="e#2945#2946#0" expanded="true" />
-            <element signature="e#3322#3323#0" expanded="true" />
-            <element signature="e#3382#3383#0" expanded="true" />
-            <element signature="e#3765#3766#0" expanded="true" />
-            <element signature="e#3826#3827#0" expanded="true" />
-            <element signature="e#4204#4205#0" expanded="true" />
-            <element signature="e#4265#4266#0" expanded="true" />
-            <element signature="e#12734#12735#0" expanded="true" />
-            <element signature="e#12786#12787#0" expanded="true" />
-            <element signature="e#12819#12820#0" expanded="true" />
-            <element signature="e#12872#12873#0" expanded="true" />
-            <element signature="e#12908#12909#0" expanded="true" />
-            <element signature="e#12964#12965#0" expanded="true" />
-            <element signature="method#registerAction#0;class#Frame#0" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Register.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="191" selection-start-line="191" selection-end-line="191" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initComponents#0;class#Register#0" />
+            <element signature="e#2071#2072#0" expanded="true" />
+            <element signature="e#2134#2135#0" expanded="true" />
+            <element signature="e#4381#4382#0" expanded="true" />
+            <element signature="e#4447#4448#0" expanded="true" />
+            <element signature="e#12404#12405#0" expanded="true" />
+            <element signature="e#12432#12433#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/MgmtUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="77" column="13" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+          <folding>
+            <element signature="method#designer#0;class#MgmtUser#0" />
+            <element signature="e#12819#12820#0" expanded="true" />
+            <element signature="e#12848#12849#0" expanded="true" />
+            <element signature="e#12889#12890#0" expanded="true" />
+            <element signature="e#12925#12926#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/MgmtProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+          <folding>
+            <element signature="e#2387#2476#0" expanded="true" />
+            <element signature="e#4424#4425#0" expanded="true" />
+            <element signature="e#4487#4488#0" expanded="true" />
+            <element signature="e#4811#4812#0" expanded="true" />
+            <element signature="e#4869#4870#0" expanded="true" />
+            <element signature="e#5234#5235#0" expanded="true" />
+            <element signature="e#5293#5294#0" expanded="true" />
+            <element signature="e#5632#5633#0" expanded="true" />
+            <element signature="e#5693#5694#0" expanded="true" />
+            <element signature="e#11245#11246#0" expanded="true" />
+            <element signature="e#11274#11275#0" expanded="true" />
+            <element signature="e#11315#11316#0" expanded="true" />
+            <element signature="e#11351#11352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/History.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Logs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/ClientHome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="50" column="35" lean-forward="true" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
         </state>
       </provider>
     </entry>

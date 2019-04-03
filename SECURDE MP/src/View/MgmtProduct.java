@@ -21,7 +21,10 @@ public class MgmtProduct extends javax.swing.JPanel {
 
     public SQLite sqlite;
     public DefaultTableModel tableModel;
-    
+
+    private int roleID;
+
+
     public MgmtProduct(SQLite sqlite) {
         initComponents();
         this.sqlite = sqlite;
@@ -43,12 +46,21 @@ public class MgmtProduct extends javax.swing.JPanel {
         
 //      LOAD CONTENTS
         ArrayList<Product> products = sqlite.getProduct();
-        for(int nCtr = 0; nCtr < products.size(); nCtr++){
-            tableModel.addRow(new Object[]{
-                products.get(nCtr).getName(), 
-                products.get(nCtr).getStock(), 
-                products.get(nCtr).getPrice()});
+
+            for(int nCtr = 0; nCtr < products.size(); nCtr++){
+                tableModel.addRow(new Object[]{
+                        products.get(nCtr).getName(),
+                        products.get(nCtr).getStock(),
+                        products.get(nCtr).getPrice()});
+            }
+
+
+        if(this.getRoleID() == 2){
+            btnAdd.setVisible(false);
+            btnEdit.setVisible(false);
+            btnDelete.setVisible(false);
         }
+
     }
     
     public void designer(JTextField component, String text){
@@ -141,6 +153,7 @@ public class MgmtProduct extends javax.swing.JPanel {
             }
         });
 
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -171,6 +184,10 @@ public class MgmtProduct extends javax.swing.JPanel {
                     .addComponent(btnPurchase, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnEdit, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
+
+
+
+
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnPurchaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPurchaseActionPerformed
@@ -246,6 +263,13 @@ public class MgmtProduct extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_btnDeleteActionPerformed
 
+    public int getRoleID() {
+        return roleID;
+    }
+
+    public void setRoleID(int roleID) {
+        this.roleID = roleID;
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdd;

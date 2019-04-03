@@ -168,22 +168,22 @@ public class SQLite {
         }
     }
 
-    public void addUser(String username, String password) {
-        String sql = "INSERT INTO users(username,password) VALUES('" + username + "','" + password + "')";
-
-        try (Connection conn = DriverManager.getConnection(driverURL);
-             Statement stmt = conn.createStatement()) {
-            stmt.execute(sql);
-
-//      PREPARED STATEMENT EXAMPLE
-//      String sql = "INSERT INTO users(username,password) VALUES(?,?)";
-//      PreparedStatement pstmt = conn.prepareStatement(sql)) {
-//      pstmt.setString(1, username);
-//      pstmt.setString(2, password);
-//      pstmt.executeUpdate();
-        } catch (Exception ex) {
-        }
-    }
+//    public void addUser(String username, String password) {
+//        String sql = "INSERT INTO users(username,password) VALUES('" + username + "','" + password + "')";
+//
+//        try (Connection conn = DriverManager.getConnection(driverURL);
+//             Statement stmt = conn.createStatement()) {
+//            stmt.execute(sql);
+//
+////      PREPARED STATEMENT EXAMPLE
+////      String sql = "INSERT INTO users(username,password) VALUES(?,?)";
+////      PreparedStatement pstmt = conn.prepareStatement(sql)) {
+////      pstmt.setString(1, username);
+////      pstmt.setString(2, password);
+////      pstmt.executeUpdate();
+//        } catch (Exception ex) {
+//        }
+//    }
 
 
     public ArrayList<History> getHistory() {

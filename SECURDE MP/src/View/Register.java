@@ -200,8 +200,11 @@ public class Register extends javax.swing.JPanel {
                     } else {
                         JOptionPane.showMessageDialog(null, "Registered successfully!");
                         this.frame.main.writeLogs(newLog(txtRegUsername.getText(), hashedPassword, userFound));
-                        frame.registerAction(txtRegUsername.getText(), hashedPassword, txtRegConfirm.getText());
+                        frame.main.sqlite.addUser(txtRegUsername.getText(), hashedPassword, 2);
                         frame.main.sqlite.getUser(txtRegUsername.getText(), hashedPassword);
+                        User newlyRegistered = new User(users.size() + 1, txtRegUsername.getText(), hashedPassword, 2, 0);
+                        System.out.println(newlyRegistered.toString());
+                        this.getUsers().add(newlyRegistered);
                         txtRegUsername.setText("");
                         txtRegPassword.setText("");
                         txtRegConfirm.setText("");
@@ -245,6 +248,9 @@ public class Register extends javax.swing.JPanel {
         }
     }
 
+    public ArrayList<User> getUsers() {
+        return users;
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnBackToLogin;

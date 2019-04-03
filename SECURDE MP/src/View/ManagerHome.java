@@ -156,6 +156,7 @@ public class ManagerHome extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void usersBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usersBtnActionPerformed
+        mgmtUser.setRoleID(4);
         mgmtUser.init();
         usersBtn.setForeground(Color.red);
         productsBtn.setForeground(Color.black);
@@ -190,8 +191,6 @@ public class ManagerHome extends javax.swing.JPanel {
         logsBtn.setForeground(Color.red);
         contentView.show(Content, "mgmtLogs");
     }//GEN-LAST:event_logsBtnActionPerformed
-    
-    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Content;

@@ -7,6 +7,7 @@ package View;
 
 import Controller.SQLite;
 import Model.User;
+
 import java.util.ArrayList;
 import javax.swing.JComboBox;
 import javax.swing.JDialog;
@@ -17,52 +18,75 @@ import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
 /**
- *
  * @author beepxD
  */
 public class MgmtUser extends javax.swing.JPanel {
 
     public SQLite sqlite;
     public DefaultTableModel tableModel;
-    
+
+    private int roleID;
+
     public MgmtUser(SQLite sqlite) {
         initComponents();
         this.sqlite = sqlite;
-        tableModel = (DefaultTableModel)table.getModel();
+        tableModel = (DefaultTableModel) table.getModel();
         table.getTableHeader().setFont(new java.awt.Font("SansSerif", java.awt.Font.BOLD, 14));
-        
+
 //        UNCOMMENT TO DISABLE BUTTONS
 //        editBtn.setVisible(false);
 //        btnDelete.setVisible(false);
 //        btnLock.setVisible(false);
 //        btnChangePass.setVisible(false);
     }
-    
-    public void init(){
+
+    public void init() {
         //      CLEAR TABLE
-        for(int nCtr = tableModel.getRowCount(); nCtr > 0; nCtr--){
+        for (int nCtr = tableModel.getRowCount(); nCtr > 0; nCtr--) {
             tableModel.removeRow(0);
         }
-        
+
 //      LOAD CONTENTS
         ArrayList<User> users = sqlite.getUsers();
-        for(int nCtr = 0; nCtr < users.size(); nCtr++){
-            tableModel.addRow(new Object[]{
-                users.get(nCtr).getUsername(), 
-                users.get(nCtr).getPassword(), 
-                users.get(nCtr).getRole(), 
-                users.get(nCtr).getLocked()});
+
+        if (this.getRoleID() == 5) {
+            for (int nCtr = 0; nCtr < users.size(); nCtr++) {
+                    tableModel.addRow(new Object[]{
+                            users.get(nCtr).getUsername(),
+                            users.get(nCtr).getPassword(),
+                            users.get(nCtr).getRole(),
+                            users.get(nCtr).getLocked()});
+            }
+        }
+        else if (this.getRoleID() == 4) {
+            for (int nCtr = 0; nCtr < users.size(); nCtr++) {
+                if (users.get(nCtr).getRole() == 3 || users.get(nCtr).getRole() == 2)
+                    tableModel.addRow(new Object[]{
+                            users.get(nCtr).getUsername(),
+                            users.get(nCtr).getPassword(),
+                            users.get(nCtr).getRole(),
+                            users.get(nCtr).getLocked()});
+            }
+        } else if (this.getRoleID() == 3) {
+            for (int nCtr = 0; nCtr < users.size(); nCtr++) {
+                if (users.get(nCtr).getRole() == 2)
+                    tableModel.addRow(new Object[]{
+                            users.get(nCtr).getUsername(),
+                            users.get(nCtr).getPassword(),
+                            users.get(nCtr).getRole(),
+                            users.get(nCtr).getLocked()});
+            }
         }
     }
 
-    public void designer(JTextField component, String text){
+    public void designer(JTextField component, String text) {
         component.setSize(70, 600);
         component.setFont(new java.awt.Font("Tahoma", 0, 18));
         component.setBackground(new java.awt.Color(240, 240, 240));
         component.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         component.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true), text, javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 12)));
     }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -81,22 +105,22 @@ public class MgmtUser extends javax.swing.JPanel {
 
         table.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         table.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Username", "Password", "Role", "Locked"
-            }
+                new Object[][]{
+                        {null, null, null, null},
+                        {null, null, null, null},
+                        {null, null, null, null},
+                        {null, null, null, null}
+                },
+                new String[]{
+                        "Username", "Password", "Role", "Locked"
+                }
         ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false
+            boolean[] canEdit = new boolean[]{
+                    false, false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
+                return canEdit[columnIndex];
             }
         });
         table.setRowHeight(24);
@@ -149,46 +173,46 @@ public class MgmtUser extends javax.swing.JPanel {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnEditRole, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(0, 0, 0)
-                        .addComponent(btnDelete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(0, 0, 0)
-                        .addComponent(btnLock, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(0, 0, 0)
-                        .addComponent(btnChangePass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jScrollPane1))
-                .addGap(0, 0, 0))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGap(0, 0, 0)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addComponent(btnEditRole, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addGap(0, 0, 0)
+                                                .addComponent(btnDelete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addGap(0, 0, 0)
+                                                .addComponent(btnLock, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addGap(0, 0, 0)
+                                                .addComponent(btnChangePass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addComponent(jScrollPane1))
+                                .addGap(0, 0, 0))
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 222, Short.MAX_VALUE)
-                .addGap(0, 0, 0)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnChangePass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnEditRole, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnLock, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGap(0, 0, 0)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 222, Short.MAX_VALUE)
+                                .addGap(0, 0, 0)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(btnChangePass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btnEditRole, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btnLock, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnEditRoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditRoleActionPerformed
-        if(table.getSelectedRow() >= 0){
-            String[] options = {"1-DISABLED","2-CLIENT","3-STAFF","4-MANAGER","5-ADMIN"};
+        if (table.getSelectedRow() >= 0) {
+            String[] options = {"1-DISABLED", "2-CLIENT", "3-STAFF", "4-MANAGER", "5-ADMIN"};
             JComboBox optionList = new JComboBox(options);
-            
-            optionList.setSelectedIndex((int)tableModel.getValueAt(table.getSelectedRow(), 2) - 1);
-            
-            String result = (String) JOptionPane.showInputDialog(null, "USER: " + tableModel.getValueAt(table.getSelectedRow(), 0), 
-                "EDIT USER ROLE", JOptionPane.QUESTION_MESSAGE, null, options, options[(int)tableModel.getValueAt(table.getSelectedRow(), 2) - 1]);
-            
-            if(result != null){
+
+            optionList.setSelectedIndex((int) tableModel.getValueAt(table.getSelectedRow(), 2) - 1);
+
+            String result = (String) JOptionPane.showInputDialog(null, "USER: " + tableModel.getValueAt(table.getSelectedRow(), 0),
+                    "EDIT USER ROLE", JOptionPane.QUESTION_MESSAGE, null, options, options[(int) tableModel.getValueAt(table.getSelectedRow(), 2) - 1]);
+
+            if (result != null) {
                 System.out.println(tableModel.getValueAt(table.getSelectedRow(), 0));
                 System.out.println(result.charAt(0));
             }
@@ -196,9 +220,9 @@ public class MgmtUser extends javax.swing.JPanel {
     }//GEN-LAST:event_btnEditRoleActionPerformed
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
-        if(table.getSelectedRow() >= 0){
+        if (table.getSelectedRow() >= 0) {
             int result = JOptionPane.showConfirmDialog(null, "Are you sure you want to delete " + tableModel.getValueAt(table.getSelectedRow(), 0) + "?", "DELETE USER", JOptionPane.YES_NO_OPTION);
-            
+
             if (result == JOptionPane.YES_OPTION) {
                 System.out.println(tableModel.getValueAt(table.getSelectedRow(), 0));
             }
@@ -206,14 +230,14 @@ public class MgmtUser extends javax.swing.JPanel {
     }//GEN-LAST:event_btnDeleteActionPerformed
 
     private void btnLockActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLockActionPerformed
-        if(table.getSelectedRow() >= 0){
+        if (table.getSelectedRow() >= 0) {
             String state = "lock";
-            if("1".equals(tableModel.getValueAt(table.getSelectedRow(), 3) + "")){
+            if ("1".equals(tableModel.getValueAt(table.getSelectedRow(), 3) + "")) {
                 state = "unlock";
             }
-            
+
             int result = JOptionPane.showConfirmDialog(null, "Are you sure you want to " + state + " " + tableModel.getValueAt(table.getSelectedRow(), 0) + "?", "DELETE USER", JOptionPane.YES_NO_OPTION);
-            
+
             if (result == JOptionPane.YES_OPTION) {
                 System.out.println(tableModel.getValueAt(table.getSelectedRow(), 0));
             }
@@ -221,24 +245,32 @@ public class MgmtUser extends javax.swing.JPanel {
     }//GEN-LAST:event_btnLockActionPerformed
 
     private void btnChangePassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChangePassActionPerformed
-        if(table.getSelectedRow() >= 0){
+        if (table.getSelectedRow() >= 0) {
             JTextField password = new JPasswordField();
             JTextField confpass = new JPasswordField();
             designer(password, "PASSWORD");
             designer(confpass, "CONFIRM PASSWORD");
-            
+
             Object[] message = {
-                "Enter New Password:", password, confpass
+                    "Enter New Password:", password, confpass
             };
 
             int result = JOptionPane.showConfirmDialog(null, message, "CHANGE PASSWORD", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE, null);
-            
+
             if (result == JOptionPane.OK_OPTION) {
                 System.out.println(password.getText());
                 System.out.println(confpass.getText());
             }
         }
     }//GEN-LAST:event_btnChangePassActionPerformed
+
+    public int getRoleID() {
+        return roleID;
+    }
+
+    public void setRoleID(int roleID) {
+        this.roleID = roleID;
+    }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

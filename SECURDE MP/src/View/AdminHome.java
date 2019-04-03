@@ -156,6 +156,7 @@ public class AdminHome extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void usersBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usersBtnActionPerformed
+        mgmtUser.setRoleID(5);
         mgmtUser.init();
         usersBtn.setForeground(Color.red);
         productsBtn.setForeground(Color.black);
