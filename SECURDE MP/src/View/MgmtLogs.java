@@ -26,8 +26,8 @@ public class MgmtLogs extends javax.swing.JPanel {
         table.getTableHeader().setFont(new java.awt.Font("SansSerif", java.awt.Font.BOLD, 14));
         
 //        UNCOMMENT TO DISABLE BUTTONS
-//        clearBtn.setVisible(false);
-//        debugBtn.setVisible(false);
+//        btnClear.setVisible(false);
+//        btnDebug.setVisible(false);
     }
 
     public void init(){
@@ -57,8 +57,8 @@ public class MgmtLogs extends javax.swing.JPanel {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         table = new javax.swing.JTable();
-        clearBtn = new javax.swing.JButton();
-        debugBtn = new javax.swing.JButton();
+        btnClear = new javax.swing.JButton();
+        btnDebug = new javax.swing.JButton();
 
         table.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         table.setModel(new javax.swing.table.DefaultTableModel(
@@ -90,22 +90,22 @@ public class MgmtLogs extends javax.swing.JPanel {
             table.getColumnModel().getColumn(3).setPreferredWidth(240);
         }
 
-        clearBtn.setBackground(new java.awt.Color(255, 255, 255));
-        clearBtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        clearBtn.setText("CLEAR");
-        clearBtn.addActionListener(new java.awt.event.ActionListener() {
+        btnClear.setBackground(new java.awt.Color(255, 255, 255));
+        btnClear.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnClear.setText("CLEAR");
+        btnClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                clearBtnActionPerformed(evt);
+                btnClearActionPerformed(evt);
             }
         });
 
-        debugBtn.setBackground(new java.awt.Color(255, 255, 255));
-        debugBtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        debugBtn.setText("ENABLE/DISABLE DEBUG MODE");
-        debugBtn.setToolTipText("");
-        debugBtn.addActionListener(new java.awt.event.ActionListener() {
+        btnDebug.setBackground(new java.awt.Color(255, 255, 255));
+        btnDebug.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnDebug.setText("ENABLE/DISABLE DEBUG MODE");
+        btnDebug.setToolTipText("");
+        btnDebug.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                debugBtnActionPerformed(evt);
+                btnDebugActionPerformed(evt);
             }
         });
 
@@ -118,9 +118,9 @@ public class MgmtLogs extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 412, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(debugBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnDebug, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(0, 0, 0)
-                        .addComponent(clearBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addComponent(btnClear, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -129,26 +129,26 @@ public class MgmtLogs extends javax.swing.JPanel {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 222, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(debugBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(clearBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(btnDebug, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void clearBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearBtnActionPerformed
+    private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
         
-    }//GEN-LAST:event_clearBtnActionPerformed
+    }//GEN-LAST:event_btnClearActionPerformed
 
-    private void debugBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_debugBtnActionPerformed
+    private void btnDebugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDebugActionPerformed
         if(sqlite.DEBUG_MODE == 1)
             sqlite.DEBUG_MODE = 0;
         else
             sqlite.DEBUG_MODE = 1;
-    }//GEN-LAST:event_debugBtnActionPerformed
+    }//GEN-LAST:event_btnDebugActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton clearBtn;
-    private javax.swing.JButton debugBtn;
+    private javax.swing.JButton btnClear;
+    private javax.swing.JButton btnDebug;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable table;
     // End of variables declaration//GEN-END:variables

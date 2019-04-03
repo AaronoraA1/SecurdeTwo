@@ -35,7 +35,7 @@ public class MgmtHistory extends javax.swing.JPanel {
         table.getColumnModel().getColumn(5).setCellRenderer(rightAlign);
         
 //        UNCOMMENT TO DISABLE BUTTONS
-//        searchBtn.setVisible(false);
+//        btnSearch.setVisible(false);
 //        reportBtn.setVisible(false);
     }
 
@@ -79,8 +79,8 @@ public class MgmtHistory extends javax.swing.JPanel {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         table = new javax.swing.JTable();
-        searchBtn = new javax.swing.JButton();
-        reloadBtn = new javax.swing.JButton();
+        btnSearch = new javax.swing.JButton();
+        btnReload = new javax.swing.JButton();
 
         table.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         table.setModel(new javax.swing.table.DefaultTableModel(
@@ -114,21 +114,21 @@ public class MgmtHistory extends javax.swing.JPanel {
             table.getColumnModel().getColumn(5).setPreferredWidth(240);
         }
 
-        searchBtn.setBackground(new java.awt.Color(255, 255, 255));
-        searchBtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        searchBtn.setText("SEARCH USERNAME OR PRODUCT");
-        searchBtn.addActionListener(new java.awt.event.ActionListener() {
+        btnSearch.setBackground(new java.awt.Color(255, 255, 255));
+        btnSearch.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnSearch.setText("SEARCH USERNAME OR PRODUCT");
+        btnSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                searchBtnActionPerformed(evt);
+                btnSearchActionPerformed(evt);
             }
         });
 
-        reloadBtn.setBackground(new java.awt.Color(255, 255, 255));
-        reloadBtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        reloadBtn.setText("RELOAD");
-        reloadBtn.addActionListener(new java.awt.event.ActionListener() {
+        btnReload.setBackground(new java.awt.Color(255, 255, 255));
+        btnReload.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnReload.setText("RELOAD");
+        btnReload.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                reloadBtnActionPerformed(evt);
+                btnReloadActionPerformed(evt);
             }
         });
 
@@ -140,9 +140,9 @@ public class MgmtHistory extends javax.swing.JPanel {
                 .addGap(0, 0, 0)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(searchBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnSearch, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(0, 0, 0)
-                        .addComponent(reloadBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(btnReload, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 424, Short.MAX_VALUE))
                 .addGap(0, 0, 0))
         );
@@ -153,12 +153,12 @@ public class MgmtHistory extends javax.swing.JPanel {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 222, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(searchBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
-                    .addComponent(reloadBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(btnSearch, javax.swing.GroupLayout.DEFAULT_SIZE, 41, Short.MAX_VALUE)
+                    .addComponent(btnReload, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void searchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBtnActionPerformed
+    private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
         JTextField searchFld = new JTextField("0");
         designer(searchFld, "SEARCH USERNAME OR PRODUCT");
 
@@ -194,17 +194,17 @@ public class MgmtHistory extends javax.swing.JPanel {
                 }
             }
         }
-    }//GEN-LAST:event_searchBtnActionPerformed
+    }//GEN-LAST:event_btnSearchActionPerformed
 
-    private void reloadBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reloadBtnActionPerformed
+    private void btnReloadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReloadActionPerformed
         init();
-    }//GEN-LAST:event_reloadBtnActionPerformed
+    }//GEN-LAST:event_btnReloadActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JButton reloadBtn;
-    private javax.swing.JButton searchBtn;
+    private javax.swing.JButton btnReload;
+    private javax.swing.JButton btnSearch;
     private javax.swing.JTable table;
     // End of variables declaration//GEN-END:variables
 }

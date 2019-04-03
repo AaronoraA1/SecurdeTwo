@@ -33,9 +33,9 @@ public class MgmtUser extends javax.swing.JPanel {
         
 //        UNCOMMENT TO DISABLE BUTTONS
 //        editBtn.setVisible(false);
-//        deleteBtn.setVisible(false);
-//        lockBtn.setVisible(false);
-//        chgpassBtn.setVisible(false);
+//        btnDelete.setVisible(false);
+//        btnLock.setVisible(false);
+//        btnChangePass.setVisible(false);
     }
     
     public void init(){
@@ -74,10 +74,10 @@ public class MgmtUser extends javax.swing.JPanel {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         table = new javax.swing.JTable();
-        editRoleBtn = new javax.swing.JButton();
-        deleteBtn = new javax.swing.JButton();
-        lockBtn = new javax.swing.JButton();
-        chgpassBtn = new javax.swing.JButton();
+        btnEditRole = new javax.swing.JButton();
+        btnDelete = new javax.swing.JButton();
+        btnLock = new javax.swing.JButton();
+        btnChangePass = new javax.swing.JButton();
 
         table.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         table.setModel(new javax.swing.table.DefaultTableModel(
@@ -109,40 +109,40 @@ public class MgmtUser extends javax.swing.JPanel {
             table.getColumnModel().getColumn(3).setPreferredWidth(100);
         }
 
-        editRoleBtn.setBackground(new java.awt.Color(255, 255, 255));
-        editRoleBtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        editRoleBtn.setText("EDIT ROLE");
-        editRoleBtn.addActionListener(new java.awt.event.ActionListener() {
+        btnEditRole.setBackground(new java.awt.Color(255, 255, 255));
+        btnEditRole.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnEditRole.setText("EDIT ROLE");
+        btnEditRole.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                editRoleBtnActionPerformed(evt);
+                btnEditRoleActionPerformed(evt);
             }
         });
 
-        deleteBtn.setBackground(new java.awt.Color(255, 255, 255));
-        deleteBtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        deleteBtn.setText("DELETE");
-        deleteBtn.addActionListener(new java.awt.event.ActionListener() {
+        btnDelete.setBackground(new java.awt.Color(255, 255, 255));
+        btnDelete.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnDelete.setText("DELETE");
+        btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                deleteBtnActionPerformed(evt);
+                btnDeleteActionPerformed(evt);
             }
         });
 
-        lockBtn.setBackground(new java.awt.Color(255, 255, 255));
-        lockBtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        lockBtn.setText("LOCK/UNLOCK");
-        lockBtn.setToolTipText("");
-        lockBtn.addActionListener(new java.awt.event.ActionListener() {
+        btnLock.setBackground(new java.awt.Color(255, 255, 255));
+        btnLock.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnLock.setText("LOCK/UNLOCK");
+        btnLock.setToolTipText("");
+        btnLock.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lockBtnActionPerformed(evt);
+                btnLockActionPerformed(evt);
             }
         });
 
-        chgpassBtn.setBackground(new java.awt.Color(255, 255, 255));
-        chgpassBtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        chgpassBtn.setText("CHANGE PASS");
-        chgpassBtn.addActionListener(new java.awt.event.ActionListener() {
+        btnChangePass.setBackground(new java.awt.Color(255, 255, 255));
+        btnChangePass.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btnChangePass.setText("CHANGE PASS");
+        btnChangePass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                chgpassBtnActionPerformed(evt);
+                btnChangePassActionPerformed(evt);
             }
         });
 
@@ -154,13 +154,13 @@ public class MgmtUser extends javax.swing.JPanel {
                 .addGap(0, 0, 0)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(editRoleBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnEditRole, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(0, 0, 0)
-                        .addComponent(deleteBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnDelete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(0, 0, 0)
-                        .addComponent(lockBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnLock, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(0, 0, 0)
-                        .addComponent(chgpassBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(btnChangePass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(jScrollPane1))
                 .addGap(0, 0, 0))
         );
@@ -171,14 +171,14 @@ public class MgmtUser extends javax.swing.JPanel {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 222, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(chgpassBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(deleteBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(editRoleBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lockBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(btnChangePass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnEditRole, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnLock, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void editRoleBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editRoleBtnActionPerformed
+    private void btnEditRoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditRoleActionPerformed
         if(table.getSelectedRow() >= 0){
             String[] options = {"1-DISABLED","2-CLIENT","3-STAFF","4-MANAGER","5-ADMIN"};
             JComboBox optionList = new JComboBox(options);
@@ -193,9 +193,9 @@ public class MgmtUser extends javax.swing.JPanel {
                 System.out.println(result.charAt(0));
             }
         }
-    }//GEN-LAST:event_editRoleBtnActionPerformed
+    }//GEN-LAST:event_btnEditRoleActionPerformed
 
-    private void deleteBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteBtnActionPerformed
+    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
         if(table.getSelectedRow() >= 0){
             int result = JOptionPane.showConfirmDialog(null, "Are you sure you want to delete " + tableModel.getValueAt(table.getSelectedRow(), 0) + "?", "DELETE USER", JOptionPane.YES_NO_OPTION);
             
@@ -203,9 +203,9 @@ public class MgmtUser extends javax.swing.JPanel {
                 System.out.println(tableModel.getValueAt(table.getSelectedRow(), 0));
             }
         }
-    }//GEN-LAST:event_deleteBtnActionPerformed
+    }//GEN-LAST:event_btnDeleteActionPerformed
 
-    private void lockBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lockBtnActionPerformed
+    private void btnLockActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLockActionPerformed
         if(table.getSelectedRow() >= 0){
             String state = "lock";
             if("1".equals(tableModel.getValueAt(table.getSelectedRow(), 3) + "")){
@@ -218,9 +218,9 @@ public class MgmtUser extends javax.swing.JPanel {
                 System.out.println(tableModel.getValueAt(table.getSelectedRow(), 0));
             }
         }
-    }//GEN-LAST:event_lockBtnActionPerformed
+    }//GEN-LAST:event_btnLockActionPerformed
 
-    private void chgpassBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chgpassBtnActionPerformed
+    private void btnChangePassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChangePassActionPerformed
         if(table.getSelectedRow() >= 0){
             JTextField password = new JPasswordField();
             JTextField confpass = new JPasswordField();
@@ -238,15 +238,15 @@ public class MgmtUser extends javax.swing.JPanel {
                 System.out.println(confpass.getText());
             }
         }
-    }//GEN-LAST:event_chgpassBtnActionPerformed
+    }//GEN-LAST:event_btnChangePassActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton chgpassBtn;
-    private javax.swing.JButton deleteBtn;
-    private javax.swing.JButton editRoleBtn;
+    private javax.swing.JButton btnChangePass;
+    private javax.swing.JButton btnDelete;
+    private javax.swing.JButton btnEditRole;
+    private javax.swing.JButton btnLock;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JButton lockBtn;
     private javax.swing.JTable table;
     // End of variables declaration//GEN-END:variables
 }
