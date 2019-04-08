@@ -269,7 +269,8 @@ public class Frame extends javax.swing.JFrame {
         clientHomePnl.init(main.sqlite);
         managerHomePnl.init(main.sqlite);
         staffHomePnl.init(main.sqlite);
-        
+
+
         Container.setLayout(frameView);
         Container.add(loginPnl, "loginPnl");
         Container.add(registerPnl, "registerPnl");
@@ -286,6 +287,15 @@ public class Frame extends javax.swing.JFrame {
     }
     
     public void mainNav(){
+
+        if(this.getUser() != null){
+
+            adminHomePnl.setUser(this.getUser());
+            clientHomePnl.setUser(this.getUser());
+            managerHomePnl.setUser(this.getUser());
+            staffHomePnl.setUser(this.getUser());
+        }
+
         frameView.show(Container, "homePnl");
         if(user.getRole() == 5){
             contentView.show(Content, "adminHomePnl");

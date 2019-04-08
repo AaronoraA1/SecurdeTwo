@@ -21,6 +21,8 @@ import javax.swing.table.DefaultTableModel;
  */
 public class AdminHome extends javax.swing.JPanel {
 
+    private User user;
+
     public MgmtHistory mgmtHistory;
     public MgmtLogs mgmtLogs;
     public MgmtProduct mgmtProduct;
@@ -157,7 +159,7 @@ public class AdminHome extends javax.swing.JPanel {
 
     private void usersBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usersBtnActionPerformed
         mgmtUser.setRoleID(5);
-        mgmtUser.init();
+        mgmtUser.init(this.getUser());
         usersBtn.setForeground(Color.red);
         productsBtn.setForeground(Color.black);
         historyBtn.setForeground(Color.black);
@@ -167,7 +169,7 @@ public class AdminHome extends javax.swing.JPanel {
 
     private void productsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productsBtnActionPerformed
         mgmtProduct.setRoleID(5);
-        mgmtProduct.init();
+        mgmtProduct.init(this.getUser());
         usersBtn.setForeground(Color.black);
         productsBtn.setForeground(Color.red);
         historyBtn.setForeground(Color.black);
@@ -177,7 +179,7 @@ public class AdminHome extends javax.swing.JPanel {
 
     private void historyBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_historyBtnActionPerformed
         mgmtHistory.setRoleID(5);
-        mgmtHistory.init();
+        mgmtHistory.init(this.getUser());
         usersBtn.setForeground(Color.black);
         productsBtn.setForeground(Color.black);
         historyBtn.setForeground(Color.red);
@@ -187,15 +189,21 @@ public class AdminHome extends javax.swing.JPanel {
 
     private void logsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logsBtnActionPerformed
         mgmtLogs.setRoleID(5);
-        mgmtLogs.init();
+        mgmtLogs.init(this.getUser());
         usersBtn.setForeground(Color.black);
         productsBtn.setForeground(Color.black);
         historyBtn.setForeground(Color.black);
         logsBtn.setForeground(Color.red);
         contentView.show(Content, "mgmtLogs");
     }//GEN-LAST:event_logsBtnActionPerformed
-    
-    
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Content;

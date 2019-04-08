@@ -5,10 +5,14 @@
  */
 package View;
 
+import Controller.Main;
 import Controller.SQLite;
 import Model.User;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import javax.swing.JComboBox;
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
@@ -22,12 +26,16 @@ import javax.swing.table.DefaultTableModel;
  */
 public class MgmtUser extends javax.swing.JPanel {
 
+    public Main main;
     public SQLite sqlite;
     public DefaultTableModel tableModel;
 
+
+    private User user;
     private int roleID;
 
     public MgmtUser(SQLite sqlite) {
+        this.main = new Main();
         initComponents();
         this.sqlite = sqlite;
         tableModel = (DefaultTableModel) table.getModel();
@@ -40,7 +48,9 @@ public class MgmtUser extends javax.swing.JPanel {
 //        btnChangePass.setVisible(false);
     }
 
-    public void init() {
+    public void init(User user) {
+        this.setUser(user);
+        main.writeLogs(newLog(this.user.getUsername()) + " accessed Users");
         //      CLEAR TABLE
         for (int nCtr = tableModel.getRowCount(); nCtr > 0; nCtr--) {
             tableModel.removeRow(0);
@@ -51,14 +61,13 @@ public class MgmtUser extends javax.swing.JPanel {
 
         if (this.getRoleID() == 5) {
             for (int nCtr = 0; nCtr < users.size(); nCtr++) {
-                    tableModel.addRow(new Object[]{
-                            users.get(nCtr).getUsername(),
-                            users.get(nCtr).getPassword(),
-                            users.get(nCtr).getRole(),
-                            users.get(nCtr).getLocked()});
+                tableModel.addRow(new Object[]{
+                        users.get(nCtr).getUsername(),
+                        users.get(nCtr).getPassword(),
+                        users.get(nCtr).getRole(),
+                        users.get(nCtr).getLocked()});
             }
-        }
-        else if (this.getRoleID() == 4) {
+        } else if (this.getRoleID() == 4) {
             for (int nCtr = 0; nCtr < users.size(); nCtr++) {
                 if (users.get(nCtr).getRole() == 3 || users.get(nCtr).getRole() == 2)
                     tableModel.addRow(new Object[]{
@@ -214,24 +223,38 @@ public class MgmtUser extends javax.swing.JPanel {
             String[] options = {"1-DISABLED", "2-CLIENT", "3-STAFF", "4-MANAGER", "5-ADMIN"};
             JComboBox optionList = new JComboBox(options);
 
+            String selectedUser = tableModel.getValueAt(table.getSelectedRow(), 0).toString();
+
+            main.writeLogs(newLog(user.getUsername()) + " attempted to edit the role of " + selectedUser);
+
             optionList.setSelectedIndex((int) tableModel.getValueAt(table.getSelectedRow(), 2) - 1);
 
-            String result = (String) JOptionPane.showInputDialog(null, "USER: " + tableModel.getValueAt(table.getSelectedRow(), 0),
+            String result = (String) JOptionPane.showInputDialog(null, "USER: " + selectedUser,
                     "EDIT USER ROLE", JOptionPane.QUESTION_MESSAGE, null, options, options[(int) tableModel.getValueAt(table.getSelectedRow(), 2) - 1]);
 
             if (result != null) {
-                System.out.println(tableModel.getValueAt(table.getSelectedRow(), 0));
+                System.out.println(selectedUser);
                 System.out.println(result.charAt(0));
+
+                main.writeLogs(newLog(user.getUsername()) + " edited the role of " + selectedUser + " to " + options[result.charAt(0)]);
+
             }
         }
     }//GEN-LAST:event_btnEditRoleActionPerformed
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+
+        String selectedUser = tableModel.getValueAt(table.getSelectedRow(), 0).toString();
+
         if (table.getSelectedRow() >= 0) {
-            int result = JOptionPane.showConfirmDialog(null, "Are you sure you want to delete " + tableModel.getValueAt(table.getSelectedRow(), 0) + "?", "DELETE USER", JOptionPane.YES_NO_OPTION);
+            int result = JOptionPane.showConfirmDialog(null, "Are you sure you want to delete " + selectedUser +
+                    "?", "DELETE USER", JOptionPane.YES_NO_OPTION);
+
+            main.writeLogs(newLog(user.getUsername()) + " attempted to delete " + selectedUser);
 
             if (result == JOptionPane.YES_OPTION) {
-                System.out.println(tableModel.getValueAt(table.getSelectedRow(), 0));
+                System.out.println(selectedUser);
+                main.writeLogs(newLog(user.getUsername()) + " deleted " + selectedUser);
             }
         }
     }//GEN-LAST:event_btnDeleteActionPerformed
@@ -243,16 +266,27 @@ public class MgmtUser extends javax.swing.JPanel {
                 state = "unlock";
             }
 
-            int result = JOptionPane.showConfirmDialog(null, "Are you sure you want to " + state + " " + tableModel.getValueAt(table.getSelectedRow(), 0) + "?", "DELETE USER", JOptionPane.YES_NO_OPTION);
+            String selectedUser = tableModel.getValueAt(table.getSelectedRow(), 0).toString();
+            main.writeLogs(newLog(user.getUsername()) + " attempted to lock/unlock " + selectedUser);
+
+
+            int result = JOptionPane.showConfirmDialog(null, "Are you sure you want to " + state + " " + selectedUser
+                    + "?", "DELETE USER", JOptionPane.YES_NO_OPTION);
 
             if (result == JOptionPane.YES_OPTION) {
-                System.out.println(tableModel.getValueAt(table.getSelectedRow(), 0));
+                System.out.println(selectedUser);
+                main.writeLogs(newLog(user.getUsername()) + " locked/unlocked " + selectedUser);
             }
         }
     }//GEN-LAST:event_btnLockActionPerformed
 
     private void btnChangePassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChangePassActionPerformed
         if (table.getSelectedRow() >= 0) {
+
+
+            String selectedUser = tableModel.getValueAt(table.getSelectedRow(), 0).toString();
+            main.writeLogs(newLog(user.getUsername()) + " attempted to change password of " + selectedUser);
+
             JTextField password = new JPasswordField();
             JTextField confpass = new JPasswordField();
             designer(password, "PASSWORD");
@@ -267,6 +301,7 @@ public class MgmtUser extends javax.swing.JPanel {
             if (result == JOptionPane.OK_OPTION) {
                 System.out.println(password.getText());
                 System.out.println(confpass.getText());
+                main.writeLogs(newLog(user.getUsername()) + " change password to " + password.getText()); // hash it later
             }
         }
     }//GEN-LAST:event_btnChangePassActionPerformed
@@ -279,6 +314,20 @@ public class MgmtUser extends javax.swing.JPanel {
         this.roleID = roleID;
     }
 
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+
+    public String newLog(String user) {
+        DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
+        Date dateobj = new Date();
+        return df.format(dateobj) + " : " + user;
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnChangePass;

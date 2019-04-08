@@ -5,10 +5,15 @@
  */
 package View;
 
+import Controller.Main;
 import Controller.SQLite;
 import Model.Product;
+import Model.User;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -19,13 +24,16 @@ import javax.swing.table.DefaultTableModel;
  */
 public class MgmtProduct extends javax.swing.JPanel {
 
+    public Main main;
     public SQLite sqlite;
     public DefaultTableModel tableModel;
 
+    private User user;
     private int roleID;
 
 
     public MgmtProduct(SQLite sqlite) {
+        this.main = new Main();
         initComponents();
         this.sqlite = sqlite;
         tableModel = (DefaultTableModel) table.getModel();
@@ -38,7 +46,11 @@ public class MgmtProduct extends javax.swing.JPanel {
 //        btnDelete.setVisible(false);
     }
 
-    public void init() {
+    public void init(User user) {
+
+        this.setUser(user);
+        main.writeLogs(newLog(this.user.getUsername()) + " accessed Products");
+
         //      CLEAR TABLE
         for (int nCtr = tableModel.getRowCount(); nCtr > 0; nCtr--) {
             tableModel.removeRow(0);
@@ -53,7 +65,6 @@ public class MgmtProduct extends javax.swing.JPanel {
                     products.get(nCtr).getStock(),
                     products.get(nCtr).getPrice()});
         }
-
 
         if (this.getRoleID() == 2) {
             btnAdd.setVisible(false);
@@ -192,18 +203,25 @@ public class MgmtProduct extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnPurchaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPurchaseActionPerformed
+
         if (table.getSelectedRow() >= 0) {
             JTextField stockFld = new JTextField("0");
             designer(stockFld, "PRODUCT STOCK");
 
+            String itemBought = tableModel.getValueAt(table.getSelectedRow(), 0).toString();
+
             Object[] message = {
-                    "How many " + tableModel.getValueAt(table.getSelectedRow(), 0) + " do you want to purchase?", stockFld
+                    "How many " + itemBought+ " do you want to purchase?", stockFld
             };
+
+            main.writeLogs(newLog(user.getUsername()) + " attempted to purchase " + itemBought);
 
             int result = JOptionPane.showConfirmDialog(null, message, "PURCHASE PRODUCT", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE, null);
 
             if (result == JOptionPane.OK_OPTION) {
-                System.out.println(stockFld.getText());
+                System.out.println(this.getUser().getUsername() + " purchased " +
+                        itemBought + " Quantity: " + stockFld.getText());
+                main.writeLogs(newLog(user.getUsername()) + " purchased " + stockFld.getText() + " " + itemBought +"/s");
             }
         }
     }//GEN-LAST:event_btnPurchaseActionPerformed
@@ -221,6 +239,8 @@ public class MgmtProduct extends javax.swing.JPanel {
                 "Insert New Product Details:", nameFld, stockFld, priceFld
         };
 
+        main.writeLogs(newLog(user.getUsername()) + " attempted to add an item");
+
         int result = JOptionPane.showConfirmDialog(null, message, "ADD PRODUCT", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE, null);
 
         if (result == JOptionPane.OK_OPTION) {
@@ -228,6 +248,8 @@ public class MgmtProduct extends javax.swing.JPanel {
             System.out.println(stockFld.getText());
             System.out.println(priceFld.getText());
         }
+
+        main.writeLogs(newLog(user.getUsername()) + " added " + nameFld.getText() + " Stock: " + stockFld.getText() + " Price: " + priceFld.getText());
     }//GEN-LAST:event_btnAddActionPerformed
 
     private void btnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditActionPerformed
@@ -244,6 +266,8 @@ public class MgmtProduct extends javax.swing.JPanel {
                     "Edit Product Details:", nameFld, stockFld, priceFld
             };
 
+            main.writeLogs(newLog(user.getUsername()) + " attempted to edit an item");
+
             int result = JOptionPane.showConfirmDialog(null, message, "EDIT PRODUCT", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE, null);
 
             if (result == JOptionPane.OK_OPTION) {
@@ -251,18 +275,33 @@ public class MgmtProduct extends javax.swing.JPanel {
                 System.out.println(stockFld.getText());
                 System.out.println(priceFld.getText());
             }
+
+            main.writeLogs(newLog(user.getUsername()) + " edited " + nameFld.getText() + "Stock: " + stockFld.getText() + " Price: " + priceFld.getText());
         }
     }//GEN-LAST:event_btnEditActionPerformed
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+
+        main.writeLogs(newLog(user.getUsername()) + " attempted to delete an item");
+
+        String deletedItem = tableModel.getValueAt(table.getSelectedRow(), 0).toString();
+
         if (table.getSelectedRow() >= 0) {
-            int result = JOptionPane.showConfirmDialog(null, "Are you sure you want to delete " + tableModel.getValueAt(table.getSelectedRow(), 0) + "?", "DELETE PRODUCT", JOptionPane.YES_NO_OPTION);
+            int result = JOptionPane.showConfirmDialog(null, "Are you sure you want to delete " + deletedItem + "?", "DELETE PRODUCT", JOptionPane.YES_NO_OPTION);
 
             if (result == JOptionPane.YES_OPTION) {
                 System.out.println(tableModel.getValueAt(table.getSelectedRow(), 0));
+                main.writeLogs(newLog(user.getUsername()) + " deleted " + deletedItem);
             }
         }
     }//GEN-LAST:event_btnDeleteActionPerformed
+
+    public String newLog(String user){
+        DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
+        Date dateobj = new Date();
+        return df.format(dateobj) + " : "+ user;
+    }
+
 
     public int getRoleID() {
         return roleID;
@@ -270,6 +309,14 @@ public class MgmtProduct extends javax.swing.JPanel {
 
     public void setRoleID(int roleID) {
         this.roleID = roleID;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

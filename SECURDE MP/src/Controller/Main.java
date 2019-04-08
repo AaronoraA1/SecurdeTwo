@@ -23,8 +23,9 @@ import static javax.script.ScriptEngine.FILENAME;
 public class Main {
     
     public SQLite sqlite;
-    private static final File FILENAME = new File("logs/logs.txt");
-    
+    private static final File FILENAME_1 = new File("logs/secret/dont touch this log.txt");
+    private static final File FILENAME_2 = new File("logs/logs.txt");
+
     public static void main(String[] args) {
         new Main().init();
     }
@@ -117,13 +118,18 @@ public class Main {
 
     public void writeLogs(String newEntry){
 
-        BufferedWriter bw = null;
-        FileWriter fw = null;
+        BufferedWriter bw1 = null;
+        BufferedWriter bw2 = null;
+        FileWriter fw1 = null;
+        FileWriter fw2 = null;
 
         try {
-            fw = new FileWriter(FILENAME, true);
-            bw = new BufferedWriter(fw);
-            bw.write(newEntry + "\n");
+            fw1 = new FileWriter(FILENAME_1, false);
+            fw2 = new FileWriter(FILENAME_2, true);
+            bw1 = new BufferedWriter(fw1);
+            bw2 = new BufferedWriter(fw2);
+            bw1.write(newEntry + "\n");
+            bw2.write(newEntry + "\n");
 
             System.out.println("Log added!");
 
@@ -131,10 +137,15 @@ public class Main {
             e.printStackTrace();
         } finally {
             try {
-                if (bw != null)
-                    bw.close();
-                if (fw != null)
-                    fw.close();
+                if (bw1 != null)
+                    bw1.close();
+                if (fw1 != null)
+                    fw1.close();
+
+                if (bw2 != null)
+                    bw2.close();
+                if (fw2 != null)
+                    fw2.close();
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
@@ -144,17 +155,17 @@ public class Main {
 
     public String hashPassword(String password) {
         try {
-            MessageDigest sha256 = MessageDigest.getInstance("SHA-256");
+            MessageDigest sha512 = MessageDigest.getInstance("SHA-512");
             String salt = "randomSalt";
             String passWithSalt = password + salt;
             byte[] passBytes = passWithSalt.getBytes();
-            byte[] passHash = sha256.digest(passBytes);
+            byte[] passHash = sha512.digest(passBytes);
             StringBuilder sb = new StringBuilder();
             for(int i=0; i< passHash.length ;i++) {
                 sb.append(Integer.toString((passHash[i] & 0xff) + 0x100, 16).substring(1));
             }
             String generatedPassword = sb.toString();
-            System.out.println("GENERATED PASSWOD >>> " + generatedPassword);
+            System.out.println("HASHED PASSWORD >>> " + generatedPassword);
             return generatedPassword;
         } catch (NoSuchAlgorithmException e) { e.printStackTrace(); }
         return null;

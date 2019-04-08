@@ -5,11 +5,16 @@
  */
 package View;
 
+import Controller.Main;
 import Controller.SQLite;
 import Model.History;
 import Model.Product;
+import Model.User;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
@@ -19,12 +24,15 @@ import javax.swing.table.DefaultTableModel;
  */
 public class MgmtHistory extends javax.swing.JPanel {
 
+    public Main main;
     public SQLite sqlite;
     public DefaultTableModel tableModel;
 
     private int roleID;
+    private User user;
 
     public MgmtHistory(SQLite sqlite) {
+        this.main = new Main();
         initComponents();
         this.sqlite = sqlite;
         tableModel = (DefaultTableModel) table.getModel();
@@ -41,7 +49,10 @@ public class MgmtHistory extends javax.swing.JPanel {
 //        reportBtn.setVisible(false);
     }
 
-    public void init() {
+    public void init(User user) {
+
+        this.setUser(user);
+        main.writeLogs(newLog(this.user.getUsername()) + " accessed History");
 //      CLEAR TABLE
         for (int nCtr = tableModel.getRowCount(); nCtr > 0; nCtr--) {
             tableModel.removeRow(0);
@@ -162,6 +173,9 @@ public class MgmtHistory extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
+
+        main.writeLogs(newLog(user.getUsername()) + " attempted to search history");
+
         JTextField searchFld = new JTextField("0");
         designer(searchFld, "SEARCH USERNAME OR PRODUCT");
 
@@ -172,6 +186,9 @@ public class MgmtHistory extends javax.swing.JPanel {
         int result = JOptionPane.showConfirmDialog(null, message, "SEARCH HISTORY", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE, null);
 
         if (result == JOptionPane.OK_OPTION) {
+
+            main.writeLogs(newLog(user.getUsername()) + " searched " + searchFld.getText() + " in history");
+
 //          CLEAR TABLE
             for (int nCtr = tableModel.getRowCount(); nCtr > 0; nCtr--) {
                 tableModel.removeRow(0);
@@ -200,15 +217,29 @@ public class MgmtHistory extends javax.swing.JPanel {
     }//GEN-LAST:event_btnSearchActionPerformed
 
     private void btnReloadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReloadActionPerformed
-        init();
+        main.writeLogs(newLog(user.getUsername()) + " reloaded history");
+        init(this.getUser());
     }//GEN-LAST:event_btnReloadActionPerformed
 
+    public String newLog(String user){
+        DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
+        Date dateobj = new Date();
+        return df.format(dateobj) + " : "+ user;
+    }
     public int getRoleID() {
         return roleID;
     }
 
     public void setRoleID(int roleID) {
         this.roleID = roleID;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
