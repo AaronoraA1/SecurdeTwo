@@ -149,6 +149,8 @@ public class MgmtLogs extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
+        sqlite.clearLogs();
+        init(this.getUser());
         main.writeLogs(newLog(user.getUsername()) + " cleared logs.");
 
     }//GEN-LAST:event_btnClearActionPerformed

@@ -302,3 +302,43 @@
 09/04/19 16:14:31 : admin attempted to change password of client2
 09/04/19 16:14:34 : admin accessed Users
 09/04/19 16:14:34 : admin change password to add
+09/04/19 16:16:54 :  LOGGED IN [admin]
+09/04/19 16:16:55 : admin accessed History
+09/04/19 16:16:56 : admin attempted to search history
+09/04/19 16:17:03 : admin searched antivirus in history
+09/04/19 16:17:45 : admin reloaded history
+09/04/19 16:17:45 : admin accessed History
+09/04/19 16:17:49 : admin attempted to search history
+09/04/19 16:17:55 : admin searched Antivirus in history
+09/04/19 16:18:44 :  LOGGED IN [admin]
+09/04/19 16:18:45 : admin accessed History
+09/04/19 16:18:46 : admin attempted to search history
+09/04/19 16:18:51 : admin searched antivirus in history
+09/04/19 16:18:53 : admin attempted to search history
+09/04/19 16:18:58 : admin searched manager in history
+09/04/19 16:18:59 : admin reloaded history
+09/04/19 16:18:59 : admin accessed History
+09/04/19 16:19:00 : admin accessed Logs
+09/04/19 16:19:01 : admin accessed History
+09/04/19 16:19:02 : admin accessed Logs
+09/04/19 16:19:03 : admin cleared logs.
+09/04/19 16:19:03 : admin turned on  debug mode.
+09/04/19 16:21:55 :  LOGGED IN [admin]
+09/04/19 16:22:04 : admin accessed Logs
+09/04/19 16:22:05 : admin cleared logs.
+09/04/19 16:22:06 : admin accessed History
+09/04/19 16:22:07 : admin accessed Logs
+09/04/19 16:22:09 : admin accessed History
+09/04/19 16:22:09 : admin accessed Logs
+09/04/19 16:22:10 : admin accessed History
+09/04/19 16:22:12 : admin accessed Logs
+09/04/19 16:25:13 :  LOGGED IN [admin]
+09/04/19 16:25:15 : admin accessed Logs
+09/04/19 16:25:19 : admin accessed Logs
+09/04/19 16:25:19 : admin cleared logs.
+09/04/19 16:25:21 : admin accessed History
+09/04/19 16:25:22 : admin accessed Logs
+09/04/19 16:25:22 : admin accessed History
+09/04/19 16:25:23 : admin accessed Logs
+09/04/19 16:25:24 : admin accessed History
+09/04/19 16:25:24 : admin accessed Logs

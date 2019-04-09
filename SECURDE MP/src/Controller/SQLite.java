@@ -116,6 +116,18 @@ public class SQLite {
         }
     }
 
+    public void clearLogs() {
+        String sql = "DELETE FROM logs;";
+
+        try (Connection conn = DriverManager.getConnection(driverURL);
+             Statement stmt = conn.createStatement()) {
+            stmt.execute(sql);
+            System.out.println("Table logs in database.db cleared.");
+        } catch (Exception ex) {
+        }
+    }
+
+
     public void dropProductTable() {
         String sql = "DROP TABLE IF EXISTS product;";
 
