@@ -512,3 +512,116 @@
 09/04/19 21:02:23 : admin accessed Products
 09/04/19 21:08:26 :  LOGGED IN [admin]
 09/04/19 21:10:41 : admin accessed Users
+09/04/19 21:43:29 :  LOGGED IN [admin]
+09/04/19 21:43:31 : admin accessed Logs
+09/04/19 21:43:32 : admin accessed History
+09/04/19 21:43:33 : admin accessed Logs
+09/04/19 21:43:33 : admin accessed History
+09/04/19 21:43:42 : admin ACCESSED LOGGED OUT
+09/04/19 21:43:47 :  LOGGED IN [manager]
+09/04/19 21:43:48 : manager accessed Products
+09/04/19 21:43:49 : manager accessed History
+09/04/19 21:43:50 : manager accessed Products
+09/04/19 21:43:51 : manager accessed Users
+09/04/19 21:43:54 : manager accessed History
+09/04/19 21:43:59 : manager attempted to search history
+09/04/19 21:44:02 : manager searched admin in history
+09/04/19 21:44:05 : manager reloaded history
+09/04/19 21:44:05 : manager accessed History
+09/04/19 21:44:06 : manager reloaded history
+09/04/19 21:44:06 : manager accessed History
+09/04/19 21:44:07 : manager attempted to search history
+09/04/19 21:44:20 : manager ACCESSED LOGGED OUT
+09/04/19 21:44:25 :  LOGGED IN [admin]
+09/04/19 21:45:33 : admin ACCESSED LOGGED OUT
+09/04/19 21:45:39 :  LOGGED IN [manager]
+09/04/19 21:45:40 : manager accessed Products
+09/04/19 21:45:40 : manager accessed History
+09/04/19 21:45:41 : manager accessed Users
+09/04/19 21:45:42 : manager accessed Products
+09/04/19 21:45:42 : manager accessed History
+09/04/19 21:45:44 : manager ACCESSED LOGGED OUT
+09/04/19 21:45:50 :  LOGGED IN [staff]
+09/04/19 21:45:51 : staff accessed Products
+09/04/19 21:45:52 : staff accessed Users
+09/04/19 21:47:51 : FAILED LOGIN ATTEMPT [manager, qewrty1234]
+09/04/19 21:47:55 :  LOGGED IN [manager]
+09/04/19 21:47:56 : manager accessed History
+09/04/19 21:48:42 :  LOGGED IN [manager]
+09/04/19 21:48:43 : manager accessed History
+09/04/19 21:49:08 :  LOGGED IN [manager]
+09/04/19 21:49:09 : manager accessed History
+09/04/19 21:49:10 : manager attempted to search history
+09/04/19 21:49:13 : manager searched admin in history
+09/04/19 21:58:22 :  LOGGED IN [admin]
+09/04/19 21:58:24 : admin accessed History
+09/04/19 21:58:25 : admin attempted to search history
+09/04/19 21:58:28 : admin searched admin in history
+09/04/19 21:58:30 : admin ACCESSED LOGGED OUT
+09/04/19 21:58:35 :  LOGGED IN [manager]
+09/04/19 21:58:36 : manager accessed History
+09/04/19 21:58:37 : manager attempted to search history
+09/04/19 21:58:40 : manager searched admin in history
+09/04/19 22:06:32 :  LOGGED IN [admin]
+09/04/19 22:06:33 : admin accessed History
+09/04/19 22:06:38 : admin ACCESSED LOGGED OUT
+09/04/19 22:06:44 :  LOGGED IN [manager]
+09/04/19 22:06:46 : manager accessed History
+09/04/19 22:06:48 : manager ACCESSED LOGGED OUT
+09/04/19 22:06:55 :  LOGGED IN [staff]
+09/04/19 22:06:56 : staff accessed Users
+09/04/19 22:06:58 : staff ACCESSED LOGGED OUT
+09/04/19 22:07:09 :  LOGGED IN [client1]
+09/04/19 22:07:10 : client1 accessed Products
+09/04/19 22:07:13 : client1 ACCESSED LOGGED OUT
+09/04/19 22:07:22 :  LOGGED IN [admin]
+09/04/19 22:10:59 :  LOGGED IN [admin]
+09/04/19 22:11:00 : admin accessed History
+09/04/19 22:11:01 : admin ACCESSED LOGGED OUT
+09/04/19 22:11:06 :  LOGGED IN [admin]
+09/04/19 22:11:32 :  LOGGED IN [admin]
+09/04/19 22:11:33 : admin accessed History
+09/04/19 22:11:34 : admin ACCESSED LOGGED OUT
+09/04/19 22:11:39 :  LOGGED IN [admin]
+09/04/19 22:15:06 :  LOGGED IN [admin]
+09/04/19 22:15:07 : admin accessed History
+09/04/19 22:15:08 : admin ACCESSED LOGGED OUT
+09/04/19 22:15:12 :  LOGGED IN [admin]
+09/04/19 22:15:15 : admin accessed Products
+09/04/19 22:15:17 : admin accessed Users
+09/04/19 22:21:34 :  LOGGED IN [admin]
+09/04/19 22:21:52 : admin accessed History
+09/04/19 22:21:53 : admin accessed Products
+09/04/19 22:21:55 : admin attempted to delete an item
+09/04/19 22:22:00 : admin accessed Products
+09/04/19 22:22:00 : admin deleted Scanner
+09/04/19 22:22:01 : admin accessed History
+09/04/19 22:38:03 :  LOGGED IN [admin]
+09/04/19 22:38:04 : admin accessed History
+09/04/19 22:38:06 : admin accessed Products
+09/04/19 22:38:07 : admin attempted to delete an item
+09/04/19 22:38:12 : admin accessed Products
+09/04/19 22:38:12 : admin deleted Scanner
+09/04/19 22:38:13 : admin accessed History
+09/04/19 22:39:07 :  LOGGED IN [admin]
+09/04/19 22:39:08 : admin accessed History
+09/04/19 22:39:11 : admin accessed Products
+09/04/19 22:39:13 : admin accessed History
+09/04/19 22:39:14 : admin accessed Products
+09/04/19 22:39:16 : admin attempted to delete an item
+09/04/19 22:39:20 : admin attempted to delete an item
+09/04/19 22:39:24 : admin accessed Products
+09/04/19 22:39:24 : admin deleted Scanner
+09/04/19 22:39:25 : admin accessed History
+09/04/19 23:00:29 :  LOGGED IN [admin]
+09/04/19 23:00:30 : admin accessed Products
+09/04/19 23:00:31 : admin accessed History
+09/04/19 23:01:27 :  LOGGED IN [admin]
+09/04/19 23:01:28 : admin accessed History
+09/04/19 23:01:31 : admin accessed Products
+09/04/19 23:01:33 : admin attempted to delete an item
+09/04/19 23:01:38 : admin accessed Products
+09/04/19 23:01:38 : admin deleted Scanner
+09/04/19 23:01:38 : admin accessed History
+09/04/19 23:01:49 : admin accessed Products
+09/04/19 23:01:51 : admin accessed History

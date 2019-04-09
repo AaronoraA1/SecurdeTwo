@@ -377,6 +377,10 @@ public class MgmtProduct extends javax.swing.JPanel {
         return df.format(dateobj) + " : " + user;
     }
 
+    public void addUserToCSV(){
+
+    }
+
 
     public int getRoleID() {
         return roleID;
