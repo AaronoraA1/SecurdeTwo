@@ -197,3 +197,108 @@
 09/04/19 15:28:24 : admin accessed History
 09/04/19 15:28:24 : admin accessed Products
 09/04/19 15:28:26 : admin accessed History
+09/04/19 15:30:39 :  LOGGED IN [admin]
+09/04/19 15:30:40 : admin accessed Users
+09/04/19 15:30:43 : admin attempted to delete client2
+09/04/19 15:30:43 : admin accessed Users
+09/04/19 15:30:43 : admin deleted client2
+09/04/19 15:31:59 : admin attempted to lock/unlock client1
+09/04/19 15:32:00 : admin locked/unlocked client1
+09/04/19 15:39:09 :  LOGGED IN [admin]
+09/04/19 15:39:10 : admin accessed Products
+09/04/19 15:39:10 : admin accessed Users
+09/04/19 15:39:12 : admin attempted to lock/unlock client2
+09/04/19 15:39:14 : admin accessed Users
+09/04/19 15:39:14 : admin locked/unlocked client2
+09/04/19 15:39:19 : admin attempted to lock/unlock client1
+09/04/19 15:39:21 : admin accessed Users
+09/04/19 15:39:21 : admin locked/unlocked client1
+09/04/19 15:39:22 : admin accessed Products
+09/04/19 15:39:23 : admin accessed Users
+09/04/19 15:41:40 : FAILED LOGIN ATTEMPT [admin, qerty1234]
+09/04/19 15:41:44 :  LOGGED IN [admin]
+09/04/19 15:41:46 : admin accessed Users
+09/04/19 15:41:48 : admin attempted to lock/unlock client2
+09/04/19 15:41:49 : admin accessed Users
+09/04/19 15:41:49 : admin locked/unlocked client2
+09/04/19 15:44:17 :  LOGGED IN [admin]
+09/04/19 15:44:18 : admin accessed Users
+09/04/19 15:44:20 : admin attempted to lock/unlock manager
+09/04/19 15:44:21 : admin accessed Users
+09/04/19 15:44:21 : admin locked/unlocked manager
+09/04/19 15:44:25 : admin attempted to lock/unlock client1
+09/04/19 15:44:27 : admin accessed Users
+09/04/19 15:44:27 : admin locked/unlocked client1
+09/04/19 15:44:35 : admin attempted to lock/unlock client2
+09/04/19 15:44:36 : admin accessed Users
+09/04/19 15:44:36 : admin locked/unlocked client2
+09/04/19 15:47:32 : FAILED LOGIN ATTEMPT [admin, qerty1234]
+09/04/19 15:47:37 :  LOGGED IN [admin]
+09/04/19 15:48:26 : admin accessed Products
+09/04/19 15:48:28 : admin accessed Users
+09/04/19 15:48:31 : admin attempted to lock/unlock client1
+09/04/19 15:48:32 : admin accessed Users
+09/04/19 15:48:32 : admin locked/unlocked client1
+09/04/19 15:48:42 : admin attempted to lock/unlock client1
+09/04/19 15:48:45 : admin accessed Users
+09/04/19 15:48:45 : admin locked/unlocked client1
+09/04/19 15:50:13 :  LOGGED IN [admin]
+09/04/19 15:50:15 : admin accessed Users
+09/04/19 15:50:16 : admin attempted to lock/unlock client1
+09/04/19 15:50:17 : admin accessed Users
+09/04/19 15:50:17 : admin locked/unlocked client1
+09/04/19 15:52:00 :  LOGGED IN [admin]
+09/04/19 15:52:01 : admin accessed Users
+09/04/19 15:52:03 : admin attempted to lock/unlock client2
+09/04/19 15:52:04 : admin accessed Users
+09/04/19 15:52:04 : admin locked/unlocked client2
+09/04/19 15:52:12 : admin attempted to lock/unlock client2
+09/04/19 15:52:13 : admin accessed Users
+09/04/19 15:52:13 : admin locked/unlocked client2
+09/04/19 15:52:16 : admin attempted to delete client2
+09/04/19 15:52:16 : admin accessed Users
+09/04/19 15:52:16 : admin deleted client2
+09/04/19 15:54:47 :  LOGGED IN [admin]
+09/04/19 15:54:48 : admin accessed Users
+09/04/19 15:54:50 : admin attempted to edit the role of client1
+09/04/19 15:56:41 :  LOGGED IN [admin]
+09/04/19 15:56:42 : admin accessed Users
+09/04/19 15:56:43 : admin attempted to edit the role of client1
+09/04/19 15:59:48 :  LOGGED IN [admin]
+09/04/19 15:59:50 : admin accessed Users
+09/04/19 15:59:52 : admin attempted to edit the role of client2
+09/04/19 16:03:31 :  LOGGED IN [admin]
+09/04/19 16:03:32 : admin accessed Users
+09/04/19 16:03:34 : admin attempted to edit the role of client2
+09/04/19 16:05:10 :  LOGGED IN [admin]
+09/04/19 16:05:11 : admin accessed Users
+09/04/19 16:05:12 : admin attempted to edit the role of client2
+09/04/19 16:06:11 :  LOGGED IN [admin]
+09/04/19 16:06:12 : admin accessed Users
+09/04/19 16:06:14 : admin attempted to edit the role of client2
+09/04/19 16:06:16 : admin edited the role of client2 to 1
+09/04/19 16:06:25 : admin accessed Products
+09/04/19 16:06:25 : admin accessed Users
+09/04/19 16:11:23 :  LOGGED IN [admin]
+09/04/19 16:11:24 : admin accessed Users
+09/04/19 16:11:25 : admin attempted to edit the role of client2
+09/04/19 16:11:29 : admin accessed Users
+09/04/19 16:11:29 : admin edited the role of client2 to 1
+09/04/19 16:11:32 : admin attempted to change password of client2
+09/04/19 16:11:40 : admin attempted to change password of client2
+09/04/19 16:11:44 : admin accessed Users
+09/04/19 16:11:44 : admin change password to new
+09/04/19 16:11:50 : admin accessed Users
+09/04/19 16:13:08 :  LOGGED IN [admin]
+09/04/19 16:13:09 : admin accessed Users
+09/04/19 16:13:12 : admin attempted to change password of client2
+09/04/19 16:13:15 : admin accessed Users
+09/04/19 16:13:15 : admin change password to add
+09/04/19 16:13:19 : admin accessed Products
+09/04/19 16:13:20 : admin accessed Users
+09/04/19 16:14:23 : FAILED LOGIN ATTEMPT [admin, qewrty1234]
+09/04/19 16:14:28 :  LOGGED IN [admin]
+09/04/19 16:14:28 : admin accessed Users
+09/04/19 16:14:31 : admin attempted to change password of client2
+09/04/19 16:14:34 : admin accessed Users
+09/04/19 16:14:34 : admin change password to add

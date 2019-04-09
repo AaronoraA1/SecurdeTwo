@@ -235,8 +235,9 @@ public class MgmtUser extends javax.swing.JPanel {
             if (result != null) {
                 System.out.println(selectedUser);
                 System.out.println(result.charAt(0));
-
-                main.writeLogs(newLog(user.getUsername()) + " edited the role of " + selectedUser + " to " + options[result.charAt(0)]);
+                sqlite.editRole(selectedUser, Integer.parseInt(String.valueOf(Character.getNumericValue(result.charAt(0)))));
+                init(this.getUser());
+                main.writeLogs(newLog(user.getUsername()) + " edited the role of " + selectedUser + " to " + result.charAt(0));
 
             }
         }
@@ -274,10 +275,18 @@ public class MgmtUser extends javax.swing.JPanel {
 
 
             int result = JOptionPane.showConfirmDialog(null, "Are you sure you want to " + state + " " + selectedUser
-                    + "?", "DELETE USER", JOptionPane.YES_NO_OPTION);
+                    + "?", "LOCK USER", JOptionPane.YES_NO_OPTION);
 
             if (result == JOptionPane.YES_OPTION) {
                 System.out.println(selectedUser);
+
+                if (!state.equalsIgnoreCase("lock")) {
+                    sqlite.lockUser(selectedUser, 0);
+                    System.out.println("here");
+                } else
+                    sqlite.lockUser(selectedUser, 1);
+
+                init(this.getUser());
                 main.writeLogs(newLog(user.getUsername()) + " locked/unlocked " + selectedUser);
             }
         }
@@ -285,7 +294,6 @@ public class MgmtUser extends javax.swing.JPanel {
 
     private void btnChangePassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnChangePassActionPerformed
         if (table.getSelectedRow() >= 0) {
-
 
             String selectedUser = tableModel.getValueAt(table.getSelectedRow(), 0).toString();
             main.writeLogs(newLog(user.getUsername()) + " attempted to change password of " + selectedUser);
@@ -302,9 +310,16 @@ public class MgmtUser extends javax.swing.JPanel {
             int result = JOptionPane.showConfirmDialog(null, message, "CHANGE PASSWORD", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE, null);
 
             if (result == JOptionPane.OK_OPTION) {
-                System.out.println(password.getText());
-                System.out.println(confpass.getText());
-                main.writeLogs(newLog(user.getUsername()) + " change password to " + password.getText()); // hash it later
+                if(password.getText().equals(confpass.getText())){
+                    System.out.println(password.getText());
+                    System.out.println(confpass.getText());
+                    sqlite.changePassword(selectedUser, main.hashPassword(password.getText()));
+                    init(this.getUser());
+                    main.writeLogs(newLog(user.getUsername()) + " change password to " + password.getText()); // hash it later
+
+                }else{
+                    JOptionPane.showMessageDialog(null, "Passwords do not match!");
+                }
             }
         }
     }//GEN-LAST:event_btnChangePassActionPerformed

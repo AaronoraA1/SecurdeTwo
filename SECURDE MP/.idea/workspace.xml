@@ -4,15 +4,13 @@
     <list default="true" id="6001fd74-a0b1-4f15-b64c-501954c8a912" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/database_logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/database/database_logs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/secret/dont touch this log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/secret/dont touch this log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/Controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/Controller/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/Controller/SQLite.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/Controller/SQLite.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/SQLite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SQLite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/MgmtProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MgmtProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/MgmtUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MgmtUser.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -90,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1024">
+            <state relative-caret-position="-1216">
               <caret line="177" column="32" selection-start-line="177" selection-start-column="32" selection-end-line="177" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -99,34 +97,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/SQLite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="321" column="61" selection-start-line="321" selection-start-column="61" selection-end-line="321" selection-end-column="61" />
+            <state relative-caret-position="220">
+              <caret line="293" column="70" lean-forward="true" selection-start-line="293" selection-start-column="70" selection-end-line="293" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/View/MgmtHistory.java">
+        <entry file="file://$PROJECT_DIR$/src/View/MgmtUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/View/MgmtProduct.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="227" column="68" lean-forward="true" selection-start-line="227" selection-start-column="68" selection-end-line="227" selection-end-column="68" />
+            <state relative-caret-position="216">
+              <caret line="315" column="38" selection-start-line="315" selection-start-column="38" selection-end-line="315" selection-end-column="38" />
               <folding>
-                <element signature="e#14622#14623#0" expanded="true" />
-                <element signature="e#14699#14700#0" expanded="true" />
-                <element signature="e#14755#14756#0" expanded="true" />
-                <element signature="e#14825#14826#0" expanded="true" />
+                <element signature="method#designer#0;class#MgmtUser#0" />
               </folding>
             </state>
           </provider>
@@ -153,6 +139,9 @@
       <find>jop</find>
       <find>ha</find>
       <find>delet</find>
+      <find>lock</find>
+      <find>locked</find>
+      <find>role</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -170,11 +159,11 @@
         <option value="$PROJECT_DIR$/src/View/ClientHome.java" />
         <option value="$PROJECT_DIR$/src/View/StaffHome.java" />
         <option value="$PROJECT_DIR$/src/View/ManagerHome.java" />
-        <option value="$PROJECT_DIR$/src/View/MgmtUser.java" />
         <option value="$PROJECT_DIR$/src/View/AdminHome.java" />
         <option value="$PROJECT_DIR$/src/Controller/Main.java" />
-        <option value="$PROJECT_DIR$/src/Controller/SQLite.java" />
         <option value="$PROJECT_DIR$/src/View/MgmtProduct.java" />
+        <option value="$PROJECT_DIR$/src/View/MgmtUser.java" />
+        <option value="$PROJECT_DIR$/src/Controller/SQLite.java" />
       </list>
     </option>
   </component>
@@ -231,7 +220,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554794879527" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554797712538" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
@@ -315,12 +304,12 @@
       <workItem from="1554648551636" duration="3081000" />
       <workItem from="1554690083287" duration="2637000" />
       <workItem from="1554705838412" duration="16729000" />
-      <workItem from="1554782110199" duration="12562000" />
+      <workItem from="1554782110199" duration="15409000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72441000" />
+    <option name="totallyTimeSpent" value="75288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -478,16 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/MgmtUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="256" column="48" lean-forward="true" selection-start-line="256" selection-start-column="48" selection-end-line="256" selection-end-column="48" />
-          <folding>
-            <element signature="method#designer#0;class#MgmtUser#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/MgmtLogs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
@@ -499,13 +478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="181" column="25" selection-start-line="181" selection-start-column="25" selection-end-line="181" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/MgmtHistory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
@@ -541,20 +513,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1024">
-          <caret line="177" column="32" selection-start-line="177" selection-start-column="32" selection-end-line="177" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/ManagerHome.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="181" column="39" selection-start-line="181" selection-start-column="39" selection-end-line="181" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/MgmtProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="342" lean-forward="true" selection-start-line="342" selection-end-line="342" />
+          <folding>
+            <element signature="e#14624#14625#0" expanded="true" />
+            <element signature="e#14701#14702#0" expanded="true" />
+            <element signature="e#14757#14758#0" expanded="true" />
+            <element signature="e#14827#14828#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/MgmtHistory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
@@ -569,23 +551,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/SQLite.java">
+    <entry file="file://$PROJECT_DIR$/src/Controller/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="321" column="61" selection-start-line="321" selection-start-column="61" selection-end-line="321" selection-end-column="61" />
+        <state relative-caret-position="-1216">
+          <caret line="177" column="32" selection-start-line="177" selection-start-column="32" selection-end-line="177" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/MgmtProduct.java">
+    <entry file="file://$PROJECT_DIR$/src/View/MgmtUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="227" column="68" lean-forward="true" selection-start-line="227" selection-start-column="68" selection-end-line="227" selection-end-column="68" />
+        <state relative-caret-position="216">
+          <caret line="315" column="38" selection-start-line="315" selection-start-column="38" selection-end-line="315" selection-end-column="38" />
           <folding>
-            <element signature="e#14622#14623#0" expanded="true" />
-            <element signature="e#14699#14700#0" expanded="true" />
-            <element signature="e#14755#14756#0" expanded="true" />
-            <element signature="e#14825#14826#0" expanded="true" />
+            <element signature="method#designer#0;class#MgmtUser#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/SQLite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="293" column="70" lean-forward="true" selection-start-line="293" selection-start-column="70" selection-end-line="293" selection-end-column="70" />
         </state>
       </provider>
     </entry>
