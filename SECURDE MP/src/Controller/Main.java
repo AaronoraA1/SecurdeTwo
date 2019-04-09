@@ -7,10 +7,7 @@ import Model.Product;
 import Model.User;
 import View.Frame;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.sql.Timestamp;
@@ -198,6 +195,27 @@ public class Main {
         // Initialize User Interface
         Frame frame = new Frame();
         frame.init(this);
+    }
+
+    public boolean isDebug(){
+
+        File file = new File("appSettings.txt");
+
+
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(file));
+            String st;
+            while ((st = br.readLine()) != null){
+                if(Integer.parseInt(st.split(":")[1]) == 1)
+                    return true;
+                else
+                    return false;
+            }
+
+        }catch(Exception e){
+            System.out.println("Error reading the file");
+        }
+        return false;
     }
 
     public void writeLogs(String newEntry) {

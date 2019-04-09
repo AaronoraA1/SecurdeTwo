@@ -5,6 +5,7 @@
  */
 package View;
 //[255,102,51]
+import Controller.Main;
 import Controller.SQLite;
 import Model.History;
 import Model.Logs;
@@ -36,6 +37,7 @@ public class AdminHome extends javax.swing.JPanel {
     }
     
     public void init(SQLite sqlite){
+        Main main = new Main();
         mgmtHistory = new MgmtHistory(sqlite);
         mgmtLogs = new MgmtLogs(sqlite);
         mgmtProduct = new MgmtProduct(sqlite);
@@ -52,7 +54,10 @@ public class AdminHome extends javax.swing.JPanel {
 //        historyBtn.setVisible(false);
 //        usersBtn.setVisible(false);
 //        productsBtn.setVisible(false);
-//        logsBtn.setVisible(false);
+
+        if(!main.isDebug()) {
+            logsBtn.setVisible(false);
+        }
     }
     
     public void showPnl(String panelName){

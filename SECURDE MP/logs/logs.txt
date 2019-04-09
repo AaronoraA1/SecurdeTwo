@@ -766,3 +766,30 @@
 10/04/19 01:15:50 : admin accessed Products
 10/04/19 01:15:50 : admin edited Scanner
 10/04/19 01:15:50 : admin edited ScannerStock: 100 Price: 100.0
+10/04/19 02:47:34 :  LOGGED IN [admin]
+10/04/19 02:47:35 : admin ACCESSED Manager Page
+10/04/19 02:47:37 : admin ACCESSED Staff Page
+10/04/19 02:47:38 : admin ACCESSED Client Page
+10/04/19 02:48:01 :  LOGGED IN [admin]
+10/04/19 02:48:02 : admin ACCESSED Manager Page
+10/04/19 02:48:05 : admin accessed Users
+10/04/19 02:48:06 : admin accessed Products
+10/04/19 02:48:07 : admin accessed History
+10/04/19 02:48:07 : admin accessed Logs
+10/04/19 02:49:30 :  LOGGED IN [admin]
+10/04/19 02:49:31 : admin accessed Logs
+10/04/19 02:49:35 : admin ACCESSED Staff Page
+10/04/19 02:49:37 : admin ACCESSED Manager Page
+10/04/19 02:49:39 : admin ACCESSED Manager Page
+10/04/19 02:50:45 :  LOGGED IN [admin]
+10/04/19 02:50:46 : admin accessed Logs
+10/04/19 02:56:06 :  LOGGED IN [admin]
+10/04/19 02:56:36 :  LOGGED IN [admin]
+10/04/19 02:56:37 : admin accessed Logs
+10/04/19 03:03:43 :  LOGGED IN [admin]
+10/04/19 03:03:45 : admin ACCESSED Manager Page
+10/04/19 03:03:46 : admin ACCESSED Manager Page
+10/04/19 03:03:48 : admin ACCESSED Staff Page
+10/04/19 03:04:43 :  LOGGED IN [admin]
+10/04/19 03:06:36 :  LOGGED IN [admin]
+10/04/19 03:06:41 : admin accessed Users

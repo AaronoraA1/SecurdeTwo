@@ -299,15 +299,31 @@ public class Frame extends javax.swing.JFrame {
         frameView.show(Container, "homePnl");
         if(user.getRole() == 5){
             contentView.show(Content, "adminHomePnl");
+            Navigation.remove(managerBtn);
+            Navigation.remove(clientBtn);
+            Navigation.remove(staffBtn);
+
         }
         else if(user.getRole() == 4){
             contentView.show(Content, "managerHomePnl");
+            Navigation.remove(adminBtn);
+            Navigation.remove(clientBtn);
+            Navigation.remove(staffBtn);
+
         }
         else if(user.getRole() == 3){
             contentView.show(Content, "staffHomePnl");
+            Navigation.remove(managerBtn);
+            Navigation.remove(clientBtn);
+            Navigation.remove(adminBtn);
+
         }
         else if(user.getRole() == 2){
             contentView.show(Content, "clientHomePnl");
+            Navigation.remove(managerBtn);
+            Navigation.remove(adminBtn);
+            Navigation.remove(staffBtn);
+
         }
     }
     
