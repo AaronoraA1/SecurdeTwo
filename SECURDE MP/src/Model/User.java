@@ -59,4 +59,9 @@ public class User {
     public void setLocked(int locked) {
         this.locked = locked;
     }
+
+    @Override
+    public String toString() {
+        return "User: " + getId() + " > Username: " + getUsername() + " Password: " + getPassword() + " Role: " + getRole() + " Locked: " + getLocked();
+    }
 }
