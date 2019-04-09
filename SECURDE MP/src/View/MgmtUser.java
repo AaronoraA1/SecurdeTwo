@@ -253,6 +253,9 @@ public class MgmtUser extends javax.swing.JPanel {
             main.writeLogs(newLog(user.getUsername()) + " attempted to delete " + selectedUser);
 
             if (result == JOptionPane.YES_OPTION) {
+
+                sqlite.removeUser(selectedUser);
+                init(this.getUser());
                 System.out.println(selectedUser);
                 main.writeLogs(newLog(user.getUsername()) + " deleted " + selectedUser);
             }

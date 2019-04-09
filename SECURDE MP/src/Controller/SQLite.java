@@ -317,4 +317,37 @@ public class SQLite {
         }
         return product;
     }
+
+    public void purchaseProduct(String itemName, float newStock) {
+        String sql = "UPDATE product SET stock = " + newStock + "\n WHERE name='" + itemName + "';";
+
+        try (Connection conn = DriverManager.getConnection(driverURL);
+             Statement stmt = conn.createStatement()) {
+            stmt.execute(sql);
+            System.out.println("Product " + itemName + " has been purchased.");
+        } catch (Exception ex) {
+        }
+    }
+
+    public void removeProduct(String name) {
+        String sql = "DELETE FROM product WHERE name='" + name + "';";
+
+        try (Connection conn = DriverManager.getConnection(driverURL);
+             Statement stmt = conn.createStatement()) {
+            stmt.execute(sql);
+            System.out.println("Product " + name + " has been deleted.");
+        } catch (Exception ex) {
+        }
+    }
+
+    public void editProduct(String oldName, String name, int stock, float price) {
+        String sql = "UPDATE product SET name = '" + name + "',  stock = " + stock + ", price =" + price + "\n WHERE name='" + oldName + "';";
+
+        try (Connection conn = DriverManager.getConnection(driverURL);
+             Statement stmt = conn.createStatement()) {
+            stmt.execute(sql);
+            System.out.println("Product " + name + " has been edited.");
+        } catch (Exception ex) {
+        }
+    }
 }
