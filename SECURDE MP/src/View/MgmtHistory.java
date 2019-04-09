@@ -14,6 +14,7 @@ import Model.User;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -260,6 +261,7 @@ public class MgmtHistory extends javax.swing.JPanel {
         if (result == JOptionPane.OK_OPTION) {
 
             main.writeLogs(newLog(user.getUsername()) + " searched " + searchFld.getText() + " in history");
+            sqlite.addLogs("SEARCH", user.getUsername(),  " searched " + searchFld.getText() + " in history", new Timestamp(new Date().getTime()).toString());
 
 //          CLEAR TABLE
             for (int nCtr = tableModel.getRowCount(); nCtr > 0; nCtr--) {
@@ -295,6 +297,7 @@ public class MgmtHistory extends javax.swing.JPanel {
 
     private void btnReloadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReloadActionPerformed
         main.writeLogs(newLog(user.getUsername()) + " reloaded history");
+        sqlite.addLogs("RELOAD", user.getUsername(),  " reloaded history", new Timestamp(new Date().getTime()).toString());
         init(this.getUser());
     }//GEN-LAST:event_btnReloadActionPerformed
 

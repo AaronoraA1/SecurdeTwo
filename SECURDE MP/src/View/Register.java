@@ -153,7 +153,7 @@ public class Register extends javax.swing.JPanel {
         // checks for nulll input
         if (!txtRegUsername.getText().isEmpty() && !txtRegPassword.getText().isEmpty() && !txtRegConfirm.getText().isEmpty()) {
             // checks for password meets the character limit range
-            if (txtRegPassword.getText().length() < 33 && txtRegPassword.getText().length() > 11) {
+            if (txtRegPassword.getText().length() < 33 && txtRegPassword.getText().length() > 7) {
                 for (int i = 0; i < txtRegPassword.getText().length(); i++) {
                     if (upper.contains(String.valueOf(txtRegPassword.getText().charAt(i)))) {
                         big = true;

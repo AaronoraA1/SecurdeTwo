@@ -9,6 +9,7 @@ import Controller.Main;
 import Controller.SQLite;
 import Model.User;
 
+import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -256,6 +257,7 @@ public class MgmtUser extends javax.swing.JPanel {
                         sqlite.editRole(selectedUser, Integer.parseInt(String.valueOf(Character.getNumericValue(result.charAt(0)))));
                         init(this.getUser());
                         main.writeLogs(newLog(user.getUsername()) + " edited the role of " + selectedUser + " to " + result.charAt(0));
+                        sqlite.addLogs("EDIT", user.getUsername(),  " edited the role of " + selectedUser + " to " + result.charAt(0), new Timestamp(new Date().getTime()).toString());
                     } else {
                         JOptionPane.showMessageDialog(null, "Passwords do not match!");
                     }
@@ -292,6 +294,7 @@ public class MgmtUser extends javax.swing.JPanel {
                         sqlite.removeUser(selectedUser);
                         init(this.getUser());
                         main.writeLogs(newLog(user.getUsername()) + " deleted " + selectedUser);
+                        sqlite.addLogs("DELETE", user.getUsername(),   " deleted " + selectedUser, new Timestamp(new Date().getTime()).toString());
                     } else {
                         JOptionPane.showMessageDialog(null, "Passwords do not match!");
                     }
@@ -334,6 +337,7 @@ public class MgmtUser extends javax.swing.JPanel {
 
                         init(this.getUser());
                         main.writeLogs(newLog(user.getUsername()) + " locked/unlocked " + selectedUser);
+                        sqlite.addLogs("LOCK/UNLOCK", user.getUsername(),   " locked/unlocked " + selectedUser, new Timestamp(new Date().getTime()).toString());
                     } else {
                         JOptionPane.showMessageDialog(null, "Passwords do not match!");
                     }
@@ -378,7 +382,8 @@ public class MgmtUser extends javax.swing.JPanel {
                             System.out.println(confpass.getText());
                             sqlite.changePassword(selectedUser, main.hashPassword(password.getText()));
                             init(this.getUser());
-                            main.writeLogs(newLog(user.getUsername()) + " change password to " + password.getText()); // hash it later
+                            main.writeLogs(newLog(user.getUsername()) + " change password to " + main.hashPassword(password.getText()));
+                            sqlite.addLogs("CHANGE PASS", user.getUsername(),   " locked/unlocked " + selectedUser, new Timestamp(new Date().getTime()).toString());
 
                         } else {
                             JOptionPane.showMessageDialog(null, "Passwords do not match!");

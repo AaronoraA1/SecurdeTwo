@@ -10,6 +10,7 @@ import Controller.SQLite;
 import Model.Logs;
 import Model.User;
 
+import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -196,10 +197,12 @@ public class MgmtLogs extends javax.swing.JPanel {
                     if (sqlite.DEBUG_MODE == 1) {
                         sqlite.DEBUG_MODE = 0;
                         main.writeLogs(newLog(user.getUsername()) + " turned off  debug mode.");
+                        sqlite.addLogs("DEBUG", user.getUsername(),  " turned off  debug mode.", new Timestamp(new Date().getTime()).toString());
                         table.setVisible(false);
                     } else {
                         sqlite.DEBUG_MODE = 1;
                         main.writeLogs(newLog(user.getUsername()) + " turned on  debug mode.");
+                        sqlite.addLogs("DEBUG", user.getUsername(),  " turned on  debug mode.", new Timestamp(new Date().getTime()).toString());
                         table.setVisible(true);
                     }
                 } else {

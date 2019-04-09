@@ -12,6 +12,7 @@ import Model.Product;
 import Model.User;
 
 import java.io.*;
+import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -229,6 +230,7 @@ public class MgmtProduct extends javax.swing.JPanel {
                         System.out.println(this.getUser().getUsername() + " purchased " +
                                 itemBought + " Quantity: " + numStocks);
                         main.writeLogs(newLog(user.getUsername()) + " purchased " + stockFld.getText() + " " + itemBought + "/s");
+                        sqlite.addLogs("PURCHASE", user.getUsername(), " purchased " + stockFld.getText() + " " + itemBought + "/s", new Timestamp(new Date().getTime()).toString());
                         sqlite.purchaseProduct(itemBought, stocksLeft - numStocks);
                         init(this.getUser());
                     } else {
@@ -283,6 +285,8 @@ public class MgmtProduct extends javax.swing.JPanel {
 
 
                         sqlite.addProduct(name, stock, price);
+                        main.writeLogs(newLog(user.getUsername()) + " added " + name + "Stock: " + stock + " Price: " + price);
+                        sqlite.addLogs("ADD", user.getUsername(),  "added " + name + "Stock: " + stock + " Price: " + price, new Timestamp(new Date().getTime()).toString());
 //                    addUserToCSV(table.getRowCount() + 1, name, stock, price);
                         init(this.getUser());
                     } else {
@@ -333,7 +337,7 @@ public class MgmtProduct extends javax.swing.JPanel {
                         JOptionPane.PLAIN_MESSAGE, null);
 
                 if (confirm == JOptionPane.OK_OPTION) {
-                    if (nameFld.getText().matches("[a-zA-Z]+") && stockFld.getText().matches("[0-9]+") && priceFld.getText().matches("[0-9]+")) {
+                    if (nameFld.getText().matches("[a-zA-Z]+") && stockFld.getText().matches("[0-9]+") && priceFld.getText().matches("[0-9]+.[0-9]+")) {
                         if (main.hashPassword(confirmIdentity.getText()).equals(this.getUser().getPassword())) {
 
                             String name = nameFld.getText();
@@ -343,6 +347,7 @@ public class MgmtProduct extends javax.swing.JPanel {
                             sqlite.editProduct(oldName, name, stock, price);
                             init(this.getUser());
                             main.writeLogs(newLog(user.getUsername()) + " edited " + name);
+                            sqlite.addLogs("EDIT", user.getUsername(),  " edited " + name, new Timestamp(new Date().getTime()).toString());
                         } else {
                             JOptionPane.showMessageDialog(null, "Passwords do not match!");
                         }
@@ -385,6 +390,7 @@ public class MgmtProduct extends javax.swing.JPanel {
                         init(this.getUser());
                         System.out.println("Deleted " + deletedItem);
                         main.writeLogs(newLog(user.getUsername()) + " deleted " + deletedItem);
+                        sqlite.addLogs("DELETE", user.getUsername(),  " deleted " + deletedItem, new Timestamp(new Date().getTime()).toString());
                     } else {
                         JOptionPane.showMessageDialog(null, "Passwords do not match!");
                     }

@@ -685,3 +685,84 @@
 09/04/19 23:45:26 : admin edited Scanner1Stock: 10 Price: 100.0
 09/04/19 23:45:29 : admin attempted to add an item
 09/04/19 23:45:39 : admin added 1 Stock: 1 Price: 1
+10/04/19 00:51:00 :  LOGGED IN [admin]
+10/04/19 00:51:01 : admin accessed Products
+10/04/19 00:51:03 : admin accessed Logs
+10/04/19 00:51:08 : admin turned on  debug mode.
+10/04/19 00:51:09 : admin accessed Products
+10/04/19 00:51:11 : admin attempted to add an item
+10/04/19 00:51:11 : admin added  Stock:  Price: 
+10/04/19 00:51:16 : admin attempted to purchase Scanner
+10/04/19 00:51:18 : admin purchased 1 Scanner/s
+10/04/19 00:51:18 : admin accessed Products
+10/04/19 00:51:20 : admin accessed Logs
+10/04/19 01:08:01 :  LOGGED IN [admin]
+10/04/19 01:08:02 : admin accessed Logs
+10/04/19 01:08:07 : admin turned on  debug mode.
+10/04/19 01:08:09 : admin accessed Users
+10/04/19 01:08:11 : admin attempted to edit the role of client2
+10/04/19 01:08:16 : admin accessed Users
+10/04/19 01:08:16 : admin edited the role of client2 to 1
+10/04/19 01:08:17 : admin accessed Logs
+10/04/19 01:08:20 : admin accessed Users
+10/04/19 01:08:22 : admin attempted to lock/unlock client2
+10/04/19 01:08:26 : admin accessed Users
+10/04/19 01:08:26 : admin locked/unlocked client2
+10/04/19 01:08:27 : admin accessed Logs
+10/04/19 01:08:29 : admin accessed Users
+10/04/19 01:08:31 : admin attempted to change password of client2
+10/04/19 01:08:37 : admin accessed Users
+10/04/19 01:08:37 : admin change password to 010056c8338cb08bca90ab0c0da7337a71e01d8bc36be7d69dd7db0f51a0ce8727326b3f99bffcf77805effbf40ed9b25061b5b2f8d0cadcd093bf16aab2e56c
+10/04/19 01:08:38 : admin accessed Logs
+10/04/19 01:08:39 : admin accessed Users
+10/04/19 01:08:42 : admin attempted to delete client2
+10/04/19 01:08:45 : admin accessed Users
+10/04/19 01:08:45 : admin deleted client2
+10/04/19 01:08:46 : admin accessed Logs
+10/04/19 01:08:48 : admin accessed Products
+10/04/19 01:08:50 : admin attempted to add an item
+10/04/19 01:08:56 : admin added qweStock: 1 Price: 1.0
+10/04/19 01:08:57 : admin accessed Products
+10/04/19 01:08:57 : admin added qwe Stock: 1 Price: 1
+10/04/19 01:09:01 : admin attempted to purchase qwe
+10/04/19 01:09:03 : admin purchased 1 qwe/s
+10/04/19 01:09:03 : admin accessed Products
+10/04/19 01:09:04 : admin accessed Logs
+10/04/19 01:09:06 : admin accessed Products
+10/04/19 01:09:08 : admin attempted to edit an item
+10/04/19 01:09:16 : admin edited qweStock: 5 Price: 1.0
+10/04/19 01:09:18 : admin attempted to edit an item
+10/04/19 01:09:31 : admin edited qweStock: 5 Price: 1.0
+10/04/19 01:09:38 : admin attempted to edit an item
+10/04/19 01:09:50 : admin edited qweStock: 5 Price: 1.0
+10/04/19 01:09:55 : admin accessed Logs
+10/04/19 01:09:57 : admin accessed Users
+10/04/19 01:10:02 : admin accessed Products
+10/04/19 01:10:03 : admin accessed Products
+10/04/19 01:10:07 : admin attempted to edit an item
+10/04/19 01:10:21 : admin accessed Products
+10/04/19 01:10:21 : admin edited qwe
+10/04/19 01:10:21 : admin edited qweStock: 1 Price: 1
+10/04/19 01:10:25 : admin accessed History
+10/04/19 01:10:28 : admin reloaded history
+10/04/19 01:10:29 : admin accessed History
+10/04/19 01:10:29 : admin accessed Logs
+10/04/19 01:10:30 : admin accessed History
+10/04/19 01:10:33 : admin attempted to search history
+10/04/19 01:10:36 : admin searched admin in history
+10/04/19 01:10:37 : admin accessed Logs
+10/04/19 01:10:39 : admin accessed Logs
+10/04/19 01:10:39 : admin cleared logs.
+10/04/19 01:10:44 : admin accessed Products
+10/04/19 01:10:49 : admin attempted to add an item
+10/04/19 01:10:56 : admin added qweqStock: 1 Price: 1.0
+10/04/19 01:10:56 : admin accessed Products
+10/04/19 01:10:56 : admin added qweq Stock: 1 Price: 1
+10/04/19 01:10:58 : admin accessed Logs
+10/04/19 01:11:03 : admin turned off  debug mode.
+10/04/19 01:15:36 :  LOGGED IN [admin]
+10/04/19 01:15:40 : admin accessed Products
+10/04/19 01:15:43 : admin attempted to edit an item
+10/04/19 01:15:50 : admin accessed Products
+10/04/19 01:15:50 : admin edited Scanner
+10/04/19 01:15:50 : admin edited ScannerStock: 100 Price: 100.0
