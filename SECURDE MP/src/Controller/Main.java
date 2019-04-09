@@ -21,16 +21,20 @@ import static javax.script.ScriptEngine.FILENAME;
 
 
 public class Main {
-    
+
     public SQLite sqlite;
     private static final File FILENAME_1 = new File("logs/secret/dont touch this log.txt");
     private static final File FILENAME_2 = new File("logs/logs.txt");
+    private static final File DATABASE_HISTORIES = new File("database/database_histories.txt");
+    private static final File DATABASE_LOGS = new File("database/database_logs.txt");
+    private static final File DATABASE_PRODUCTS = new File("database/database_products.txt");
+    private static final File DATABASE_USERS = new File("database/database_users.txt");
 
     public static void main(String[] args) {
         new Main().init();
     }
-    
-    public void init(){
+
+    public void init() {
         // Initialize a driver object
         sqlite = new SQLite();
 
@@ -66,7 +70,7 @@ public class Main {
         sqlite.addProduct("Scanner", 10, 100.0);
 
         // Add sample users
-        sqlite.addUser("admin", hashPassword("qwerty1234") , 5);
+        sqlite.addUser("admin", hashPassword("qwerty1234"), 5);
         sqlite.addUser("manager", hashPassword("qwerty1234"), 4);
         sqlite.addUser("staff", hashPassword("qwerty1234"), 3);
         sqlite.addUser("client1", hashPassword("qwerty1234"), 2);
@@ -75,7 +79,7 @@ public class Main {
 
         // Get users
         ArrayList<History> histories = sqlite.getHistory();
-        for(int nCtr = 0; nCtr < histories.size(); nCtr++){
+        for (int nCtr = 0; nCtr < histories.size(); nCtr++) {
             System.out.println("===== History " + histories.get(nCtr).getId() + " =====");
             System.out.println(" Username: " + histories.get(nCtr).getUsername());
             System.out.println(" Name: " + histories.get(nCtr).getName());
@@ -85,7 +89,7 @@ public class Main {
 
         // Get users
         ArrayList<Logs> logs = sqlite.getLogs();
-        for(int nCtr = 0; nCtr < logs.size(); nCtr++){
+        for (int nCtr = 0; nCtr < logs.size(); nCtr++) {
             System.out.println("===== Logs " + logs.get(nCtr).getId() + " =====");
             System.out.println(" Username: " + logs.get(nCtr).getEvent());
             System.out.println(" Password: " + logs.get(nCtr).getUsername());
@@ -95,7 +99,7 @@ public class Main {
 
         // Get users
         ArrayList<Product> products = sqlite.getProduct();
-        for(int nCtr = 0; nCtr < products.size(); nCtr++){
+        for (int nCtr = 0; nCtr < products.size(); nCtr++) {
             System.out.println("===== Product " + products.get(nCtr).getId() + " =====");
             System.out.println(" Name: " + products.get(nCtr).getName());
             System.out.println(" Stock: " + products.get(nCtr).getStock());
@@ -103,20 +107,101 @@ public class Main {
         }
         // Get users
         ArrayList<User> users = sqlite.getUsers();
-        for(int nCtr = 0; nCtr < users.size(); nCtr++){
+        for (int nCtr = 0; nCtr < users.size(); nCtr++) {
             System.out.println("===== User " + users.get(nCtr).getId() + " =====");
             System.out.println(" Username: " + users.get(nCtr).getUsername());
             System.out.println(" Password: " + users.get(nCtr).getPassword());
             System.out.println(" Role: " + users.get(nCtr).getRole());
             System.out.println(" Locked: " + users.get(nCtr).getLocked());
         }
-        
+
+        BufferedWriter bwH = null;
+        BufferedWriter bwL = null;
+        BufferedWriter bwP = null;
+        BufferedWriter bwU = null;
+        FileWriter fwH = null;
+        FileWriter fwL = null;
+        FileWriter fwP = null;
+        FileWriter fwU = null;
+
+        try {
+            fwH = new FileWriter(DATABASE_HISTORIES, false);
+            fwL = new FileWriter(DATABASE_LOGS, false);
+            fwP = new FileWriter(DATABASE_PRODUCTS, false);
+            fwU = new FileWriter(DATABASE_USERS, false);
+            bwH = new BufferedWriter(fwH);
+            bwL = new BufferedWriter(fwL);
+            bwP = new BufferedWriter(fwP);
+            bwU = new BufferedWriter(fwU);
+
+            for (int nCtr = 0; nCtr < histories.size(); nCtr++) {
+                bwH.write(histories.get(nCtr).getId() + "," +
+                        histories.get(nCtr).getUsername() + "," +
+                        histories.get(nCtr).getName() + "," +
+                        histories.get(nCtr).getStock() + "," +
+                        histories.get(nCtr).getTimestamp() + "\n");
+            }
+
+            for (int nCtr = 0; nCtr < logs.size(); nCtr++) {
+                bwL.write(logs.get(nCtr).getId() + "," +
+                        logs.get(nCtr).getEvent() + "," +
+                        logs.get(nCtr).getUsername() + "," +
+                        logs.get(nCtr).getDesc() + "," +
+                        logs.get(nCtr).getTimestamp() + "\n");
+            }
+
+            for (int nCtr = 0; nCtr < products.size(); nCtr++) {
+                bwP.write(products.get(nCtr).getId() + "," +
+                        products.get(nCtr).getName() + "," +
+                        products.get(nCtr).getStock() + "," +
+                        products.get(nCtr).getPrice() + "\n");
+            }
+
+            for (int nCtr = 0; nCtr < users.size(); nCtr++) {
+                bwU.write(users.get(nCtr).getId() + "," +
+                        users.get(nCtr).getUsername() + "," +
+                        users.get(nCtr).getPassword() + "," +
+                        users.get(nCtr).getRole() + "," +
+                        users.get(nCtr).getLocked() + "\n");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (bwH != null)
+                    bwH.close();
+                if (fwH != null)
+                    fwH.close();
+
+                if (bwL != null)
+                    bwL.close();
+                if (fwL != null)
+                    fwL.close();
+
+                if (bwP != null)
+                    bwP.close();
+                if (fwP != null)
+                    fwP.close();
+
+                if (bwU != null)
+                    bwU.close();
+                if (fwU != null)
+                    fwU.close();
+
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+
+
+        //databaseCSV(histories, logs, products, users);
+
         // Initialize User Interface
         Frame frame = new Frame();
         frame.init(this);
     }
 
-    public void writeLogs(String newEntry){
+    public void writeLogs(String newEntry) {
 
         BufferedWriter bw1 = null;
         BufferedWriter bw2 = null;
@@ -161,13 +246,15 @@ public class Main {
             byte[] passBytes = passWithSalt.getBytes();
             byte[] passHash = sha512.digest(passBytes);
             StringBuilder sb = new StringBuilder();
-            for(int i=0; i< passHash.length ;i++) {
+            for (int i = 0; i < passHash.length; i++) {
                 sb.append(Integer.toString((passHash[i] & 0xff) + 0x100, 16).substring(1));
             }
             String generatedPassword = sb.toString();
             System.out.println("HASHED PASSWORD >>> " + generatedPassword);
             return generatedPassword;
-        } catch (NoSuchAlgorithmException e) { e.printStackTrace(); }
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
         return null;
     }
 

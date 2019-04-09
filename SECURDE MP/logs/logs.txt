@@ -1,0 +1,344 @@
+09/04/19 13:57:45 :  LOGGED IN [admin]
+09/04/19 13:57:46 : admin accessed Users
+09/04/19 13:57:49 : admin attempted to edit the role of client2
+09/04/19 13:57:55 : admin accessed Products
+09/04/19 13:57:56 : admin attempted to add an item
+09/04/19 13:57:59 : admin added  Stock:  Price: 
+09/04/19 13:57:59 : admin attempted to edit an item
+09/04/19 13:58:09 : admin edited ScannerStock: 10 Price: 100.0
+09/04/19 14:03:31 : admin attempted to edit an item
+09/04/19 14:03:33 : admin edited ScannerStock: 10 Price: 100.0
+09/04/19 14:12:58 :  LOGGED IN [admin]
+09/04/19 14:12:59 : admin accessed Products
+09/04/19 14:13:00 : admin attempted to edit an item
+09/04/19 14:13:27 : admin attempted to edit an item
+09/04/19 14:19:36 :  LOGGED IN [admin]
+09/04/19 14:19:38 : admin accessed Users
+09/04/19 14:19:39 : admin accessed Products
+09/04/19 14:19:40 : admin attempted to edit an item
+09/04/19 14:19:43 : admin edited ScannerStock: 100 Price: 100.0
+09/04/19 14:19:47 : admin accessed Products
+09/04/19 14:19:48 : admin accessed History
+09/04/19 14:19:48 : admin accessed Products
+09/04/19 14:19:56 : admin attempted to edit an item
+09/04/19 14:19:58 : admin edited ScannerStock: 100 Price: 100.0
+09/04/19 14:19:59 : admin accessed Products
+09/04/19 14:20:00 : admin accessed Products
+09/04/19 14:20:00 : admin accessed Products
+09/04/19 14:20:00 : admin accessed Products
+09/04/19 14:26:24 :  LOGGED IN [admin]
+09/04/19 14:26:25 : admin accessed Products
+09/04/19 14:26:27 : admin attempted to edit an item
+09/04/19 14:26:29 : admin edited ScannerStock: 100 Price: 100.0
+09/04/19 14:26:30 : admin accessed Products
+09/04/19 14:26:32 : admin accessed History
+09/04/19 14:26:32 : admin accessed Products
+09/04/19 14:26:39 : admin attempted to edit an item
+09/04/19 14:26:41 : admin edited FirewallStock: 31 Price: 1000.0
+09/04/19 14:26:44 : admin accessed Logs
+09/04/19 14:26:44 : admin accessed Products
+09/04/19 14:26:45 : admin accessed History
+09/04/19 14:26:46 : admin accessed Products
+09/04/19 14:26:46 : admin accessed Products
+09/04/19 14:26:47 : admin accessed History
+09/04/19 14:26:49 : admin accessed Products
+09/04/19 14:28:59 :  LOGGED IN [admin]
+09/04/19 14:29:00 : admin accessed Products
+09/04/19 14:29:02 : admin attempted to edit an item
+09/04/19 14:29:04 : admin edited FirewallStock: 31 Price: 1000.0
+09/04/19 14:29:05 : admin accessed Products
+09/04/19 14:31:12 :  LOGGED IN [admin]
+09/04/19 14:31:13 : admin accessed Products
+09/04/19 14:31:15 : admin attempted to edit an item
+09/04/19 14:31:18 : admin accessed Products
+09/04/19 14:31:18 : admin edited FirewallStock: 3 Price: 10000.0
+09/04/19 14:31:22 : admin accessed Products
+09/04/19 14:32:44 :  LOGGED IN [admin]
+09/04/19 14:32:45 : admin accessed Products
+09/04/19 14:32:46 : admin attempted to add an item
+09/04/19 14:32:54 : admin accessed Products
+09/04/19 14:32:54 : admin added TEST Stock: 1 Price: 1000
+09/04/19 14:32:59 : admin attempted to purchase TEST
+09/04/19 14:33:01 : admin purchased 1 TEST/s
+09/04/19 14:34:19 : FAILED LOGIN ATTEMPT [admin, qerty134]
+09/04/19 14:34:23 :  LOGGED IN [admin]
+09/04/19 14:34:24 : admin accessed Products
+09/04/19 14:34:26 : admin attempted to edit an item
+09/04/19 14:34:28 : admin accessed Products
+09/04/19 14:34:28 : admin edited ScannersStock: 10 Price: 100.0
+09/04/19 14:38:26 : FAILED LOGIN ATTEMPT [admin, qewrty1234]
+09/04/19 14:38:32 :  LOGGED IN [admin]
+09/04/19 14:38:32 : admin accessed Products
+09/04/19 14:38:35 : admin attempted to edit an item
+09/04/19 14:38:37 : admin accessed Products
+09/04/19 14:38:38 : admin edited ScannersStock: 10 Price: 100.0
+09/04/19 14:38:42 : admin accessed Products
+09/04/19 14:38:43 : admin accessed Users
+09/04/19 14:38:44 : admin accessed Products
+09/04/19 14:38:47 : admin attempted to edit an item
+09/04/19 14:38:50 : admin accessed Products
+09/04/19 14:38:50 : admin edited AntivirusesStock: 5 Price: 500.0
+09/04/19 14:38:53 : admin accessed Products
+09/04/19 14:40:10 :  LOGGED IN [admin]
+09/04/19 14:40:11 : admin accessed Products
+09/04/19 14:40:13 : admin attempted to edit an item
+09/04/19 14:40:16 : admin accessed Products
+09/04/19 14:40:16 : admin edited FirewallsStock: 3 Price: 1000.0
+09/04/19 14:40:29 : admin attempted to edit an item
+09/04/19 14:40:32 : admin accessed Products
+09/04/19 14:40:32 : admin edited FirewallssStock: 3 Price: 1000.0
+09/04/19 14:43:08 :  LOGGED IN [admin]
+09/04/19 14:43:09 : admin accessed Products
+09/04/19 14:43:11 : admin attempted to edit an item
+09/04/19 14:51:54 :  LOGGED IN [admin]
+09/04/19 14:51:55 : admin accessed Products
+09/04/19 14:51:57 : admin attempted to edit an item
+09/04/19 14:51:59 : admin accessed Products
+09/04/19 14:51:59 : admin edited AntivirusesStock: 5 Price: 500.0
+09/04/19 14:52:03 : admin accessed History
+09/04/19 14:52:04 : admin accessed Products
+09/04/19 14:53:41 : admin attempted to edit an item
+09/04/19 14:53:44 : admin accessed Products
+09/04/19 14:53:44 : admin edited FirewallsStock: 3 Price: 1000.0
+09/04/19 14:53:46 : admin attempted to edit an item
+09/04/19 14:53:48 : admin accessed Products
+09/04/19 14:53:48 : admin edited FirewallStock: 31 Price: 1000.0
+09/04/19 14:53:53 : admin attempted to edit an item
+09/04/19 14:53:58 : admin edited FirewallStock: 3 Price: 1000.0
+09/04/19 14:55:37 :  LOGGED IN [admin]
+09/04/19 14:55:38 : admin accessed Products
+09/04/19 14:55:40 : admin attempted to edit an item
+09/04/19 14:55:42 : admin accessed Products
+09/04/19 14:55:42 : admin edited ScannersStock: 10 Price: 100.0
+09/04/19 14:55:46 : admin attempted to edit an item
+09/04/19 14:55:55 : admin accessed Products
+09/04/19 14:55:55 : admin edited FirewallStock: 13 Price: 1000.0
+09/04/19 14:56:44 : FAILED LOGIN ATTEMPT [admin, qerty1234]
+09/04/19 14:56:48 :  LOGGED IN [admin]
+09/04/19 14:56:49 : admin accessed Products
+09/04/19 14:56:51 : admin attempted to edit an item
+09/04/19 14:56:53 : admin accessed Products
+09/04/19 14:56:53 : admin edited FirewallsStock: 3 Price: 1000.0
+09/04/19 14:56:58 : admin attempted to edit an item
+09/04/19 14:57:01 : admin accessed Products
+09/04/19 14:57:01 : admin edited FirewallsStock: 31 Price: 1000.0
+09/04/19 14:57:03 : admin attempted to edit an item
+09/04/19 14:57:05 : admin accessed Products
+09/04/19 14:57:05 : admin edited ScannersStock: 10 Price: 100.0
+09/04/19 15:08:12 :  LOGGED IN [admin]
+09/04/19 15:08:14 : admin accessed Products
+09/04/19 15:08:16 : admin attempted to purchase Scanner
+09/04/19 15:08:20 : admin purchased 1 Scanner/s
+09/04/19 15:08:20 : admin accessed Products
+09/04/19 15:09:18 :  LOGGED IN [admin]
+09/04/19 15:09:20 : admin accessed Products
+09/04/19 15:09:23 : admin attempted to purchase Scanner
+09/04/19 15:09:25 : admin purchased 1 Scanner/s
+09/04/19 15:09:25 : admin accessed Products
+09/04/19 15:09:30 : admin attempted to purchase Firewall
+09/04/19 15:09:32 : admin purchased 5 Firewall/s
+09/04/19 15:09:32 : admin accessed Products
+09/04/19 15:14:37 :  LOGGED IN [admin]
+09/04/19 15:14:38 : admin accessed Products
+09/04/19 15:14:41 : admin attempted to edit an item
+09/04/19 15:14:43 : admin accessed Products
+09/04/19 15:14:43 : admin edited AntivirusStock: 51 Price: 500.0
+09/04/19 15:14:45 : admin attempted to purchase Antivirus
+09/04/19 15:14:49 : admin attempted to edit an item
+09/04/19 15:14:51 : admin accessed Products
+09/04/19 15:14:51 : admin edited AntivirusesStock: 51 Price: 500.0
+09/04/19 15:14:55 : admin attempted to purchase Antiviruses
+09/04/19 15:15:04 : admin purchased 21 Antiviruses/s
+09/04/19 15:15:04 : admin accessed Products
+09/04/19 15:16:06 :  LOGGED IN [admin]
+09/04/19 15:16:08 : admin accessed Products
+09/04/19 15:16:16 : admin attempted to purchase Antivirus
+09/04/19 15:16:19 : admin purchased 3 Antivirus/s
+09/04/19 15:16:19 : admin accessed Products
+09/04/19 15:18:04 :  LOGGED IN [admin]
+09/04/19 15:18:06 : admin accessed Products
+09/04/19 15:18:08 : admin attempted to purchase Firewall
+09/04/19 15:18:11 : admin purchased 1 Firewall/s
+09/04/19 15:18:11 : admin accessed Products
+09/04/19 15:18:18 : admin attempted to edit an item
+09/04/19 15:18:21 : admin accessed Products
+09/04/19 15:18:21 : admin edited FirewallStock: 1 Price: 1000.0
+09/04/19 15:19:55 :  LOGGED IN [admin]
+09/04/19 15:19:56 : admin accessed Products
+09/04/19 15:19:57 : admin attempted to add an item
+09/04/19 15:19:59 : admin attempted to purchase Firewall
+09/04/19 15:20:24 : admin attempted to purchase Antivirus
+09/04/19 15:20:28 : admin purchased 2 Antivirus/s
+09/04/19 15:20:28 : admin accessed Products
+09/04/19 15:21:05 :  LOGGED IN [admin]
+09/04/19 15:21:06 : admin accessed Products
+09/04/19 15:21:09 : admin attempted to purchase Antivirus
+09/04/19 15:21:12 : admin purchased 1 Antivirus/s
+09/04/19 15:21:12 : admin accessed Products
+09/04/19 15:25:17 : FAILED LOGIN ATTEMPT [admin, nqwerty1234]
+09/04/19 15:25:19 :  LOGGED IN [admin]
+09/04/19 15:25:20 : admin accessed Products
+09/04/19 15:25:21 : admin attempted to purchase Antivirus
+09/04/19 15:25:23 : admin purchased 1 Antivirus/s
+09/04/19 15:25:23 : admin accessed Products
+09/04/19 15:25:34 : admin attempted to purchase Antivirus
+09/04/19 15:25:42 : admin attempted to purchase Antivirus
+09/04/19 15:25:47 : admin purchased 5 Antivirus/s
+09/04/19 15:25:48 : admin accessed Products
+09/04/19 15:28:04 :  LOGGED IN [admin]
+09/04/19 15:28:04 : admin accessed Products
+09/04/19 15:28:06 : admin attempted to purchase Firewall
+09/04/19 15:28:12 : admin purchased 1 Firewall/s
+09/04/19 15:28:12 : admin accessed Products
+09/04/19 15:28:16 : admin attempted to purchase Firewall
+09/04/19 15:28:18 : admin purchased 2 Firewall/s
+09/04/19 15:28:18 : admin accessed Products
+09/04/19 15:28:20 : admin attempted to purchase Firewall
+09/04/19 15:28:24 : admin accessed History
+09/04/19 15:28:24 : admin accessed Products
+09/04/19 15:28:26 : admin accessed History
+09/04/19 15:30:39 :  LOGGED IN [admin]
+09/04/19 15:30:40 : admin accessed Users
+09/04/19 15:30:43 : admin attempted to delete client2
+09/04/19 15:30:43 : admin accessed Users
+09/04/19 15:30:43 : admin deleted client2
+09/04/19 15:31:59 : admin attempted to lock/unlock client1
+09/04/19 15:32:00 : admin locked/unlocked client1
+09/04/19 15:39:09 :  LOGGED IN [admin]
+09/04/19 15:39:10 : admin accessed Products
+09/04/19 15:39:10 : admin accessed Users
+09/04/19 15:39:12 : admin attempted to lock/unlock client2
+09/04/19 15:39:14 : admin accessed Users
+09/04/19 15:39:14 : admin locked/unlocked client2
+09/04/19 15:39:19 : admin attempted to lock/unlock client1
+09/04/19 15:39:21 : admin accessed Users
+09/04/19 15:39:21 : admin locked/unlocked client1
+09/04/19 15:39:22 : admin accessed Products
+09/04/19 15:39:23 : admin accessed Users
+09/04/19 15:41:40 : FAILED LOGIN ATTEMPT [admin, qerty1234]
+09/04/19 15:41:44 :  LOGGED IN [admin]
+09/04/19 15:41:46 : admin accessed Users
+09/04/19 15:41:48 : admin attempted to lock/unlock client2
+09/04/19 15:41:49 : admin accessed Users
+09/04/19 15:41:49 : admin locked/unlocked client2
+09/04/19 15:44:17 :  LOGGED IN [admin]
+09/04/19 15:44:18 : admin accessed Users
+09/04/19 15:44:20 : admin attempted to lock/unlock manager
+09/04/19 15:44:21 : admin accessed Users
+09/04/19 15:44:21 : admin locked/unlocked manager
+09/04/19 15:44:25 : admin attempted to lock/unlock client1
+09/04/19 15:44:27 : admin accessed Users
+09/04/19 15:44:27 : admin locked/unlocked client1
+09/04/19 15:44:35 : admin attempted to lock/unlock client2
+09/04/19 15:44:36 : admin accessed Users
+09/04/19 15:44:36 : admin locked/unlocked client2
+09/04/19 15:47:32 : FAILED LOGIN ATTEMPT [admin, qerty1234]
+09/04/19 15:47:37 :  LOGGED IN [admin]
+09/04/19 15:48:26 : admin accessed Products
+09/04/19 15:48:28 : admin accessed Users
+09/04/19 15:48:31 : admin attempted to lock/unlock client1
+09/04/19 15:48:32 : admin accessed Users
+09/04/19 15:48:32 : admin locked/unlocked client1
+09/04/19 15:48:42 : admin attempted to lock/unlock client1
+09/04/19 15:48:45 : admin accessed Users
+09/04/19 15:48:45 : admin locked/unlocked client1
+09/04/19 15:50:13 :  LOGGED IN [admin]
+09/04/19 15:50:15 : admin accessed Users
+09/04/19 15:50:16 : admin attempted to lock/unlock client1
+09/04/19 15:50:17 : admin accessed Users
+09/04/19 15:50:17 : admin locked/unlocked client1
+09/04/19 15:52:00 :  LOGGED IN [admin]
+09/04/19 15:52:01 : admin accessed Users
+09/04/19 15:52:03 : admin attempted to lock/unlock client2
+09/04/19 15:52:04 : admin accessed Users
+09/04/19 15:52:04 : admin locked/unlocked client2
+09/04/19 15:52:12 : admin attempted to lock/unlock client2
+09/04/19 15:52:13 : admin accessed Users
+09/04/19 15:52:13 : admin locked/unlocked client2
+09/04/19 15:52:16 : admin attempted to delete client2
+09/04/19 15:52:16 : admin accessed Users
+09/04/19 15:52:16 : admin deleted client2
+09/04/19 15:54:47 :  LOGGED IN [admin]
+09/04/19 15:54:48 : admin accessed Users
+09/04/19 15:54:50 : admin attempted to edit the role of client1
+09/04/19 15:56:41 :  LOGGED IN [admin]
+09/04/19 15:56:42 : admin accessed Users
+09/04/19 15:56:43 : admin attempted to edit the role of client1
+09/04/19 15:59:48 :  LOGGED IN [admin]
+09/04/19 15:59:50 : admin accessed Users
+09/04/19 15:59:52 : admin attempted to edit the role of client2
+09/04/19 16:03:31 :  LOGGED IN [admin]
+09/04/19 16:03:32 : admin accessed Users
+09/04/19 16:03:34 : admin attempted to edit the role of client2
+09/04/19 16:05:10 :  LOGGED IN [admin]
+09/04/19 16:05:11 : admin accessed Users
+09/04/19 16:05:12 : admin attempted to edit the role of client2
+09/04/19 16:06:11 :  LOGGED IN [admin]
+09/04/19 16:06:12 : admin accessed Users
+09/04/19 16:06:14 : admin attempted to edit the role of client2
+09/04/19 16:06:16 : admin edited the role of client2 to 1
+09/04/19 16:06:25 : admin accessed Products
+09/04/19 16:06:25 : admin accessed Users
+09/04/19 16:11:23 :  LOGGED IN [admin]
+09/04/19 16:11:24 : admin accessed Users
+09/04/19 16:11:25 : admin attempted to edit the role of client2
+09/04/19 16:11:29 : admin accessed Users
+09/04/19 16:11:29 : admin edited the role of client2 to 1
+09/04/19 16:11:32 : admin attempted to change password of client2
+09/04/19 16:11:40 : admin attempted to change password of client2
+09/04/19 16:11:44 : admin accessed Users
+09/04/19 16:11:44 : admin change password to new
+09/04/19 16:11:50 : admin accessed Users
+09/04/19 16:13:08 :  LOGGED IN [admin]
+09/04/19 16:13:09 : admin accessed Users
+09/04/19 16:13:12 : admin attempted to change password of client2
+09/04/19 16:13:15 : admin accessed Users
+09/04/19 16:13:15 : admin change password to add
+09/04/19 16:13:19 : admin accessed Products
+09/04/19 16:13:20 : admin accessed Users
+09/04/19 16:14:23 : FAILED LOGIN ATTEMPT [admin, qewrty1234]
+09/04/19 16:14:28 :  LOGGED IN [admin]
+09/04/19 16:14:28 : admin accessed Users
+09/04/19 16:14:31 : admin attempted to change password of client2
+09/04/19 16:14:34 : admin accessed Users
+09/04/19 16:14:34 : admin change password to add
+09/04/19 16:16:54 :  LOGGED IN [admin]
+09/04/19 16:16:55 : admin accessed History
+09/04/19 16:16:56 : admin attempted to search history
+09/04/19 16:17:03 : admin searched antivirus in history
+09/04/19 16:17:45 : admin reloaded history
+09/04/19 16:17:45 : admin accessed History
+09/04/19 16:17:49 : admin attempted to search history
+09/04/19 16:17:55 : admin searched Antivirus in history
+09/04/19 16:18:44 :  LOGGED IN [admin]
+09/04/19 16:18:45 : admin accessed History
+09/04/19 16:18:46 : admin attempted to search history
+09/04/19 16:18:51 : admin searched antivirus in history
+09/04/19 16:18:53 : admin attempted to search history
+09/04/19 16:18:58 : admin searched manager in history
+09/04/19 16:18:59 : admin reloaded history
+09/04/19 16:18:59 : admin accessed History
+09/04/19 16:19:00 : admin accessed Logs
+09/04/19 16:19:01 : admin accessed History
+09/04/19 16:19:02 : admin accessed Logs
+09/04/19 16:19:03 : admin cleared logs.
+09/04/19 16:19:03 : admin turned on  debug mode.
+09/04/19 16:21:55 :  LOGGED IN [admin]
+09/04/19 16:22:04 : admin accessed Logs
+09/04/19 16:22:05 : admin cleared logs.
+09/04/19 16:22:06 : admin accessed History
+09/04/19 16:22:07 : admin accessed Logs
+09/04/19 16:22:09 : admin accessed History
+09/04/19 16:22:09 : admin accessed Logs
+09/04/19 16:22:10 : admin accessed History
+09/04/19 16:22:12 : admin accessed Logs
+09/04/19 16:25:13 :  LOGGED IN [admin]
+09/04/19 16:25:15 : admin accessed Logs
+09/04/19 16:25:19 : admin accessed Logs
+09/04/19 16:25:19 : admin cleared logs.
+09/04/19 16:25:21 : admin accessed History
+09/04/19 16:25:22 : admin accessed Logs
+09/04/19 16:25:22 : admin accessed History
+09/04/19 16:25:23 : admin accessed Logs
+09/04/19 16:25:24 : admin accessed History
+09/04/19 16:25:24 : admin accessed Logs

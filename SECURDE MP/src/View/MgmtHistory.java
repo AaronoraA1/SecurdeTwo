@@ -197,10 +197,10 @@ public class MgmtHistory extends javax.swing.JPanel {
 //          LOAD CONTENTS
             ArrayList<History> history = sqlite.getHistory();
             for (int nCtr = 0; nCtr < history.size(); nCtr++) {
-                if (searchFld.getText().contains(history.get(nCtr).getUsername()) ||
-                        history.get(nCtr).getUsername().contains(searchFld.getText()) ||
-                        searchFld.getText().contains(history.get(nCtr).getName()) ||
-                        history.get(nCtr).getName().contains(searchFld.getText())) {
+                if (searchFld.getText().equalsIgnoreCase(history.get(nCtr).getUsername()) ||
+                        history.get(nCtr).getUsername().equalsIgnoreCase(searchFld.getText()) ||
+                        searchFld.getText().equalsIgnoreCase(history.get(nCtr).getName()) ||
+                        history.get(nCtr).getName().equalsIgnoreCase(searchFld.getText())) {
 
                     Product product = sqlite.getProduct(history.get(nCtr).getName());
                     tableModel.addRow(new Object[]{

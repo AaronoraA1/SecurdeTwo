@@ -116,6 +116,18 @@ public class SQLite {
         }
     }
 
+    public void clearLogs() {
+        String sql = "DELETE FROM logs;";
+
+        try (Connection conn = DriverManager.getConnection(driverURL);
+             Statement stmt = conn.createStatement()) {
+            stmt.execute(sql);
+            System.out.println("Table logs in database.db cleared.");
+        } catch (Exception ex) {
+        }
+    }
+
+
     public void dropProductTable() {
         String sql = "DROP TABLE IF EXISTS product;";
 
@@ -277,6 +289,39 @@ public class SQLite {
         }
     }
 
+    public void editRole(String username, int role) {
+        String sql = "UPDATE users SET role = " + role + "\n WHERE username='" + username + "';";
+
+        try (Connection conn = DriverManager.getConnection(driverURL);
+             Statement stmt = conn.createStatement()) {
+            stmt.execute(sql);
+            System.out.println("User " + username + "'s role has been changed to " + role);
+        } catch (Exception ex) {
+        }
+    }
+
+    public void changePassword(String username, String newPassword) {
+        String sql = "UPDATE users SET password = '" + newPassword+ "'\n WHERE username='" + username + "';";
+
+        try (Connection conn = DriverManager.getConnection(driverURL);
+             Statement stmt = conn.createStatement()) {
+            stmt.execute(sql);
+            System.out.println("User " + username + "'s password has been changed.");
+        } catch (Exception ex) {
+        }
+    }
+
+    public void lockUser(String username, int lock) {
+        String sql = "UPDATE users SET locked = " + lock + "\n WHERE username='" + username + "';";
+
+        try (Connection conn = DriverManager.getConnection(driverURL);
+             Statement stmt = conn.createStatement()) {
+            stmt.execute(sql);
+            System.out.println("User " + username + " has been locked/unlocked.");
+        } catch (Exception ex) {
+        }
+    }
+
     public void removeUser(String username) {
         String sql = "DELETE FROM users WHERE username='" + username + "';";
 
@@ -316,5 +361,38 @@ public class SQLite {
         } catch (Exception ex) {
         }
         return product;
+    }
+
+    public void purchaseProduct(String itemName, float newStock) {
+        String sql = "UPDATE product SET stock = " + newStock + "\n WHERE name='" + itemName + "';";
+
+        try (Connection conn = DriverManager.getConnection(driverURL);
+             Statement stmt = conn.createStatement()) {
+            stmt.execute(sql);
+            System.out.println("Product " + itemName + " has been purchased.");
+        } catch (Exception ex) {
+        }
+    }
+
+    public void removeProduct(String name) {
+        String sql = "DELETE FROM product WHERE name='" + name + "';";
+
+        try (Connection conn = DriverManager.getConnection(driverURL);
+             Statement stmt = conn.createStatement()) {
+            stmt.execute(sql);
+            System.out.println("Product " + name + " has been deleted.");
+        } catch (Exception ex) {
+        }
+    }
+
+    public void editProduct(String oldName, String name, int stock, float price) {
+        String sql = "UPDATE product SET name = '" + name + "',  stock = " + stock + ", price =" + price + "\n WHERE name='" + oldName + "';";
+
+        try (Connection conn = DriverManager.getConnection(driverURL);
+             Statement stmt = conn.createStatement()) {
+            stmt.execute(sql);
+            System.out.println("Product " + name + " has been edited.");
+        } catch (Exception ex) {
+        }
     }
 }
