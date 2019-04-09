@@ -14,9 +14,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
+import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -249,6 +247,13 @@ public class MgmtProduct extends javax.swing.JPanel {
                 "Insert New Product Details:", nameFld, stockFld, priceFld
         };
 
+        JTextField confirmIdentity = new JPasswordField();
+        designer(confirmIdentity, "PASSWORD");
+
+        Object[] confirmMessage = {
+                "Enter Password:", confirmIdentity
+        };
+
         main.writeLogs(newLog(user.getUsername()) + " attempted to add an item");
 
         int result = JOptionPane.showConfirmDialog(null, message, "ADD PRODUCT", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE, null);
@@ -257,9 +262,20 @@ public class MgmtProduct extends javax.swing.JPanel {
         float price = Float.valueOf(priceFld.getText());
 
         if (result == JOptionPane.OK_OPTION) {
-            System.out.println(name + " " + stock + " " + price);
-            sqlite.addProduct(name, stock, price);
-            init(this.getUser());
+
+            int confirm = JOptionPane.showConfirmDialog(null,
+                    confirmMessage, "Confirm Identity", JOptionPane.OK_CANCEL_OPTION,
+                    JOptionPane.PLAIN_MESSAGE, null);
+
+            if (confirm == JOptionPane.OK_OPTION) {
+                if (main.hashPassword(confirmIdentity.getText()).equals(this.getUser().getPassword())) {
+                    sqlite.addProduct(name, stock, price);
+                    init(this.getUser());
+                } else {
+                    JOptionPane.showMessageDialog(null, "Passwords do not match!");
+                }
+            }
+
         }
 
         main.writeLogs(newLog(user.getUsername()) + " added " + nameFld.getText() + " Stock: " + stockFld.getText() + " Price: " + priceFld.getText());
@@ -279,6 +295,13 @@ public class MgmtProduct extends javax.swing.JPanel {
                     "Edit Product Details:", nameFld, stockFld, priceFld
             };
 
+            JTextField confirmIdentity = new JPasswordField();
+            designer(confirmIdentity, "PASSWORD");
+
+            Object[] confirmMessage = {
+                    "Enter Password:", confirmIdentity
+            };
+
             main.writeLogs(newLog(user.getUsername()) + " attempted to edit an item");
 
             int result = JOptionPane.showConfirmDialog(null, message, "EDIT PRODUCT", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE, null);
@@ -290,9 +313,21 @@ public class MgmtProduct extends javax.swing.JPanel {
 
 
             if (result == JOptionPane.OK_OPTION) {
-                System.out.println(name + " " + stock + " " + price);
-                sqlite.editProduct(oldName, name, stock, price);
-                init(this.getUser());
+
+                int confirm = JOptionPane.showConfirmDialog(null,
+                        confirmMessage, "Confirm Identity", JOptionPane.OK_CANCEL_OPTION,
+                        JOptionPane.PLAIN_MESSAGE, null);
+
+                if (confirm == JOptionPane.OK_OPTION) {
+                    if (main.hashPassword(confirmIdentity.getText()).equals(this.getUser().getPassword())) {
+                        sqlite.editProduct(oldName, name, stock, price);
+                        init(this.getUser());
+                        main.writeLogs(newLog(user.getUsername()) + " edited " + name);
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Passwords do not match!");
+                    }
+                }
+
             }
 
             main.writeLogs(newLog(user.getUsername()) + " edited " + nameFld.getText() + "Stock: " + stockFld.getText() + " Price: " + priceFld.getText());
@@ -305,15 +340,33 @@ public class MgmtProduct extends javax.swing.JPanel {
 
         String deletedItem = tableModel.getValueAt(table.getSelectedRow(), 0).toString();
 
+        JTextField confirmIdentity = new JPasswordField();
+        designer(confirmIdentity, "PASSWORD");
+
+        Object[] confirmMessage = {
+                "Enter Password:", confirmIdentity
+        };
+
         if (table.getSelectedRow() >= 0) {
             int result = JOptionPane.showConfirmDialog(null, "Are you sure you want to delete " + deletedItem + "?", "DELETE PRODUCT", JOptionPane.YES_NO_OPTION);
 
             if (result == JOptionPane.YES_OPTION) {
 
-                sqlite.removeProduct(deletedItem);
-                init(this.getUser());
-                System.out.println("Deleted " + deletedItem);
-                main.writeLogs(newLog(user.getUsername()) + " deleted " + deletedItem);
+                int confirm = JOptionPane.showConfirmDialog(null,
+                        confirmMessage, "Confirm Identity", JOptionPane.OK_CANCEL_OPTION,
+                        JOptionPane.PLAIN_MESSAGE, null);
+
+                if (confirm == JOptionPane.OK_OPTION) {
+                    if (main.hashPassword(confirmIdentity.getText()).equals(this.getUser().getPassword())) {
+                        sqlite.removeProduct(deletedItem);
+                        init(this.getUser());
+                        System.out.println("Deleted " + deletedItem);
+                        main.writeLogs(newLog(user.getUsername()) + " deleted " + deletedItem);
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Passwords do not match!");
+                    }
+                }
+
             }
         }
     }//GEN-LAST:event_btnDeleteActionPerformed

@@ -13,6 +13,7 @@ import Model.User;
 import java.awt.CardLayout;
 import java.awt.Color;
 import java.util.ArrayList;
+import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -158,6 +159,7 @@ public class ManagerHome extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void usersBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usersBtnActionPerformed
+        if (user.getRole() != 1) {
         mgmtUser.setRoleID(4);
         mgmtUser.init(this.getUser());
         usersBtn.setForeground(Color.red);
@@ -165,9 +167,13 @@ public class ManagerHome extends javax.swing.JPanel {
         historyBtn.setForeground(Color.black);
         logsBtn.setForeground(Color.black);
         contentView.show(Content, "mgmtUser");
+    } else {
+        JOptionPane.showMessageDialog(null, "Invalid entry. User is disabled.");
+    }
     }//GEN-LAST:event_usersBtnActionPerformed
 
     private void productsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productsBtnActionPerformed
+        if (user.getRole() != 1) {
         mgmtProduct.setRoleID(4);
         mgmtProduct.init(this.getUser());
         usersBtn.setForeground(Color.black);
@@ -175,9 +181,13 @@ public class ManagerHome extends javax.swing.JPanel {
         historyBtn.setForeground(Color.black);
         logsBtn.setForeground(Color.black);
         contentView.show(Content, "mgmtProduct");
+    } else {
+        JOptionPane.showMessageDialog(null, "Invalid entry. User is disabled.");
+    }
     }//GEN-LAST:event_productsBtnActionPerformed
 
     private void historyBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_historyBtnActionPerformed
+        if (user.getRole() != 1) {
         mgmtHistory.setRoleID(4);
         mgmtHistory.init(this.getUser());
         usersBtn.setForeground(Color.black);
@@ -185,9 +195,13 @@ public class ManagerHome extends javax.swing.JPanel {
         historyBtn.setForeground(Color.red);
         logsBtn.setForeground(Color.black);
         contentView.show(Content, "mgmtHistory");
+    } else {
+        JOptionPane.showMessageDialog(null, "Invalid entry. User is disabled.");
+    }
     }//GEN-LAST:event_historyBtnActionPerformed
 
     private void logsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logsBtnActionPerformed
+        if (user.getRole() != 1) {
         mgmtLogs.setRoleID(4);
         mgmtLogs.init(this.getUser());
         usersBtn.setForeground(Color.black);
@@ -195,6 +209,9 @@ public class ManagerHome extends javax.swing.JPanel {
         historyBtn.setForeground(Color.black);
         logsBtn.setForeground(Color.red);
         contentView.show(Content, "mgmtLogs");
+    } else {
+        JOptionPane.showMessageDialog(null, "Invalid entry. User is disabled.");
+    }
     }//GEN-LAST:event_logsBtnActionPerformed
 
     public User getUser() {

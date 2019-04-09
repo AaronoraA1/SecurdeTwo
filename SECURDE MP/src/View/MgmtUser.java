@@ -69,7 +69,8 @@ public class MgmtUser extends javax.swing.JPanel {
             }
         } else if (this.getRoleID() == 4) {
             for (int nCtr = 0; nCtr < users.size(); nCtr++) {
-                if (users.get(nCtr).getRole() == 3 || users.get(nCtr).getRole() == 2)
+                if (users.get(nCtr).getRole() == 3 || users.get(nCtr).getRole() == 2 ||
+                        users.get(nCtr).getRole() == 1)
                     tableModel.addRow(new Object[]{
                             users.get(nCtr).getUsername(),
                             users.get(nCtr).getPassword(),
@@ -81,7 +82,7 @@ public class MgmtUser extends javax.swing.JPanel {
 
         } else if (this.getRoleID() == 3) {
             for (int nCtr = 0; nCtr < users.size(); nCtr++) {
-                if (users.get(nCtr).getRole() == 2)
+                if (users.get(nCtr).getRole() == 2 || users.get(nCtr).getRole() == 1)
                     tableModel.addRow(new Object[]{
                             users.get(nCtr).getUsername(),
                             users.get(nCtr).getPassword(),
@@ -220,7 +221,19 @@ public class MgmtUser extends javax.swing.JPanel {
 
     private void btnEditRoleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditRoleActionPerformed
         if (table.getSelectedRow() >= 0) {
+
             String[] options = {"1-DISABLED", "2-CLIENT", "3-STAFF", "4-MANAGER", "5-ADMIN"};
+
+            if (roleID == 4) {
+                options = new String[]{"1-DISABLED", "2-CLIENT", "3-STAFF", "4-MANAGER"};
+            }
+            JTextField confirmIdentity = new JPasswordField();
+            designer(confirmIdentity, "PASSWORD");
+
+            Object[] confirmMessage = {
+                    "Enter Password:", confirmIdentity
+            };
+
             JComboBox optionList = new JComboBox(options);
 
             String selectedUser = tableModel.getValueAt(table.getSelectedRow(), 0).toString();
@@ -233,11 +246,20 @@ public class MgmtUser extends javax.swing.JPanel {
                     "EDIT USER ROLE", JOptionPane.QUESTION_MESSAGE, null, options, options[(int) tableModel.getValueAt(table.getSelectedRow(), 2) - 1]);
 
             if (result != null) {
-                System.out.println(selectedUser);
-                System.out.println(result.charAt(0));
-                sqlite.editRole(selectedUser, Integer.parseInt(String.valueOf(Character.getNumericValue(result.charAt(0)))));
-                init(this.getUser());
-                main.writeLogs(newLog(user.getUsername()) + " edited the role of " + selectedUser + " to " + result.charAt(0));
+
+                int confirm = JOptionPane.showConfirmDialog(null,
+                        confirmMessage, "Confirm Identity", JOptionPane.OK_CANCEL_OPTION,
+                        JOptionPane.PLAIN_MESSAGE, null);
+
+                if (confirm == JOptionPane.OK_OPTION) {
+                    if (main.hashPassword(confirmIdentity.getText()).equals(this.getUser().getPassword())) {
+                        sqlite.editRole(selectedUser, Integer.parseInt(String.valueOf(Character.getNumericValue(result.charAt(0)))));
+                        init(this.getUser());
+                        main.writeLogs(newLog(user.getUsername()) + " edited the role of " + selectedUser + " to " + result.charAt(0));
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Passwords do not match!");
+                    }
+                }
 
             }
         }
@@ -246,6 +268,12 @@ public class MgmtUser extends javax.swing.JPanel {
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
 
         String selectedUser = tableModel.getValueAt(table.getSelectedRow(), 0).toString();
+        JTextField confirmIdentity = new JPasswordField();
+        designer(confirmIdentity, "PASSWORD");
+
+        Object[] confirmMessage = {
+                "Enter Password:", confirmIdentity
+        };
 
         if (table.getSelectedRow() >= 0) {
             int result = JOptionPane.showConfirmDialog(null, "Are you sure you want to delete " + selectedUser +
@@ -255,10 +283,20 @@ public class MgmtUser extends javax.swing.JPanel {
 
             if (result == JOptionPane.YES_OPTION) {
 
-                sqlite.removeUser(selectedUser);
-                init(this.getUser());
-                System.out.println(selectedUser);
-                main.writeLogs(newLog(user.getUsername()) + " deleted " + selectedUser);
+                int confirm = JOptionPane.showConfirmDialog(null,
+                        confirmMessage, "Confirm Identity", JOptionPane.OK_CANCEL_OPTION,
+                        JOptionPane.PLAIN_MESSAGE, null);
+
+                if (confirm == JOptionPane.OK_OPTION) {
+                    if (main.hashPassword(confirmIdentity.getText()).equals(this.getUser().getPassword())) {
+                        sqlite.removeUser(selectedUser);
+                        init(this.getUser());
+                        main.writeLogs(newLog(user.getUsername()) + " deleted " + selectedUser);
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Passwords do not match!");
+                    }
+                }
+
             }
         }
     }//GEN-LAST:event_btnDeleteActionPerformed
@@ -269,25 +307,38 @@ public class MgmtUser extends javax.swing.JPanel {
             if ("1".equals(tableModel.getValueAt(table.getSelectedRow(), 3) + "")) {
                 state = "unlock";
             }
+            JTextField confirmIdentity = new JPasswordField();
+            designer(confirmIdentity, "PASSWORD");
+
+            Object[] confirmMessage = {
+                    "Enter Password:", confirmIdentity
+            };
 
             String selectedUser = tableModel.getValueAt(table.getSelectedRow(), 0).toString();
             main.writeLogs(newLog(user.getUsername()) + " attempted to lock/unlock " + selectedUser);
-
 
             int result = JOptionPane.showConfirmDialog(null, "Are you sure you want to " + state + " " + selectedUser
                     + "?", "LOCK USER", JOptionPane.YES_NO_OPTION);
 
             if (result == JOptionPane.YES_OPTION) {
-                System.out.println(selectedUser);
+                int confirm = JOptionPane.showConfirmDialog(null,
+                        confirmMessage, "Confirm Identity", JOptionPane.OK_CANCEL_OPTION,
+                        JOptionPane.PLAIN_MESSAGE, null);
 
-                if (!state.equalsIgnoreCase("lock")) {
-                    sqlite.lockUser(selectedUser, 0);
-                    System.out.println("here");
-                } else
-                    sqlite.lockUser(selectedUser, 1);
+                if (confirm == JOptionPane.OK_OPTION) {
+                    if (main.hashPassword(confirmIdentity.getText()).equals(this.getUser().getPassword())) {
+                        if (!state.equalsIgnoreCase("lock")) {
+                            sqlite.lockUser(selectedUser, 0);
+                        } else
+                            sqlite.lockUser(selectedUser, 1);
 
-                init(this.getUser());
-                main.writeLogs(newLog(user.getUsername()) + " locked/unlocked " + selectedUser);
+                        init(this.getUser());
+                        main.writeLogs(newLog(user.getUsername()) + " locked/unlocked " + selectedUser);
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Passwords do not match!");
+                    }
+                }
+
             }
         }
     }//GEN-LAST:event_btnLockActionPerformed
@@ -300,26 +351,43 @@ public class MgmtUser extends javax.swing.JPanel {
 
             JTextField password = new JPasswordField();
             JTextField confpass = new JPasswordField();
+            JTextField confirmIdentity = new JPasswordField();
             designer(password, "PASSWORD");
-            designer(confpass, "CONFIRM PASSWORD");
+            designer(confpass, "PASSWORD");
+            designer(confirmIdentity, "CONFIRM PASSWORD");
 
             Object[] message = {
                     "Enter New Password:", password, confpass
+            };
+            Object[] confirmMessage = {
+                    "Enter New Password:", confirmIdentity
             };
 
             int result = JOptionPane.showConfirmDialog(null, message, "CHANGE PASSWORD", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE, null);
 
             if (result == JOptionPane.OK_OPTION) {
-                if(password.getText().equals(confpass.getText())){
-                    System.out.println(password.getText());
-                    System.out.println(confpass.getText());
-                    sqlite.changePassword(selectedUser, main.hashPassword(password.getText()));
-                    init(this.getUser());
-                    main.writeLogs(newLog(user.getUsername()) + " change password to " + password.getText()); // hash it later
 
-                }else{
-                    JOptionPane.showMessageDialog(null, "Passwords do not match!");
+                int confirm = JOptionPane.showConfirmDialog(null,
+                        confirmMessage, "Confirm Identity", JOptionPane.OK_CANCEL_OPTION,
+                        JOptionPane.PLAIN_MESSAGE, null);
+
+                if (confirm == JOptionPane.OK_OPTION) {
+                    if (main.hashPassword(confirmIdentity.getText()).equals(this.getUser().getPassword())) {
+                        if (password.getText().equals(confpass.getText())) {
+                            System.out.println(password.getText());
+                            System.out.println(confpass.getText());
+                            sqlite.changePassword(selectedUser, main.hashPassword(password.getText()));
+                            init(this.getUser());
+                            main.writeLogs(newLog(user.getUsername()) + " change password to " + password.getText()); // hash it later
+
+                        } else {
+                            JOptionPane.showMessageDialog(null, "Passwords do not match!");
+                        }
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Passwords do not match!");
+                    }
                 }
+
             }
         }
     }//GEN-LAST:event_btnChangePassActionPerformed

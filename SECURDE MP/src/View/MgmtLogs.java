@@ -14,6 +14,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -58,6 +59,12 @@ public class MgmtLogs extends javax.swing.JPanel {
                     logs.get(nCtr).getDesc(),
                     logs.get(nCtr).getTimestamp()});
         }
+
+        if (sqlite.DEBUG_MODE == 0) {
+            table.setVisible(false);
+        } else
+            table.setVisible(true);
+
     }
 
     /**
@@ -148,6 +155,14 @@ public class MgmtLogs extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    public void designer(JTextField component, String text) {
+        component.setSize(70, 600);
+        component.setFont(new java.awt.Font("Tahoma", 0, 18));
+        component.setBackground(new java.awt.Color(240, 240, 240));
+        component.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        component.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true), text, javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 12)));
+    }
+
     private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
         sqlite.clearLogs();
         init(this.getUser());
@@ -156,13 +171,44 @@ public class MgmtLogs extends javax.swing.JPanel {
     }//GEN-LAST:event_btnClearActionPerformed
 
     private void btnDebugActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDebugActionPerformed
-        if (sqlite.DEBUG_MODE == 1) {
-            sqlite.DEBUG_MODE = 0;
-            main.writeLogs(newLog(user.getUsername()) + " turned off  debug mode.");
-        } else {
-            sqlite.DEBUG_MODE = 1;
-            main.writeLogs(newLog(user.getUsername()) + " turned on  debug mode.");
+
+
+        JTextField confirmIdentity = new JPasswordField();
+        designer(confirmIdentity, "PASSWORD");
+
+        Object[] confirmMessage = {
+                "Enter Password:", confirmIdentity
+        };
+
+        int result = JOptionPane.showConfirmDialog(null,
+                "Are you sure you want to toggle debug mode?",
+                "Debug Mode", JOptionPane.YES_NO_OPTION);
+
+        if (result == JOptionPane.OK_OPTION) {
+
+            int confirm = JOptionPane.showConfirmDialog(null,
+                    confirmMessage, "Confirm Identity", JOptionPane.OK_CANCEL_OPTION,
+                    JOptionPane.PLAIN_MESSAGE, null);
+
+            if (confirm == JOptionPane.OK_OPTION) {
+                if (main.hashPassword(confirmIdentity.getText()).equals(this.getUser().getPassword())) {
+
+                    if (sqlite.DEBUG_MODE == 1) {
+                        sqlite.DEBUG_MODE = 0;
+                        main.writeLogs(newLog(user.getUsername()) + " turned off  debug mode.");
+                        table.setVisible(false);
+                    } else {
+                        sqlite.DEBUG_MODE = 1;
+                        main.writeLogs(newLog(user.getUsername()) + " turned on  debug mode.");
+                        table.setVisible(true);
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(null, "Passwords do not match!");
+                }
+            }
         }
+
+
     }//GEN-LAST:event_btnDebugActionPerformed
 
     public String newLog(String user) {
