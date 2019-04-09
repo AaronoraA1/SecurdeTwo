@@ -7,9 +7,11 @@ package View;
 
 import Controller.Main;
 import Controller.SQLite;
+import Model.History;
 import Model.Product;
 import Model.User;
 
+import java.io.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -28,6 +30,8 @@ public class MgmtProduct extends javax.swing.JPanel {
 
     private User user;
     private int roleID;
+
+    private static final File DATABASE_PRODUCTS = new File("database/database_products.txt");
 
 
     public MgmtProduct(SQLite sqlite) {
@@ -216,18 +220,22 @@ public class MgmtProduct extends javax.swing.JPanel {
 
             int result = JOptionPane.showConfirmDialog(null, message, "PURCHASE PRODUCT", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE, null);
 
-            int numStocks = Integer.parseInt(stockFld.getText());
-            int stocksLeft = Integer.parseInt(tableModel.getValueAt(table.getSelectedRow(), 1).toString());
-
             if (result == JOptionPane.OK_OPTION) {
-                if(numStocks <= stocksLeft){
-                    System.out.println(this.getUser().getUsername() + " purchased " +
-                            itemBought + " Quantity: " + numStocks);
-                    main.writeLogs(newLog(user.getUsername()) + " purchased " + stockFld.getText() + " " + itemBought + "/s");
-                    sqlite.purchaseProduct(itemBought, stocksLeft - numStocks);
-                    init(this.getUser());
-                }else{
-                    JOptionPane.showMessageDialog(null, "Insufficient stock!");
+                if (stockFld.getText().matches("[0-9]+")) {
+                    int numStocks = Integer.parseInt(stockFld.getText());
+                    int stocksLeft = Integer.parseInt(tableModel.getValueAt(table.getSelectedRow(), 1).toString());
+
+                    if (numStocks <= stocksLeft) {
+                        System.out.println(this.getUser().getUsername() + " purchased " +
+                                itemBought + " Quantity: " + numStocks);
+                        main.writeLogs(newLog(user.getUsername()) + " purchased " + stockFld.getText() + " " + itemBought + "/s");
+                        sqlite.purchaseProduct(itemBought, stocksLeft - numStocks);
+                        init(this.getUser());
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Insufficient stock!");
+                    }
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Input!!");
                 }
 
             }
@@ -257,9 +265,7 @@ public class MgmtProduct extends javax.swing.JPanel {
         main.writeLogs(newLog(user.getUsername()) + " attempted to add an item");
 
         int result = JOptionPane.showConfirmDialog(null, message, "ADD PRODUCT", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE, null);
-        String name = nameFld.getText();
-        int stock = Integer.parseInt(stockFld.getText());
-        float price = Float.valueOf(priceFld.getText());
+
 
         if (result == JOptionPane.OK_OPTION) {
 
@@ -268,11 +274,23 @@ public class MgmtProduct extends javax.swing.JPanel {
                     JOptionPane.PLAIN_MESSAGE, null);
 
             if (confirm == JOptionPane.OK_OPTION) {
-                if (main.hashPassword(confirmIdentity.getText()).equals(this.getUser().getPassword())) {
-                    sqlite.addProduct(name, stock, price);
-                    init(this.getUser());
+                if (nameFld.getText().matches("[a-zA-Z]+") && stockFld.getText().matches("[0-9]+") && priceFld.getText().matches("[0-9]+")) {
+                    if (main.hashPassword(confirmIdentity.getText()).equals(this.getUser().getPassword())) {
+
+                        String name = nameFld.getText();
+                        int stock = Integer.parseInt(stockFld.getText());
+                        float price = Float.valueOf(priceFld.getText());
+
+
+                        sqlite.addProduct(name, stock, price);
+//                    addUserToCSV(table.getRowCount() + 1, name, stock, price);
+                        init(this.getUser());
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Passwords do not match!");
+                    }
+
                 } else {
-                    JOptionPane.showMessageDialog(null, "Passwords do not match!");
+                    JOptionPane.showMessageDialog(null, "Invalid Input!!");
                 }
             }
 
@@ -307,10 +325,6 @@ public class MgmtProduct extends javax.swing.JPanel {
             int result = JOptionPane.showConfirmDialog(null, message, "EDIT PRODUCT", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE, null);
 
             String oldName = String.valueOf(tableModel.getValueAt(table.getSelectedRow(), 0));
-            String name = nameFld.getText();
-            int stock = Integer.parseInt(stockFld.getText());
-            float price = Float.valueOf(priceFld.getText());
-
 
             if (result == JOptionPane.OK_OPTION) {
 
@@ -319,12 +333,21 @@ public class MgmtProduct extends javax.swing.JPanel {
                         JOptionPane.PLAIN_MESSAGE, null);
 
                 if (confirm == JOptionPane.OK_OPTION) {
-                    if (main.hashPassword(confirmIdentity.getText()).equals(this.getUser().getPassword())) {
-                        sqlite.editProduct(oldName, name, stock, price);
-                        init(this.getUser());
-                        main.writeLogs(newLog(user.getUsername()) + " edited " + name);
+                    if (nameFld.getText().matches("[a-zA-Z]+") && stockFld.getText().matches("[0-9]+") && priceFld.getText().matches("[0-9]+")) {
+                        if (main.hashPassword(confirmIdentity.getText()).equals(this.getUser().getPassword())) {
+
+                            String name = nameFld.getText();
+                            int stock = Integer.parseInt(stockFld.getText());
+                            float price = Float.valueOf(priceFld.getText());
+
+                            sqlite.editProduct(oldName, name, stock, price);
+                            init(this.getUser());
+                            main.writeLogs(newLog(user.getUsername()) + " edited " + name);
+                        } else {
+                            JOptionPane.showMessageDialog(null, "Passwords do not match!");
+                        }
                     } else {
-                        JOptionPane.showMessageDialog(null, "Passwords do not match!");
+                        JOptionPane.showMessageDialog(null, "Invalid Input!!");
                     }
                 }
 
@@ -377,9 +400,17 @@ public class MgmtProduct extends javax.swing.JPanel {
         return df.format(dateobj) + " : " + user;
     }
 
-    public void addUserToCSV(){
-
-    }
+//    public void addUserToCSV(int id, String name, int stock, float price) {
+//        try {
+//
+//            FileWriter fwP = new FileWriter(DATABASE_PRODUCTS, true);
+//            BufferedWriter bwP = new BufferedWriter(fwP);
+//            bwP.write(id + "," + name + "," + stock + "," + price + "\n");
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//
+//    }
 
 
     public int getRoleID() {

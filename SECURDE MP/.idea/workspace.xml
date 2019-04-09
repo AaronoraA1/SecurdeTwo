@@ -7,11 +7,18 @@
       <change beforePath="$PROJECT_DIR$/database/database_logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/database/database_logs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/logs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/secret/dont touch this log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/secret/dont touch this log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/Controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/Controller/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtHistory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtHistory$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtHistory$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtHistory$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtHistory$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtHistory$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtHistory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/MgmtHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MgmtHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SECURDE MP/View/MgmtProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View/MgmtProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/MgmtProduct.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -54,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/src/View/AdminHome.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="113">
-              <caret line="37" column="18" lean-forward="true" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+              <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
               <folding>
                 <element signature="e#2691#2692#0" expanded="true" />
                 <element signature="e#2751#2752#0" expanded="true" />
@@ -74,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/MgmtHistory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="200">
+              <caret line="30" column="95" selection-start-line="30" selection-start-column="95" selection-end-line="31" selection-end-column="93" />
               <folding>
                 <element signature="e#13631#13632#0" expanded="true" />
                 <element signature="e#13660#13661#0" expanded="true" />
@@ -93,8 +100,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/View/MgmtProduct.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="380" column="8" selection-start-line="380" selection-start-column="8" selection-end-line="380" selection-end-column="8" />
+            <state relative-caret-position="611">
+              <caret line="292" column="75" selection-start-line="292" selection-start-column="75" selection-end-line="292" selection-end-column="75" />
+              <folding>
+                <element signature="e#4959#4960#0" expanded="true" />
+                <element signature="e#5022#5023#0" expanded="true" />
+                <element signature="e#5346#5347#0" expanded="true" />
+                <element signature="e#5404#5405#0" expanded="true" />
+                <element signature="e#5769#5770#0" expanded="true" />
+                <element signature="e#5828#5829#0" expanded="true" />
+                <element signature="e#6167#6168#0" expanded="true" />
+                <element signature="e#6228#6229#0" expanded="true" />
+                <element signature="e#18332#18333#0" expanded="true" />
+                <element signature="e#18409#18410#0" expanded="true" />
+                <element signature="e#18465#18466#0" expanded="true" />
+                <element signature="e#18535#18536#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,8 +146,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/ClientHome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="202" column="9" lean-forward="true" selection-start-line="199" selection-start-column="53" selection-end-line="202" selection-end-column="9" />
+            <state relative-caret-position="380">
+              <caret line="199" column="53" lean-forward="true" selection-start-line="199" selection-start-column="53" selection-end-line="199" selection-end-column="53" />
               <folding>
                 <element signature="e#2664#2665#0" expanded="true" />
                 <element signature="e#2724#2725#0" expanded="true" />
@@ -147,7 +168,7 @@
         <entry file="file://$PROJECT_DIR$/src/View/StaffHome.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="233">
-              <caret line="213" column="5" lean-forward="true" selection-start-line="210" selection-start-column="46" selection-end-line="213" selection-end-column="5" />
+              <caret line="213" column="5" selection-start-line="210" selection-start-column="46" selection-end-line="213" selection-end-column="5" />
               <folding>
                 <element signature="e#2645#2646#0" expanded="true" />
                 <element signature="e#2705#2706#0" expanded="true" />
@@ -169,8 +190,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2505">
-              <caret line="26" column="69" lean-forward="true" selection-start-line="26" selection-start-column="69" selection-end-line="27" selection-end-column="95" />
+            <state relative-caret-position="115">
+              <caret line="195" selection-start-line="195" selection-end-line="195" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -191,7 +212,7 @@
         <entry file="file://$PROJECT_DIR$/src/View/MgmtUser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-360">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="33" selection-end-column="22" />
+              <caret line="32" selection-start-line="32" selection-end-line="33" selection-end-column="22" />
               <folding>
                 <element signature="method#designer#0;class#MgmtUser#0" />
                 <element signature="e#6136#6137#0" expanded="true" />
@@ -248,7 +269,6 @@
         <option value="$PROJECT_DIR$/src/View/Login.java" />
         <option value="$PROJECT_DIR$/src/View/Register.java" />
         <option value="$PROJECT_DIR$/src/Model/User.java" />
-        <option value="$PROJECT_DIR$/src/Controller/Main.java" />
         <option value="$PROJECT_DIR$/src/Controller/SQLite.java" />
         <option value="$PROJECT_DIR$/src/View/ClientHome.java" />
         <option value="$PROJECT_DIR$/src/View/StaffHome.java" />
@@ -258,6 +278,7 @@
         <option value="$PROJECT_DIR$/src/View/MgmtLogs.java" />
         <option value="$PROJECT_DIR$/src/View/Frame.java" />
         <option value="$PROJECT_DIR$/src/View/MgmtHistory.java" />
+        <option value="$PROJECT_DIR$/src/Controller/Main.java" />
         <option value="$PROJECT_DIR$/src/View/MgmtProduct.java" />
       </list>
     </option>
@@ -400,18 +421,18 @@
       <workItem from="1554690083287" duration="2637000" />
       <workItem from="1554705838412" duration="16729000" />
       <workItem from="1554782110199" duration="16622000" />
-      <workItem from="1554806717948" duration="13602000" />
+      <workItem from="1554806717948" duration="15830000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90103000" />
+    <option name="totallyTimeSpent" value="92331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24432677" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24432677" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -443,6 +464,39 @@
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3294271" />
       <window_info anchor="right" id="Maven Projects" order="11" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24432677" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" show_stripe_button="false" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3371522" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.18206896" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32569557" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Maven" order="0" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" show_stripe_button="false" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Structure" order="7" weight="0.24962178" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32980332" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3294271" />
+      <window_info anchor="right" id="Maven Projects" order="11" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -545,7 +599,7 @@
     <entry file="file://$PROJECT_DIR$/src/View/StaffHome.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
-          <caret line="213" column="5" lean-forward="true" selection-start-line="210" selection-start-column="46" selection-end-line="213" selection-end-column="5" />
+          <caret line="213" column="5" selection-start-line="210" selection-start-column="46" selection-end-line="213" selection-end-column="5" />
           <folding>
             <element signature="e#2645#2646#0" expanded="true" />
             <element signature="e#2705#2706#0" expanded="true" />
@@ -559,25 +613,6 @@
             <element signature="e#9557#9558#0" expanded="true" />
             <element signature="e#9595#9596#0" expanded="true" />
             <element signature="e#9627#9628#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/ClientHome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="202" column="9" lean-forward="true" selection-start-line="199" selection-start-column="53" selection-end-line="202" selection-end-column="9" />
-          <folding>
-            <element signature="e#2664#2665#0" expanded="true" />
-            <element signature="e#2724#2725#0" expanded="true" />
-            <element signature="e#3073#3074#0" expanded="true" />
-            <element signature="e#3136#3137#0" expanded="true" />
-            <element signature="e#4045#4046#0" expanded="true" />
-            <element signature="e#4107#4108#0" expanded="true" />
-            <element signature="e#4436#4437#0" expanded="true" />
-            <element signature="e#4495#4496#0" expanded="true" />
-            <element signature="e#10227#10228#0" expanded="true" />
-            <element signature="e#10297#10298#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -623,7 +658,7 @@
     <entry file="file://$PROJECT_DIR$/src/View/MgmtUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-360">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="33" selection-end-column="22" />
+          <caret line="32" selection-start-line="32" selection-end-line="33" selection-end-column="22" />
           <folding>
             <element signature="method#designer#0;class#MgmtUser#0" />
             <element signature="e#6136#6137#0" expanded="true" />
@@ -675,16 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2505">
-          <caret line="26" column="69" lean-forward="true" selection-start-line="26" selection-start-column="69" selection-end-line="27" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/History.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -713,7 +738,7 @@
     <entry file="file://$PROJECT_DIR$/src/View/AdminHome.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
-          <caret line="37" column="18" lean-forward="true" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
           <folding>
             <element signature="e#2691#2692#0" expanded="true" />
             <element signature="e#2751#2752#0" expanded="true" />
@@ -731,8 +756,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/MgmtHistory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="200">
+          <caret line="30" column="95" selection-start-line="30" selection-start-column="95" selection-end-line="31" selection-end-column="93" />
           <folding>
             <element signature="e#13631#13632#0" expanded="true" />
             <element signature="e#13660#13661#0" expanded="true" />
@@ -746,10 +771,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="195" selection-start-line="195" selection-end-line="195" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/ClientHome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="199" column="53" lean-forward="true" selection-start-line="199" selection-start-column="53" selection-end-line="199" selection-end-column="53" />
+          <folding>
+            <element signature="e#2664#2665#0" expanded="true" />
+            <element signature="e#2724#2725#0" expanded="true" />
+            <element signature="e#3073#3074#0" expanded="true" />
+            <element signature="e#3136#3137#0" expanded="true" />
+            <element signature="e#4045#4046#0" expanded="true" />
+            <element signature="e#4107#4108#0" expanded="true" />
+            <element signature="e#4436#4437#0" expanded="true" />
+            <element signature="e#4495#4496#0" expanded="true" />
+            <element signature="e#10227#10228#0" expanded="true" />
+            <element signature="e#10297#10298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/View/MgmtProduct.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="380" column="8" selection-start-line="380" selection-start-column="8" selection-end-line="380" selection-end-column="8" />
+        <state relative-caret-position="611">
+          <caret line="292" column="75" selection-start-line="292" selection-start-column="75" selection-end-line="292" selection-end-column="75" />
+          <folding>
+            <element signature="e#4959#4960#0" expanded="true" />
+            <element signature="e#5022#5023#0" expanded="true" />
+            <element signature="e#5346#5347#0" expanded="true" />
+            <element signature="e#5404#5405#0" expanded="true" />
+            <element signature="e#5769#5770#0" expanded="true" />
+            <element signature="e#5828#5829#0" expanded="true" />
+            <element signature="e#6167#6168#0" expanded="true" />
+            <element signature="e#6228#6229#0" expanded="true" />
+            <element signature="e#18332#18333#0" expanded="true" />
+            <element signature="e#18409#18410#0" expanded="true" />
+            <element signature="e#18465#18466#0" expanded="true" />
+            <element signature="e#18535#18536#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

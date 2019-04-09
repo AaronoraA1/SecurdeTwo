@@ -194,7 +194,6 @@ public class Main {
         }
 
 
-        //databaseCSV(histories, logs, products, users);
 
         // Initialize User Interface
         Frame frame = new Frame();

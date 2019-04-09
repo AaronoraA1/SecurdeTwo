@@ -625,3 +625,63 @@
 09/04/19 23:01:38 : admin accessed History
 09/04/19 23:01:49 : admin accessed Products
 09/04/19 23:01:51 : admin accessed History
+09/04/19 23:19:19 :  LOGGED IN [admin]
+09/04/19 23:19:25 : admin accessed Products
+09/04/19 23:19:26 : admin attempted to add an item
+09/04/19 23:19:32 : admin accessed Products
+09/04/19 23:19:32 : admin added qwe Stock: 1 Price: 1
+09/04/19 23:20:55 :  LOGGED IN [admin]
+09/04/19 23:20:56 : admin accessed Products
+09/04/19 23:20:57 : admin attempted to add an item
+09/04/19 23:21:03 : admin accessed Products
+09/04/19 23:21:03 : admin added qwe Stock: 1 Price: 1
+09/04/19 23:22:51 :  LOGGED IN [admin]
+09/04/19 23:22:52 : admin accessed Products
+09/04/19 23:22:54 : admin attempted to delete an item
+09/04/19 23:22:58 : admin accessed Products
+09/04/19 23:22:58 : admin deleted Firewall
+09/04/19 23:22:59 : admin accessed History
+09/04/19 23:23:00 : admin accessed Products
+09/04/19 23:23:01 : admin attempted to add an item
+09/04/19 23:23:07 : admin accessed Products
+09/04/19 23:23:07 : admin added qwe Stock: 1 Price: 1
+09/04/19 23:32:01 :  LOGGED IN [admin]
+09/04/19 23:32:04 : admin accessed Products
+09/04/19 23:32:05 : admin attempted to add an item
+09/04/19 23:32:19 : admin added qqwe Stock: 1 Price: 1
+09/04/19 23:32:25 : admin attempted to add an item
+09/04/19 23:33:04 : admin added qwe Stock: 1 Price: 1
+09/04/19 23:34:55 :  LOGGED IN [admin]
+09/04/19 23:34:56 : admin accessed Products
+09/04/19 23:34:57 : admin attempted to add an item
+09/04/19 23:35:03 : admin accessed Products
+09/04/19 23:35:03 : admin added qwe Stock: 1 Price: 1
+09/04/19 23:39:14 :  LOGGED IN [admin]
+09/04/19 23:39:15 : admin accessed Products
+09/04/19 23:39:16 : admin attempted to purchase Scanner
+09/04/19 23:40:29 : FAILED LOGIN ATTEMPT [admin, qerty1234]
+09/04/19 23:40:33 :  LOGGED IN [admin]
+09/04/19 23:40:34 : admin accessed Products
+09/04/19 23:40:36 : admin attempted to purchase Scanner
+09/04/19 23:40:40 : admin attempted to purchase Scanner
+09/04/19 23:40:43 : admin purchased 1 Scanner/s
+09/04/19 23:40:43 : admin accessed Products
+09/04/19 23:40:47 : admin attempted to add an item
+09/04/19 23:42:05 :  LOGGED IN [admin]
+09/04/19 23:42:06 : admin accessed Products
+09/04/19 23:42:07 : admin attempted to add an item
+09/04/19 23:42:16 : admin added qwe Stock: 1 Price: a
+09/04/19 23:42:20 : admin attempted to add an item
+09/04/19 23:42:29 : admin added 1 Stock: 1 Price: 1
+09/04/19 23:42:31 : admin attempted to add an item
+09/04/19 23:42:37 : admin accessed Products
+09/04/19 23:42:37 : admin added qwe Stock: 1 Price: 1
+09/04/19 23:42:40 : admin attempted to edit an item
+09/04/19 23:42:46 : admin edited qwe1Stock: 1 Price: 1.0
+09/04/19 23:42:47 : admin attempted to edit an item
+09/04/19 23:45:13 :  LOGGED IN [admin]
+09/04/19 23:45:14 : admin accessed Products
+09/04/19 23:45:18 : admin attempted to edit an item
+09/04/19 23:45:26 : admin edited Scanner1Stock: 10 Price: 100.0
+09/04/19 23:45:29 : admin attempted to add an item
+09/04/19 23:45:39 : admin added 1 Stock: 1 Price: 1
