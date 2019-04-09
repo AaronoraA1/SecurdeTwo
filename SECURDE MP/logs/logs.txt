@@ -342,3 +342,346 @@
 09/04/19 16:25:23 : admin accessed Logs
 09/04/19 16:25:24 : admin accessed History
 09/04/19 16:25:24 : admin accessed Logs
+09/04/19 18:49:09 : FAILED LOGIN ATTEMPT [admin, qewrty1234]
+09/04/19 18:49:16 :  LOGGED IN [admin]
+09/04/19 18:49:18 : admin ACCESSED Manager Page
+09/04/19 18:49:20 : admin ACCESSED Staff Page
+09/04/19 18:49:22 : admin ACCESSED Client Page
+09/04/19 18:49:25 : admin accessed Logs
+09/04/19 18:50:37 : admin accessed Users
+09/04/19 18:50:44 : admin attempted to edit the role of client2
+09/04/19 18:50:50 : admin accessed Users
+09/04/19 18:50:50 : admin edited the role of client2 to 1
+09/04/19 18:51:03 : admin attempted to edit the role of manager
+09/04/19 18:51:18 : admin attempted to edit the role of staff
+09/04/19 18:51:24 : admin accessed Users
+09/04/19 18:51:24 : admin edited the role of staff to 5
+09/04/19 18:51:27 : admin attempted to edit the role of client1
+09/04/19 18:51:31 : admin accessed Users
+09/04/19 18:51:31 : admin edited the role of client1 to 5
+09/04/19 18:51:33 : admin attempted to edit the role of client2
+09/04/19 18:51:36 : admin accessed Users
+09/04/19 18:51:36 : admin edited the role of client2 to 5
+09/04/19 18:51:38 : admin accessed Products
+09/04/19 18:51:39 : admin accessed Users
+09/04/19 18:51:40 : admin ACCESSED LOGGED OUT
+09/04/19 18:51:52 :  LOGGED IN [manager]
+09/04/19 18:51:53 : manager accessed Users
+09/04/19 18:52:24 : manager ACCESSED LOGGED OUT
+09/04/19 18:52:36 :  LOGGED IN [manager]
+09/04/19 18:52:37 : manager accessed Users
+09/04/19 18:52:37 : manager accessed Products
+09/04/19 18:52:39 : manager accessed History
+09/04/19 18:52:40 : manager accessed Users
+09/04/19 18:52:44 : manager ACCESSED LOGGED OUT
+09/04/19 18:52:50 :  LOGGED IN [admin]
+09/04/19 18:52:52 : admin attempted to edit the role of client2
+09/04/19 18:52:54 : admin accessed Users
+09/04/19 18:52:54 : admin edited the role of client2 to 3
+09/04/19 18:52:55 : admin ACCESSED LOGGED OUT
+09/04/19 18:53:01 :  LOGGED IN [manager]
+09/04/19 18:53:05 : manager accessed Products
+09/04/19 18:53:06 : manager accessed Users
+09/04/19 19:39:45 :  LOGGED IN [manager]
+09/04/19 19:39:52 : manager accessed Users
+09/04/19 19:51:38 :  LOGGED IN [admin]
+09/04/19 19:51:39 : admin accessed Users
+09/04/19 19:51:42 : admin attempted to edit the role of client1
+09/04/19 19:51:48 : admin accessed Users
+09/04/19 19:51:48 : admin edited the role of client1 to 1
+09/04/19 19:51:49 : admin ACCESSED LOGGED OUT
+09/04/19 19:51:55 :  LOGGED IN [manager]
+09/04/19 19:51:57 : manager accessed Users
+09/04/19 19:52:01 : manager attempted to edit the role of staff
+09/04/19 19:55:18 :  LOGGED IN [admin]
+09/04/19 19:55:19 : admin accessed Users
+09/04/19 19:58:14 : admin ACCESSED LOGGED OUT
+09/04/19 19:58:20 :  LOGGED IN [manager]
+09/04/19 19:58:21 : manager accessed Users
+09/04/19 19:59:11 : manager attempted to delete client2
+09/04/19 19:59:11 : manager accessed Users
+09/04/19 19:59:11 : manager deleted client2
+09/04/19 19:59:14 : manager accessed Products
+09/04/19 19:59:17 : manager attempted to delete an item
+09/04/19 19:59:18 : manager accessed Products
+09/04/19 19:59:18 : manager deleted Scanner
+09/04/19 19:59:19 : manager accessed History
+09/04/19 19:59:23 : manager accessed Users
+09/04/19 20:01:39 :  LOGGED IN [manager]
+09/04/19 20:01:41 : manager accessed Users
+09/04/19 20:04:51 : manager attempted to edit the role of client2
+09/04/19 20:04:55 : manager accessed Users
+09/04/19 20:04:55 : manager edited the role of client2 to 1
+09/04/19 20:04:57 : manager ACCESSED LOGGED OUT
+09/04/19 20:05:10 :  LOGGED IN [client2]
+09/04/19 20:05:11 : client2 accessed Products
+09/04/19 20:12:30 :  LOGGED IN [manager]
+09/04/19 20:12:31 : manager accessed Users
+09/04/19 20:12:33 : manager attempted to edit the role of client2
+09/04/19 20:12:36 : manager accessed Users
+09/04/19 20:12:36 : manager edited the role of client2 to 1
+09/04/19 20:12:37 : manager ACCESSED LOGGED OUT
+09/04/19 20:12:42 :  LOGGED IN [client2]
+09/04/19 20:12:59 : client2 ACCESSED LOGGED OUT
+09/04/19 20:16:13 :  LOGGED IN [manager]
+09/04/19 20:16:24 : manager accessed Products
+09/04/19 20:16:26 : manager attempted to add an item
+09/04/19 20:16:30 : manager accessed Products
+09/04/19 20:16:30 : manager added test Stock: 1 Price: 1
+09/04/19 20:17:11 : manager attempted to edit an item
+09/04/19 20:17:15 : manager accessed Products
+09/04/19 20:17:15 : manager edited testStock: 1 Price: 11.0
+09/04/19 20:17:18 : manager attempted to delete an item
+09/04/19 20:17:19 : manager accessed Products
+09/04/19 20:17:19 : manager deleted test
+09/04/19 20:17:21 : manager accessed History
+09/04/19 20:17:22 : manager accessed Products
+09/04/19 20:17:39 : manager accessed History
+09/04/19 20:18:10 : manager ACCESSED LOGGED OUT
+09/04/19 20:18:15 :  LOGGED IN [admin]
+09/04/19 20:18:19 : admin accessed Logs
+09/04/19 20:18:25 : admin accessed Logs
+09/04/19 20:18:25 : admin cleared logs.
+09/04/19 20:18:26 : admin turned on  debug mode.
+09/04/19 20:18:28 : admin turned off  debug mode.
+09/04/19 20:18:36 : admin accessed History
+09/04/19 20:27:04 :  LOGGED IN [admin]
+09/04/19 20:27:05 : admin accessed Logs
+09/04/19 20:27:08 : admin turned on  debug mode.
+09/04/19 20:27:15 : admin accessed Logs
+09/04/19 20:27:15 : admin cleared logs.
+09/04/19 20:28:28 :  LOGGED IN [admin]
+09/04/19 20:28:28 : admin accessed Logs
+09/04/19 20:28:32 : admin turned on  debug mode.
+09/04/19 20:28:33 : admin turned off  debug mode.
+09/04/19 20:28:36 : admin turned on  debug mode.
+09/04/19 20:28:38 : admin turned off  debug mode.
+09/04/19 20:34:54 :  LOGGED IN [admin]
+09/04/19 20:34:55 : admin accessed Logs
+09/04/19 20:35:06 : admin turned on  debug mode.
+09/04/19 20:35:17 : admin accessed Logs
+09/04/19 20:35:17 : admin cleared logs.
+09/04/19 20:37:12 : admin accessed History
+09/04/19 20:37:15 : admin accessed Products
+09/04/19 20:37:17 : admin accessed Users
+09/04/19 20:46:42 :  LOGGED IN [admin]
+09/04/19 20:46:43 : admin accessed Users
+09/04/19 20:46:48 : admin attempted to edit the role of client2
+09/04/19 20:46:57 : admin attempted to edit the role of client2
+09/04/19 20:47:03 : admin accessed Users
+09/04/19 20:47:03 : admin edited the role of client2 to 1
+09/04/19 20:47:06 : admin attempted to lock/unlock client2
+09/04/19 20:47:11 : admin accessed Users
+09/04/19 20:47:11 : admin locked/unlocked client2
+09/04/19 20:47:14 : admin attempted to change password of client2
+09/04/19 20:47:28 : admin attempted to delete client2
+09/04/19 20:47:32 : admin attempted to delete client2
+09/04/19 20:47:36 : admin accessed Users
+09/04/19 20:47:36 : admin deleted client2
+09/04/19 20:50:08 :  LOGGED IN [admin]
+09/04/19 20:50:09 : admin accessed Users
+09/04/19 20:50:11 : admin attempted to change password of client2
+09/04/19 20:50:22 : admin attempted to change password of client2
+09/04/19 20:50:32 : admin attempted to change password of client2
+09/04/19 20:50:39 : admin accessed Users
+09/04/19 20:50:39 : admin change password to qwe
+09/04/19 21:01:17 :  LOGGED IN [admin]
+09/04/19 21:01:19 : admin accessed Products
+09/04/19 21:01:21 : admin attempted to purchase Scanner
+09/04/19 21:01:24 : admin purchased 9 Scanner/s
+09/04/19 21:01:24 : admin accessed Products
+09/04/19 21:01:28 : admin attempted to add an item
+09/04/19 21:01:35 : admin added qwe Stock: 1 Price: 1
+09/04/19 21:01:36 : admin attempted to add an item
+09/04/19 21:01:43 : admin accessed Products
+09/04/19 21:01:43 : admin added qwe Stock: 1 Price: 1
+09/04/19 21:01:46 : admin attempted to edit an item
+09/04/19 21:01:50 : admin edited qweStock: 11 Price: 1.0
+09/04/19 21:01:51 : admin attempted to edit an item
+09/04/19 21:02:00 : admin accessed Products
+09/04/19 21:02:00 : admin edited qwe
+09/04/19 21:02:00 : admin edited qweStock: 11 Price: 1.0
+09/04/19 21:02:02 : admin attempted to delete an item
+09/04/19 21:02:06 : admin attempted to delete an item
+09/04/19 21:02:11 : admin accessed Products
+09/04/19 21:02:11 : admin deleted qwe
+09/04/19 21:02:12 : admin accessed History
+09/04/19 21:02:14 : admin accessed Products
+09/04/19 21:02:16 : admin accessed History
+09/04/19 21:02:21 : admin accessed Users
+09/04/19 21:02:23 : admin accessed Products
+09/04/19 21:08:26 :  LOGGED IN [admin]
+09/04/19 21:10:41 : admin accessed Users
+09/04/19 21:43:29 :  LOGGED IN [admin]
+09/04/19 21:43:31 : admin accessed Logs
+09/04/19 21:43:32 : admin accessed History
+09/04/19 21:43:33 : admin accessed Logs
+09/04/19 21:43:33 : admin accessed History
+09/04/19 21:43:42 : admin ACCESSED LOGGED OUT
+09/04/19 21:43:47 :  LOGGED IN [manager]
+09/04/19 21:43:48 : manager accessed Products
+09/04/19 21:43:49 : manager accessed History
+09/04/19 21:43:50 : manager accessed Products
+09/04/19 21:43:51 : manager accessed Users
+09/04/19 21:43:54 : manager accessed History
+09/04/19 21:43:59 : manager attempted to search history
+09/04/19 21:44:02 : manager searched admin in history
+09/04/19 21:44:05 : manager reloaded history
+09/04/19 21:44:05 : manager accessed History
+09/04/19 21:44:06 : manager reloaded history
+09/04/19 21:44:06 : manager accessed History
+09/04/19 21:44:07 : manager attempted to search history
+09/04/19 21:44:20 : manager ACCESSED LOGGED OUT
+09/04/19 21:44:25 :  LOGGED IN [admin]
+09/04/19 21:45:33 : admin ACCESSED LOGGED OUT
+09/04/19 21:45:39 :  LOGGED IN [manager]
+09/04/19 21:45:40 : manager accessed Products
+09/04/19 21:45:40 : manager accessed History
+09/04/19 21:45:41 : manager accessed Users
+09/04/19 21:45:42 : manager accessed Products
+09/04/19 21:45:42 : manager accessed History
+09/04/19 21:45:44 : manager ACCESSED LOGGED OUT
+09/04/19 21:45:50 :  LOGGED IN [staff]
+09/04/19 21:45:51 : staff accessed Products
+09/04/19 21:45:52 : staff accessed Users
+09/04/19 21:47:51 : FAILED LOGIN ATTEMPT [manager, qewrty1234]
+09/04/19 21:47:55 :  LOGGED IN [manager]
+09/04/19 21:47:56 : manager accessed History
+09/04/19 21:48:42 :  LOGGED IN [manager]
+09/04/19 21:48:43 : manager accessed History
+09/04/19 21:49:08 :  LOGGED IN [manager]
+09/04/19 21:49:09 : manager accessed History
+09/04/19 21:49:10 : manager attempted to search history
+09/04/19 21:49:13 : manager searched admin in history
+09/04/19 21:58:22 :  LOGGED IN [admin]
+09/04/19 21:58:24 : admin accessed History
+09/04/19 21:58:25 : admin attempted to search history
+09/04/19 21:58:28 : admin searched admin in history
+09/04/19 21:58:30 : admin ACCESSED LOGGED OUT
+09/04/19 21:58:35 :  LOGGED IN [manager]
+09/04/19 21:58:36 : manager accessed History
+09/04/19 21:58:37 : manager attempted to search history
+09/04/19 21:58:40 : manager searched admin in history
+09/04/19 22:06:32 :  LOGGED IN [admin]
+09/04/19 22:06:33 : admin accessed History
+09/04/19 22:06:38 : admin ACCESSED LOGGED OUT
+09/04/19 22:06:44 :  LOGGED IN [manager]
+09/04/19 22:06:46 : manager accessed History
+09/04/19 22:06:48 : manager ACCESSED LOGGED OUT
+09/04/19 22:06:55 :  LOGGED IN [staff]
+09/04/19 22:06:56 : staff accessed Users
+09/04/19 22:06:58 : staff ACCESSED LOGGED OUT
+09/04/19 22:07:09 :  LOGGED IN [client1]
+09/04/19 22:07:10 : client1 accessed Products
+09/04/19 22:07:13 : client1 ACCESSED LOGGED OUT
+09/04/19 22:07:22 :  LOGGED IN [admin]
+09/04/19 22:10:59 :  LOGGED IN [admin]
+09/04/19 22:11:00 : admin accessed History
+09/04/19 22:11:01 : admin ACCESSED LOGGED OUT
+09/04/19 22:11:06 :  LOGGED IN [admin]
+09/04/19 22:11:32 :  LOGGED IN [admin]
+09/04/19 22:11:33 : admin accessed History
+09/04/19 22:11:34 : admin ACCESSED LOGGED OUT
+09/04/19 22:11:39 :  LOGGED IN [admin]
+09/04/19 22:15:06 :  LOGGED IN [admin]
+09/04/19 22:15:07 : admin accessed History
+09/04/19 22:15:08 : admin ACCESSED LOGGED OUT
+09/04/19 22:15:12 :  LOGGED IN [admin]
+09/04/19 22:15:15 : admin accessed Products
+09/04/19 22:15:17 : admin accessed Users
+09/04/19 22:21:34 :  LOGGED IN [admin]
+09/04/19 22:21:52 : admin accessed History
+09/04/19 22:21:53 : admin accessed Products
+09/04/19 22:21:55 : admin attempted to delete an item
+09/04/19 22:22:00 : admin accessed Products
+09/04/19 22:22:00 : admin deleted Scanner
+09/04/19 22:22:01 : admin accessed History
+09/04/19 22:38:03 :  LOGGED IN [admin]
+09/04/19 22:38:04 : admin accessed History
+09/04/19 22:38:06 : admin accessed Products
+09/04/19 22:38:07 : admin attempted to delete an item
+09/04/19 22:38:12 : admin accessed Products
+09/04/19 22:38:12 : admin deleted Scanner
+09/04/19 22:38:13 : admin accessed History
+09/04/19 22:39:07 :  LOGGED IN [admin]
+09/04/19 22:39:08 : admin accessed History
+09/04/19 22:39:11 : admin accessed Products
+09/04/19 22:39:13 : admin accessed History
+09/04/19 22:39:14 : admin accessed Products
+09/04/19 22:39:16 : admin attempted to delete an item
+09/04/19 22:39:20 : admin attempted to delete an item
+09/04/19 22:39:24 : admin accessed Products
+09/04/19 22:39:24 : admin deleted Scanner
+09/04/19 22:39:25 : admin accessed History
+09/04/19 23:00:29 :  LOGGED IN [admin]
+09/04/19 23:00:30 : admin accessed Products
+09/04/19 23:00:31 : admin accessed History
+09/04/19 23:01:27 :  LOGGED IN [admin]
+09/04/19 23:01:28 : admin accessed History
+09/04/19 23:01:31 : admin accessed Products
+09/04/19 23:01:33 : admin attempted to delete an item
+09/04/19 23:01:38 : admin accessed Products
+09/04/19 23:01:38 : admin deleted Scanner
+09/04/19 23:01:38 : admin accessed History
+09/04/19 23:01:49 : admin accessed Products
+09/04/19 23:01:51 : admin accessed History
+09/04/19 23:19:19 :  LOGGED IN [admin]
+09/04/19 23:19:25 : admin accessed Products
+09/04/19 23:19:26 : admin attempted to add an item
+09/04/19 23:19:32 : admin accessed Products
+09/04/19 23:19:32 : admin added qwe Stock: 1 Price: 1
+09/04/19 23:20:55 :  LOGGED IN [admin]
+09/04/19 23:20:56 : admin accessed Products
+09/04/19 23:20:57 : admin attempted to add an item
+09/04/19 23:21:03 : admin accessed Products
+09/04/19 23:21:03 : admin added qwe Stock: 1 Price: 1
+09/04/19 23:22:51 :  LOGGED IN [admin]
+09/04/19 23:22:52 : admin accessed Products
+09/04/19 23:22:54 : admin attempted to delete an item
+09/04/19 23:22:58 : admin accessed Products
+09/04/19 23:22:58 : admin deleted Firewall
+09/04/19 23:22:59 : admin accessed History
+09/04/19 23:23:00 : admin accessed Products
+09/04/19 23:23:01 : admin attempted to add an item
+09/04/19 23:23:07 : admin accessed Products
+09/04/19 23:23:07 : admin added qwe Stock: 1 Price: 1
+09/04/19 23:32:01 :  LOGGED IN [admin]
+09/04/19 23:32:04 : admin accessed Products
+09/04/19 23:32:05 : admin attempted to add an item
+09/04/19 23:32:19 : admin added qqwe Stock: 1 Price: 1
+09/04/19 23:32:25 : admin attempted to add an item
+09/04/19 23:33:04 : admin added qwe Stock: 1 Price: 1
+09/04/19 23:34:55 :  LOGGED IN [admin]
+09/04/19 23:34:56 : admin accessed Products
+09/04/19 23:34:57 : admin attempted to add an item
+09/04/19 23:35:03 : admin accessed Products
+09/04/19 23:35:03 : admin added qwe Stock: 1 Price: 1
+09/04/19 23:39:14 :  LOGGED IN [admin]
+09/04/19 23:39:15 : admin accessed Products
+09/04/19 23:39:16 : admin attempted to purchase Scanner
+09/04/19 23:40:29 : FAILED LOGIN ATTEMPT [admin, qerty1234]
+09/04/19 23:40:33 :  LOGGED IN [admin]
+09/04/19 23:40:34 : admin accessed Products
+09/04/19 23:40:36 : admin attempted to purchase Scanner
+09/04/19 23:40:40 : admin attempted to purchase Scanner
+09/04/19 23:40:43 : admin purchased 1 Scanner/s
+09/04/19 23:40:43 : admin accessed Products
+09/04/19 23:40:47 : admin attempted to add an item
+09/04/19 23:42:05 :  LOGGED IN [admin]
+09/04/19 23:42:06 : admin accessed Products
+09/04/19 23:42:07 : admin attempted to add an item
+09/04/19 23:42:16 : admin added qwe Stock: 1 Price: a
+09/04/19 23:42:20 : admin attempted to add an item
+09/04/19 23:42:29 : admin added 1 Stock: 1 Price: 1
+09/04/19 23:42:31 : admin attempted to add an item
+09/04/19 23:42:37 : admin accessed Products
+09/04/19 23:42:37 : admin added qwe Stock: 1 Price: 1
+09/04/19 23:42:40 : admin attempted to edit an item
+09/04/19 23:42:46 : admin edited qwe1Stock: 1 Price: 1.0
+09/04/19 23:42:47 : admin attempted to edit an item
+09/04/19 23:45:13 :  LOGGED IN [admin]
+09/04/19 23:45:14 : admin accessed Products
+09/04/19 23:45:18 : admin attempted to edit an item
+09/04/19 23:45:26 : admin edited Scanner1Stock: 10 Price: 100.0
+09/04/19 23:45:29 : admin attempted to add an item
+09/04/19 23:45:39 : admin added 1 Stock: 1 Price: 1

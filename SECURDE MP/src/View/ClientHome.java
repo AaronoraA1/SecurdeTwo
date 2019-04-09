@@ -5,18 +5,20 @@
  */
 package View;
 //[255,102,51]
+
 import Controller.SQLite;
 import Model.History;
 import Model.Logs;
 import Model.Product;
 import Model.User;
+
 import java.awt.CardLayout;
 import java.awt.Color;
 import java.util.ArrayList;
+import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
 /**
- *
  * @author BeepXD
  */
 public class ClientHome extends javax.swing.JPanel {
@@ -27,36 +29,36 @@ public class ClientHome extends javax.swing.JPanel {
     public MgmtLogs mgmtLogs;
     public MgmtProduct mgmtProduct;
     public MgmtUser mgmtUser;
-    
+
     private CardLayout contentView = new CardLayout();
-    
+
     public ClientHome() {
         initComponents();
     }
-    
-    public void init(SQLite sqlite){
+
+    public void init(SQLite sqlite) {
 
         mgmtHistory = new MgmtHistory(sqlite);
         mgmtLogs = new MgmtLogs(sqlite);
         mgmtProduct = new MgmtProduct(sqlite);
         mgmtUser = new MgmtUser(sqlite);
-    
+
         Content.setLayout(contentView);
-        Content.add(new Home("WELCOME CLIENT!", new java.awt.Color(255,102,51)), "home");
+        Content.add(new Home("WELCOME CLIENT!", new java.awt.Color(255, 102, 51)), "home");
         Content.add(mgmtUser, "mgmtUser");
         Content.add(mgmtHistory, "mgmtHistory");
         Content.add(mgmtProduct, "mgmtProduct");
         Content.add(mgmtLogs, "mgmtLogs");
 
-        
+
 //        UNCOMMENT TO DISABLE BUTTONS
         historyBtn.setVisible(false);
         usersBtn.setVisible(false);
 //        productsBtn.setVisible(false);
         logsBtn.setVisible(false);
     }
-    
-    public void showPnl(String panelName){
+
+    public void showPnl(String panelName) {
         contentView.show(Content, panelName);
     }
 
@@ -100,12 +102,12 @@ public class ClientHome extends javax.swing.JPanel {
         javax.swing.GroupLayout ContentLayout = new javax.swing.GroupLayout(Content);
         Content.setLayout(ContentLayout);
         ContentLayout.setHorizontalGroup(
-            ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+                ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 0, Short.MAX_VALUE)
         );
         ContentLayout.setVerticalGroup(
-            ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 271, Short.MAX_VALUE)
+                ContentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(0, 271, Short.MAX_VALUE)
         );
 
         historyBtn.setBackground(new java.awt.Color(255, 255, 255));
@@ -129,75 +131,90 @@ public class ClientHome extends javax.swing.JPanel {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Content, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(usersBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(productsBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(historyBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(logsBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap())
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(Content, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addComponent(usersBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(productsBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(historyBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(logsBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addContainerGap())
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(usersBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(productsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(historyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(logsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Content, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(usersBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(productsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(historyBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(logsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Content, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
     private void usersBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usersBtnActionPerformed
-        mgmtUser.setRoleID(2);
-        mgmtUser.init(this.getUser());
-        usersBtn.setForeground(Color.red);
-        productsBtn.setForeground(Color.black);
-        historyBtn.setForeground(Color.black);
-        logsBtn.setForeground(Color.black);
-        contentView.show(Content, "mgmtUser");
+        if (user.getRole() != 1) {
+            mgmtUser.setRoleID(2);
+            mgmtUser.init(this.getUser());
+            usersBtn.setForeground(Color.red);
+            productsBtn.setForeground(Color.black);
+            historyBtn.setForeground(Color.black);
+            logsBtn.setForeground(Color.black);
+            contentView.show(Content, "mgmtUser");
+        } else {
+            JOptionPane.showMessageDialog(null, "Invalid entry. User is disabled.");
+        }
     }//GEN-LAST:event_usersBtnActionPerformed
 
     private void productsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productsBtnActionPerformed
-
-        mgmtProduct.setRoleID(2);
-        mgmtProduct.init(this.getUser());
-        usersBtn.setForeground(Color.black);
-        productsBtn.setForeground(Color.red);
-        historyBtn.setForeground(Color.black);
-        logsBtn.setForeground(Color.black);
-        contentView.show(Content, "mgmtProduct");
+        if (user.getRole() != 1) {
+            mgmtProduct.setRoleID(2);
+            mgmtProduct.init(this.getUser());
+            usersBtn.setForeground(Color.black);
+            productsBtn.setForeground(Color.red);
+            historyBtn.setForeground(Color.black);
+            logsBtn.setForeground(Color.black);
+            contentView.show(Content, "mgmtProduct");
+        } else {
+            JOptionPane.showMessageDialog(null, "Invalid entry. User is disabled.");
+        }
     }//GEN-LAST:event_productsBtnActionPerformed
 
     private void historyBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_historyBtnActionPerformed
-        mgmtHistory.setRoleID(2);
-        mgmtHistory.init(this.getUser());
-        usersBtn.setForeground(Color.black);
-        productsBtn.setForeground(Color.black);
-        historyBtn.setForeground(Color.red);
-        logsBtn.setForeground(Color.black);
-        contentView.show(Content, "mgmtHistory");
+        if (user.getRole() != 1) {
+            mgmtHistory.setRoleID(2);
+            mgmtHistory.init(this.getUser());
+            usersBtn.setForeground(Color.black);
+            productsBtn.setForeground(Color.black);
+            historyBtn.setForeground(Color.red);
+            logsBtn.setForeground(Color.black);
+            contentView.show(Content, "mgmtHistory");
+        } else {
+            JOptionPane.showMessageDialog(null, "Invalid entry. User is disabled.");
+        }
     }//GEN-LAST:event_historyBtnActionPerformed
 
     private void logsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logsBtnActionPerformed
-        mgmtLogs.setRoleID(2);
-        mgmtLogs.init(this.getUser());
-        usersBtn.setForeground(Color.black);
-        productsBtn.setForeground(Color.black);
-        historyBtn.setForeground(Color.black);
-        logsBtn.setForeground(Color.red);
-        contentView.show(Content, "mgmtLogs");
+        if (user.getRole() != 1) {
+            mgmtLogs.setRoleID(2);
+            mgmtLogs.init(this.getUser());
+            usersBtn.setForeground(Color.black);
+            productsBtn.setForeground(Color.black);
+            historyBtn.setForeground(Color.black);
+            logsBtn.setForeground(Color.red);
+            contentView.show(Content, "mgmtLogs");
+        } else {
+            JOptionPane.showMessageDialog(null, "Invalid entry. User is disabled.");
+        }
     }//GEN-LAST:event_logsBtnActionPerformed
 
     public User getUser() {
@@ -207,7 +224,7 @@ public class ClientHome extends javax.swing.JPanel {
     public void setUser(User user) {
         this.user = user;
     }
-    
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Content;

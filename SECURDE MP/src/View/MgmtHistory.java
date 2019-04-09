@@ -11,10 +11,14 @@ import Model.History;
 import Model.Product;
 import Model.User;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
@@ -23,6 +27,9 @@ import javax.swing.table.DefaultTableModel;
  * @author beepxD
  */
 public class MgmtHistory extends javax.swing.JPanel {
+
+    private static final File DATABASE_HISTORIES = new File("database/database_histories.txt");
+    private static final File DATABASE_PRODUCTS = new File("database/database_products.txt");
 
     public Main main;
     public SQLite sqlite;
@@ -58,18 +65,83 @@ public class MgmtHistory extends javax.swing.JPanel {
             tableModel.removeRow(0);
         }
 
-//      LOAD CONTENTS
-        ArrayList<History> history = sqlite.getHistory();
-        for (int nCtr = 0; nCtr < history.size(); nCtr++) {
-            Product product = sqlite.getProduct(history.get(nCtr).getName());
-            tableModel.addRow(new Object[]{
-                    history.get(nCtr).getUsername(),
-                    history.get(nCtr).getName(),
-                    history.get(nCtr).getStock(),
-                    product.getPrice(),
-                    product.getPrice() * history.get(nCtr).getStock(),
-                    history.get(nCtr).getTimestamp()
-            });
+//      LOAD CONTENT
+//        loaded data from csv to avoid NullPointerException when deleting a product which is used in populating history
+
+        List<History> history = new ArrayList<>();
+        List<Product> product = new ArrayList<>();
+        try {
+            String line = null;
+
+            // wrap a BufferedReader around FileReader
+            BufferedReader bufferedReader1;
+            bufferedReader1 = new BufferedReader(new FileReader(DATABASE_HISTORIES));
+            BufferedReader bufferedReader2;
+            bufferedReader2 = new BufferedReader(new FileReader(DATABASE_PRODUCTS));
+
+            // use the readLine method of the BufferedReader to read one line at a time.
+            // the readLine method returns null when there is nothing else to read.
+            while ((line = bufferedReader1.readLine()) != null) {
+                String[] data = line.split(",");
+                history.add(new History(Integer.parseInt(data[0]), data[1], data[2], Integer.parseInt(data[3]), data[4]));
+            }
+
+            while ((line = bufferedReader2.readLine()) != null) {
+                String[] data = line.split(",");
+                product.add(new Product(Integer.parseInt(data[0]), data[1], Integer.parseInt(data[2]), Float.valueOf(data[3])));
+            }
+
+            // close the BufferedReader when we're done
+            bufferedReader1.close();
+            bufferedReader2.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+        if (this.getRoleID() == 5) {
+            Product tempProduct = null;
+
+            for (int nCtr = 0; nCtr < history.size(); nCtr++) {
+                for (int i = 0; i < product.size(); i++) {
+                    if (product.get(i).getName().equals(history.get(nCtr).getName())) {
+                        tempProduct = product.get(i);
+                        break;
+                    }
+                }
+                tableModel.addRow(new Object[]{
+                        history.get(nCtr).getUsername(),
+                        history.get(nCtr).getName(),
+                        history.get(nCtr).getStock(),
+                        tempProduct.getPrice(),
+                        tempProduct.getPrice() * history.get(nCtr).getStock(),
+                        history.get(nCtr).getTimestamp()
+                });
+            }
+        } else {
+            Product tempProduct = null;
+            for (int nCtr = 0; nCtr < history.size(); nCtr++) {
+                if (!history.get(nCtr).getUsername().equalsIgnoreCase("admin")) {
+
+                    for (int i = 0; i < product.size(); i++) {
+                        if (product.get(i).getName().equals(history.get(nCtr).getName())) {
+                            tempProduct = product.get(i);
+                            break;
+                        }
+                    }
+
+                    tableModel.addRow(new Object[]{
+                            history.get(nCtr).getUsername(),
+                            history.get(nCtr).getName(),
+                            history.get(nCtr).getStock(),
+                            tempProduct.getPrice(),
+                            tempProduct.getPrice() * history.get(nCtr).getStock(),
+                            history.get(nCtr).getTimestamp()
+                    });
+                }
+
+
+            }
         }
 
     }
@@ -211,6 +283,11 @@ public class MgmtHistory extends javax.swing.JPanel {
                             product.getPrice() * history.get(nCtr).getStock(),
                             history.get(nCtr).getTimestamp()
                     });
+                    // if manager searched for admin-related history, dont show
+                    if (user.getRole() == 4 && searchFld.getText().equalsIgnoreCase("admin")) {
+                        tableModel.removeRow(tableModel.getRowCount() - 1);
+                    }
+
                 }
             }
         }
@@ -221,11 +298,12 @@ public class MgmtHistory extends javax.swing.JPanel {
         init(this.getUser());
     }//GEN-LAST:event_btnReloadActionPerformed
 
-    public String newLog(String user){
+    public String newLog(String user) {
         DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
         Date dateobj = new Date();
-        return df.format(dateobj) + " : "+ user;
+        return df.format(dateobj) + " : " + user;
     }
+
     public int getRoleID() {
         return roleID;
     }
