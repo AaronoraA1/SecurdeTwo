@@ -226,8 +226,8 @@ public class Main {
         FileWriter fw2 = null;
 
         try {
-            fw1 = new FileWriter(FILENAME_1, false);
-            fw2 = new FileWriter(FILENAME_2, true);
+            fw1 = new FileWriter(FILENAME_1, true);
+            fw2 = new FileWriter(FILENAME_2, false);
             bw1 = new BufferedWriter(fw1);
             bw2 = new BufferedWriter(fw2);
             bw1.write(newEntry + "\n");
